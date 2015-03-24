@@ -1,0 +1,147 @@
+
+/*
+--------------------------------------------------------------------------------------------------
+typography													
+--------------------------------------------------------------------------------------------------
+*/
+
+
+@font-face {
+ font-family: OpenSans;
+ src: url('../font/OpenSans.eot'); /* IE9 */
+ src: url('../font/OpenSans.eot?') format('eot'),  /* IE6-IE8 */ 
+      url('../font/OpenSans.woff') format('woff'), /* Современные браузеры */ 
+      url('../font/OpenSans.ttf') format('truetype'), /* Safari, Android, iOS */ 
+      url('../font/OpenSans.svg#svgOpenSans') format('svg'); /* iOS */
+}
+@font-face {
+ font-family: OpenSansB;
+ src: url('../font/OpenSans-Bold.eot'); /* IE9 */
+ src: url('../font/OpenSans-Bold.eot?') format('eot'),  /* IE6-IE8 */ 
+      url('../font/OpenSans-Bold.woff') format('woff'), /* Современные браузеры */ 
+      url('../font/OpenSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ 
+      url('../font/OpenSans-Bold.svg#svgOpenSans-Bold') format('svg'); /* iOS */
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic-ext,cyrillic);
+/*font-family: 'Open Sans', 'sans-serif';
+*/
+
+$fontf: 'Open Sans', sans-serif;
+/*$fontfb: 'OpenSansB', sans-serif;*/
+$base-font-size: 14px; /*базовый размер шрифта, относительно него должны счиитаться все остальные размеры шрифтов*/
+$base-line-height: 19px;
+//===========================================================================================================================
+//===========================================================================================================================
+body {
+	color: #333333;
+  font-family: $fontf;
+	font-size: $base-font-size;
+	line-height: 1.3em;
+	font-weight: 400;
+	font-style: normal;
+}
+a,
+a:visited {
+  font-family: $fontf;
+	color: #254b64;
+	outline: none;
+	text-decoration: underline;
+  @include transition(all 0.1s);  
+}
+a:hover {
+	color: #254b64;
+	/*border-bottom: 1px dashed #d6142f;*/
+	text-decoration: none;
+}
+a:active {
+}
+
+a.dashed:hover {
+	text-decoration: none;
+	border-bottom: 1px dashed #d6142f;
+}
+
+
+h1, .h1 {
+  @include adjust-font-size-to(24px);
+  font-weight: bold;
+  line-height: 1em;
+  color: #326586;
+  margin-bottom: 30px;
+  padding: 0 0px;
+}
+h2, .h2 {
+	color: #000;
+	font-weight: 700;
+	font: normal 30px/30px $fontf;
+	margin: 0;
+	padding: 0;
+}
+h3, .h3 {
+    color: #326586;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $fontf;
+}
+h4, .h4 {
+	color: #000;
+	font: normal 18px/24px $fontf;
+	margin: 0;
+	padding: 0;
+}
+
+
+p {
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+
+
+strong,
+b {
+  font-family: $fontf;
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+
+
+ul {
+	margin: 0 0 0px 0px;
+	padding: 0;
+}
+ol {
+	margin: 0 0 0px 0px;
+	padding: 0;
+}
+input{
+    font-family: $fontf;
+    font-weight: 300;
+    -webkit-transition: all 0.2s;
+       -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s; 
+         -o-transition: all 0.2s; 
+            transition: all 0.2s;    
+}
+
+.align-left {
+	text-align: left !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.bold{
+  font-family: $fontf;
+}
+
+/*
+===================================================================================================
+/typography													
+===================================================================================================
+*/

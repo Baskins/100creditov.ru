@@ -1,0 +1,547 @@
+/*
+===================================================================================================
+layout                                            
+===================================================================================================
+*/
+//шрифты-===========================================================================================
+//общий шрифт для всего контента
+$fontf: 'Open Sans', sans-serif;
+/*$fontfb: 'OpenSansB', sans-serif;*/
+
+
+//цвета и оттенки-==================================================================================
+$botton-top: #fead01; //начальный цвет градиента кнопки "отправить заявку на кредит"  "отправить"  
+$botton-bottom: #e48120; //конечный цвет градиента кнопки "отправить заявку на кредит"  "отправить"  
+$botton-hover: #f69f0b; //активный цвет при кнопки "отправить заявку на кредит"  "отправить"  
+
+$header-grad-top: #fff;  //начальный цвет градиента шапки и футера
+$header-grad-bottom: #f6f4f4;//конечный цвет градиента шапки и футера
+
+$menu-grad-top: #99cc33;  //начальный цвет градиента верхнего главного меню
+$menu-grad-bottom: #679a01;//конечный цвет градиента верхнего главного меню
+
+$input-search-grad-top: #f6f6f6;  //начальный цвет градиента верхнего поля поиска
+$input-search-grad-bottom: #fefefe;//конечный цвет градиента верхнего поля поиска
+
+
+$rewiev-bt: #e3e3e3;   //верхний, нижний градиенты кнопок фильтра просмотров и активное сосотояние
+$rewiev-bb: #ffffff;
+$rewiev-ba: #f4f4f4;
+
+$get-bl: #ededed;   //левый, правый, активный градиенты кнопки получить персональную помощь (серая )
+$get-br: #a2a2a2;
+$get-bl2: #d8d8d8;   //левый, правый, активный градиенты кнопки получить персональную помощь (серая )
+$get-br2: #c2c2c2;
+$get-ba: #d8d8d8;
+
+
+//ширина и размеры-==================================================================================
+$left-col-width: 170px; //ширина левой колонки трехколоночной разметки
+$right-col-width: 200px; //ширина правой колокнки трехколоночной разметки
+
+
+
+$lft-i-width: 180px; /*ширина левой колонки трехколоночной разметки на главной страницк*/
+$rght-i-width: 110px; /*ширина правой колокнки трехколоночной разметки на главной стрнаице*/
+
+
+
+$resize-m: 0px 860px; /*то расширение экрана, когда убирается третья колонка*/
+$wind-wdth: 0px 1000px;
+
+/*====================================================================================================
+add background-colors
+=====================================================================================================*/
+.bg-edf7df      {background: #edf7df!important; } /*цвет правой колонки*/
+
+$greyl: #999999; /*светлосерый цвет текста*/
+$greyd: #666666; /*темносерый цвет текста*/  
+$green: #009900; /*зеленый цвет текста*/
+$bluet: #326586; /*синий цвет текста*/
+
+.green {color: $green;}
+.greyl {color: $greyl;}
+.greyd {color: $greyd;}
+.bluet {color: $bluet;}
+
+/*====================================================================================================
+add borders to blocks
+=====================================================================================================*/
+.red            {border: 1px solid red;}
+
+/*====================================================================================================
+widths
+=====================================================================================================*/
+.width-143px         {width: 143px;}
+.width-115px         {width: 115px;}
+.widthx499per        {width: 49.9%;}
+
+
+
+
+.bdtop{border-top: 1px solid #cccccc;}
+.bd-bl-1px{
+    width: 100%;
+    height: 1px;
+    background:#d7d7d7;
+    border: none;
+}
+/*====================================================================================================
+indent
+=====================================================================================================*/
+/*=внутренний отступ сверху ================================*/
+.pt10px, .pt-smaller    { padding-top: 10px;}
+.pt15px, .pt-small      { padding-top: 15px;}
+.pt20px, .pt-medium     { padding-top: 20px;}
+.pt25px, .pt-averager   { padding-top: 25px;}
+.pt30px, .pt-big        { padding-top: 30px;}
+.pt35px, .pt-biger      { padding-top: 35px;}
+.pt40px, .pt-bigest     { padding-top: 40px;}
+/*=внутрениий отступ слева=================================*/
+.pl10px, .pl-smaller    { padding-left: 10px;}
+.pl15px, .pl-small      { padding-left: 15px;}
+.pl20px, .pl-medium     { padding-left: 20px;}
+.pl25px, .pl-averager   { padding-left: 25px;}
+.pl30px, .pl-big        { padding-left: 30px;}
+.pl35px, .pl-biger      { padding-left: 35px;}
+.pl40px, .pl-bigest     { padding-left: 40px;}
+/*=внутренний отступ справа=================================*/
+.pr10px, .pr-smaller    { padding-right: 10px;}
+.pr15px, .pr-small      { padding-right: 15px;}
+.pr20px, .pr-medium     { padding-right: 20px;}
+.pr25px, .pr-averager   { padding-right: 25px;}
+.pr30px, .pr-big        { padding-right: 30px;}
+.pr35px, .pr-biger      { padding-right: 35px;}
+.pr40px, .pr-bigest     { padding-right: 40px;}
+/*=внутренний отступ снизу=================================*/
+.pb10px, .pb-smaller    { padding-bottom: 10px;}
+.pb15px, .pb-small      { padding-bottom: 15px;}
+.pb20px, .pb-medium     { padding-bottom: 20px;}
+.pb25px, .pb-averager   { padding-bottom: 25px;}
+.pb30px, .pb-big        { padding-bottom: 30px;}
+.pb35px, .pb-biger      { padding-bottom: 35px;}
+.pb40px, .pb-bigest     { padding-bottom: 40px;}
+/*#########################################################*/
+
+/*=внешний отступ сверху ================================*/
+.mt10px, .mt-smaller    { margin-top: 10px;}
+.mt15px, .mt-small      { margin-top: 15px;}
+.mt20px, .mt-medium     { margin-top: 20px;}
+.mt25px, .mt-averager   { margin-top: 25px;}
+.mt30px, .mt-big        { margin-top: 30px;}
+.mt35px, .mt-biger      { margin-top: 35px;}
+.mt40px, .mt-bigest     { margin-top: 40px;}
+/*=внешний отступ слева=================================*/
+.ml10px, .ml-smaller    { margin-left: 10px;}
+.ml15px, .ml-small      { margin-left: 15px;}
+.ml20px, .ml-medium     { margin-left: 20px;}
+.ml25px, .ml-averager   { margin-left: 25px;}
+.ml30px, .ml-big        { margin-left: 30px;}
+.ml35px, .ml-biger      { margin-left: 35px;}
+.ml40px, .ml-bigest     { margin-left: 40px;}
+/*=внешний отступ справа=================================*/
+.mr10px, .mr-smaller    { margin-right: 10px;}
+.mr15px, .mr-small      { margin-right: 15px;}
+.mr20px, .mr-medium     { margin-right: 20px;}
+.mr25px, .mr-averager   { margin-right: 25px;}
+.mr30px, .mr-big        { margin-right: 30px;}
+.mr35px, .mr-biger      { margin-right: 35px;}
+.mr40px, .mr-bigest     { margin-right: 40px;}
+/*=внешний отступ снизу=================================*/
+.mb10px, .mb-smaller    { margin-bottom: 10px;}
+.mb15px, .mb-small      { margin-bottom: 15px;}
+.mb20px, .mb-medium     { margin-bottom: 20px;}
+.mb25px, .mb-averager   { margin-bottom: 25px;}
+.mb30px, .mb-big        { margin-bottom: 30px;}
+.mb35px, .mb-biger      { margin-bottom: 35px;}
+.mb40px, .mb-bigest     { margin-bottom: 40px;}
+/*######################################################*/
+
+
+
+
+
+.mb57px{margin-bottom: 57px;}
+
+
+.plx20per{padding-left: 20%;}
+.plx40per{padding-left: 40%;}
+
+
+
+
+
+.blueh2{
+  @include adjust-font-size-to(24px);
+  line-height: 1em;
+  font-weight: bold;
+  padding-bottom: 40px;
+  color: $bluet;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 740px;
+    min-height: 100%;
+    position: relative;
+    /*overflow-x: hidden;*/
+    background: #286AA6 url('../img/bkg_cloud-a.jpg') repeat-x fixed center bottom;   
+    font-family: $fontf;
+}
+
+
+
+
+.cf:before, .cf:after { content: " "; display: table;}
+.cf:after { clear: both;}
+.cf {*zoom: 1;}
+/*====================================================================================================
+bottons
+=====================================================================================================*/
+.submit_small{
+    display: inline-block;  
+    *display:inline;
+    *zoom:1;
+    cursor: pointer;
+    color: #fff!important;
+    font-family: $fontf;
+    font-weight: 700;
+    line-height: 1em;
+    text-decoration: none;  
+    text-transform: uppercase;
+    font-size: 12px;
+    @include background-image(linear-gradient(top, $botton-top, $botton-bottom));
+    border: none;
+    border-right: 1px solid #996c20;
+    padding: 8px 20px 8px 20px;
+    @include border-radius(3px);
+    @include transition(all 0s);  
+    outline: none;
+    @include box-shadow(rgba(0, 0, 0, 0.02) 0px 0px 0px 4px);
+    cursor: pointer;
+    span{
+        color: #000;
+        text-transform: none;
+    }
+
+    i{
+        font-weight:  normal;
+        font-style: normal;
+        font-size: 21px;
+    }
+}
+.submit_small:hover{
+    background: $botton-hover;
+}
+
+ 
+.submit_orange{
+    
+    @include border-radius;  
+    @include adjust-font-size-to(16px); 
+    @include background-image(linear-gradient(top, $botton-top, $botton-bottom));
+    @include transition(all 0s);      
+    display: inline-block;  
+    *display:inline;
+    *zoom:1;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1em;
+    text-decoration: none;
+    display: block;
+    border-right: 1px solid #996c20;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px 30px;
+
+    i{
+        font-weight:  normal;
+        font-style: normal;
+        font-size: 21px;
+    }
+} 
+.submit_orange span{color: #000;} /*используется на старнице otzivi2*/
+.submit_orange:hover{
+   background: $botton-hover;
+    color: #fff;   
+}
+.submit_orange:visited{ color: #fff;}
+
+
+
+
+.get-credit{
+    padding: 6px 15px 9px 15px;
+    margin-bottom: 15px;
+    border:  1px solid #a6a5a5;
+    @include border-radius(5px);   
+    @include box-sizing(border-box);
+    @include inline-block;
+    /*@include background-image(linear-gradient(left, $get-bl 70%, $get-br 30%));*/
+    @include background-image(linear-gradient(left, $get-bl, $get-bl2 60%, $get-bl2 40%, $get-br));
+    @include transition(all 0s);
+    @include adjust-font-size-to(16px,  $from-size: 14px);
+    text-decoration: none;
+    color: #323232;
+    line-height: 1em;
+    font-weight: bold; 
+    cursor: pointer;
+    span{
+        color: #fff;
+        font-weight:  normal;
+        font-style: normal;
+        font-size: 21px;
+    }
+}
+.get-credit:hover{
+    background: $get-ba;
+}
+
+
+.submit-orange-arrow{
+    /*display: block;*/
+    width: auto;
+    background: url(../img/botton-arrow.png) no-repeat right;
+    padding-right: 50px;
+    padding-left: 15px;
+    height: 28px;
+    line-height: 28px!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000!important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    @include inline-block;
+    @include text-shadow(rgba(255, 255, 255, 0.5) 0px 0px 2px);  
+    @include box-sizing(border-box);
+    @include adjust-font-size-to(12px);
+    @include border-radius(5px);
+   @include transition(all 0.15s); 
+}
+
+.submit-orange-arrow:hover{
+   @include opacity(0.85);
+
+}
+
+.submit-orange-arrow1,
+.submit-orange-arrow2{
+    /*display: block;*/
+    @include inline-block;
+    @include box-sizing(border-box);
+    @include adjust-font-size-to(10px);
+    @include border-radius(3px);
+    @include transition(all 0.15s); 
+    width: auto;
+    padding-right: 20px;
+    padding-left: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff!important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.submit-orange-arrow1{
+    background: url(../img/botton-arrow1.png) no-repeat right;
+    height: 21px;
+    line-height: 21px!important;
+}
+
+.submit-orange-arrow2{
+    background: url(../img/botton-arrow2.png) no-repeat right;
+    height: 25px;
+    line-height: 25px!important;
+}
+
+.submit-orange-arrow1:hover,
+.submit-orange-arrow2:hover{
+   @include opacity(0.85);
+}
+
+/*==================================================================================================*/
+.plx10px{ padding-left: 10px;}
+
+.mtx0px{margin-top: 0px!important;}
+/*==================================================================================================
+                                         general    razmetka                                     
+/*==================================================================================================*/
+.container {
+    display: block;
+    min-width: 740px;
+    max-width: 1000px;
+    margin: 0 auto 0px auto;
+    padding: 0;
+}
+/*==================================================================================================*/
+
+.columns-3{
+    overflow: hidden;
+    -webkit-border-radius: 0px 0px 5px 5px; 
+     -khtml-border-radius: 0px 0px 5px 5px; 
+       -moz-border-radius: 0px 0px 5px 5px; 
+            border-radius: 0px 0px 5px 5px; 
+}
+.lft-col,
+.rght-col{
+    @include box-sizing(border-box);
+    background:#fff;    
+    margin-bottom: -9999px;
+    padding-bottom:9999px;
+}
+.lft-col{
+    float: left;
+    width: $left-col-width;
+}
+.lft-col.bg-edf7df{
+    border-right: 1px solid #cccccc;   
+}
+.lft-col.plx10px{
+    float: left;
+    width: $left-col-width+10px;
+}
+
+.rght-col{
+    float: right;
+    width: $right-col-width;
+
+}
+.middle-col{
+    margin-left: $left-col-width + 15px;
+    margin-right: $right-col-width + 15px
+}
+.second-width-col{
+    margin-left: $left-col-width + 25px;
+    @include breakpoint($wind-wdth) {
+        padding-right: 15px;    
+    }
+
+}
+.col33per{
+    float: left;
+    width: 31.30%;
+}
+
+
+
+
+/*===============================================================================*/
+.main-section-index{
+    display: block;
+    min-width: 740px;
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+    padding: 0px 0 0 0;
+
+}
+.lft-col-i,
+.rght-col-i,
+.mdl-col-i{
+    /*border:  1px solid green;*/
+    @include box-sizing(border-box);
+    /*margin-bottom: 40px;*/
+}
+
+.lft-col-i{
+    width: $lft-i-width;
+    float: left;
+}
+.rght-col-i{
+    width: $rght-i-width;
+    float: right;
+    @include breakpoint($resize-m) {
+        float: none;
+        width: auto;
+        margin-left: $lft-i-width +15px;
+    }    
+}
+
+.mdl-col-i{
+    margin-left: $lft-i-width +15px;
+    margin-right: $rght-i-width +15px;
+    @include breakpoint($resize-m) {
+        margin-right: 0px;
+        padding-right: 10px;
+    } 
+}
+
+
+
+/*==================================================================================================*/
+input[type='text'],
+input[type='password'], 
+textarea{
+    @include box-sizing(border-box);
+    padding: 3px 10px;
+    border: 1px solid #b5b4b4;
+    @include border-radius(2px);
+    @include adjust-font-size-to(12px);
+    line-height: 1.2em;
+    font-family: $fontf;
+
+    @include input-placeholder {
+        line-height: 1.5em; 
+    }
+}        
+input[type='text']:active,
+input[type='email']:active,
+input[type='password']:active, 
+textarea:active{
+    border: 1px solid #000;
+}
+
+input[type=text].error, 
+input[type=email].error, 
+select.error,
+textarea.error {
+  border: 1px solid #d50404!important;
+  background-color: rgba(255, 0, 0, 0.15) !important;
+}
+
+/* Pagination ---------------------- */
+ul.pagination { display: block; height: 24px; margin-left: -5px; }
+ul.pagination li { float: left; display: block; height: 24px; color: #999; font-size: 14px; margin-left: 5px; }
+ul.pagination li a { display: block; padding: 1px 7px 1px; color: #E28006; text-decoration: none; }
+ul.pagination li:hover a, ul.pagination li a:focus { background: #f5f8f1; }
+ul.pagination li.unavailable a { cursor: default; color: #999; }
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus { background: transparent; }
+ul.pagination li.current a { background: #558232; color: white; font-weight: bold; cursor: default; }
+ul.pagination li.current a:hover, ul.pagination li.current a:focus { background: #558232; }
+div.pagination-centered { text-align: center; }
+div.pagination-centered ul > li { float: none; display: inline-block; }
+/* Pagination ---------------------- /END */
+
+
+/*==================================================================================================*/
+/*                                                         */
+/*==================================================================================================*/
+/*##################################################################################################*/
+.disp-none   {display: none;}
+.fl-lft   {float: left;}
+.fl-rght  {float: right;}
+.clear, .clean  {   
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    float: none;
+    border:0 none;
+}
+
+/*
+===================================================================================================
+/layout                                               
+===================================================================================================
+*/
