@@ -101,9 +101,11 @@ $par-step: 28px;  /*исползуется для позиционировани
     }
 }
 
-.site-header.card{
-	min-width: 895px;
-}
+body.card{
+	.site-header{
+		min-width: 895px;
+	}
+}	
 
 .header-logo{
     width: 400px;
