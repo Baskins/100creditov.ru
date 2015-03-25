@@ -24,47 +24,14 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-  $(function() {
-    var 
-        bh = $(".site-header").outerHeight(true); // высота шапки 
-   
-
-        LinePosition = $(".fix-line-first").offset().top;
-        LineHeight = $(".fix-line").outerHeight(true);
-        LineHeightFirst = $(".fix-line-first").outerHeight(true);
-        LineHeightSum = LineHeight + LineHeightFirst;
-        //alert(LineHeightFirst)
-
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > LinePosition) {
-        $(".fix-line-first").addClass("position-fixed");
-        $(".fix-line").addClass("position-fixed");
-        $(".fix-line").css({'top':LineHeightFirst+'px'});
-        $('.fix-line').next().children().css({'padding-top':LineHeightSum+10+'px'});
-      }
-      else {
-        $(".fix-line-first").removeClass("position-fixed");
-        $(".fix-line").removeClass("position-fixed");
-        $('.fix-line').next().children().css({'padding-top':10+'px'});          
-      };
-    });
-  });
-</script>
-
-
-
-
 </head>
-<body class="page-forum">
+<body class="page-forum  card">
 <!--задается этот класс, чтобы немного изменить стандартизированные или просто похожие и где-то до этого, а сейчас и на этой странице используемые стили классов-->
 
 
 
 <!-- .site-header -->
-    <header class="site-header">
+    <header class="site-header  card">
         <div class="container">
             <div class="header-logo">
                 <a href="#">ПОДБЕРИТЕ ЛЮБОЙ КРЕДИТ<br /><span>БЫСТРО, ЛЕГКО, ДОСТУПНО</span></a>
@@ -127,16 +94,17 @@
 
 
 
-<div id="comparecontent" class="credit-compare">
+<div id="comparecontent" class="credit-compare" >
 
 
-<table cellspacing="0" cellpadding="0" border="0">
+<table cellspacing="0" cellpadding="0" border="0" class="table">
 <tbody>
 <tr>
   <th></th>
   <th colspan="6"><h1>Результат сравнения кредитов для бизнеса</h1></th>
 </tr>
-
+</tbody>
+<tbody id="fix">
 <tr class="fix-line-first">
   <th style="width:10.000000%">Банк</th>
   <td style="width:30%">
@@ -159,7 +127,8 @@
 <td style="width:30%"><strong><a href="/banks/msk/ruscobank/business/500/" class="p" target="_blank">Для </a></strong>
 </td>
 </tr>
-
+</tbody>
+<tbody>
 <tr class="next">
 <th style="width: 10%;">Материальное обеспечение</th>
 <td style="width: 30%; "><ul><li>не требуется</li></ul></td>
@@ -325,6 +294,16 @@
           </div>
         </footer>	
 <!--/footer--> 	
-	
+<!--Для закрепления строки таблицы-->
+
+<script type="text/javascript" src="js/jquery.stickytableheaders.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    // умножим табличку на три
+    
+  $('.table').stickyTableHeaders();
+  });
+
+  </script>		
 </body>	
 </html>

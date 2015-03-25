@@ -101,6 +101,10 @@ $par-step: 28px;  /*исползуется для позиционировани
     }
 }
 
+.site-header.card{
+	min-width: 895px;
+}
+
 .header-logo{
     width: 400px;
     position: absolute;
@@ -5187,7 +5191,7 @@ ul.fwpn-naw{
                 padding-bottom: 7px;
             }
             .widthx499per{
-                position: relative;
+                position: relative;				
             }
             .so-wrapp{
                 @include breakpoint($resize-m) {
@@ -7484,6 +7488,15 @@ ul.fwpn-naw{
             font-size: 14px;
             text-align: center;
         }
+		.widthx499per{
+			width:155px;
+			margin:0 auto 10px;
+			input{
+				width:110px;
+				height:25px;
+				margin-right:5px;
+			}	
+		}
         @include breakpoint($resize-m) {
             br{
                 display: none;
@@ -7639,6 +7652,7 @@ ul.fwpn-naw{
         font-size: 18px;
         border: 1px solid #bbb;
         margin-bottom: 20px;
+		margin-right: 7px;
         @include input-placeholder {
             font-size: 18px; 
             color: #333;
@@ -7815,7 +7829,7 @@ ul.fwpn-naw{
     display: block;
     overflow: hidden;
     position: fixed;
-    @include box-sizing(border-box);   
+    @include box-sizing(border-box); 
 }
 
 .fix-line.position-fixed{
@@ -7832,7 +7846,7 @@ ul.fwpn-naw{
         margin-bottom: -9999px;
         padding-bottom:9999px; 
         overflow: hidden;
-        @include box-sizing(border-box);   
+        @include box-sizing(border-box); 
     }  
 
     th{
@@ -7856,7 +7870,7 @@ ul.fwpn-naw{
         margin-bottom: -9999px;
         padding-bottom:9999px; 
         overflow: hidden;
-        @include box-sizing(border-box);   
+        @include box-sizing(border-box); 
     }  
 
     th{
@@ -7865,6 +7879,18 @@ ul.fwpn-naw{
         padding-bottom:9999px;        
     }
 }
+
+.tableFloatingHeader{
+	th{	
+		padding-right:45px!important;
+	}
+}
+
+.fix.tableFloatingHeader{
+	th{	
+		padding-right:0!important;
+	}
+}	
 
 /*===================================================================================================================*/
 /* 44. / 100Creditov-Compare-Tabl.html
