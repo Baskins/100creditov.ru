@@ -45,9 +45,8 @@
 					'position': 'fixed',
 					'top': 0,
 					'z-index': 1, // #18: opacity bug
-					'display': 'none'
-				});
-
+					'display': 'none'					
+				});				
 				base.$originalHeader.addClass('tableFloatingHeaderOriginal');
 
 				base.$originalHeader.after(base.$clonedHeader);
@@ -92,7 +91,7 @@
 						'margin-top': 0,
 						'left': newLeft,
 						'display': 'block'
-					});
+					});					
 					base.$originalHeader.css('visibility', 'hidden');
 					base.isCloneVisible = true;
 					base.leftOffset = newLeft;
@@ -108,15 +107,24 @@
 
 		base.updateWidth = function () {
 			// Copy cell widths and classes from original header
+			$('tr', base.$clonedHeader).each(function (index) {
+				var $this = $(this);
+				var $origCell = $('tr', base.$originalHeader).eq(index);
+				this.className = $origCell.attr('class') || '';				
+				$this.css('width', $origCell.width());
+				$this.css('height', $origCell.height());
+			});
 			$('th', base.$clonedHeader).each(function (index) {
 				var $this = $(this);
 				var $origCell = $('th', base.$originalHeader).eq(index);
-				this.className = $origCell.attr('class') || '';
-				$this.css('width', $origCell.width());		
+				this.className = $origCell.attr('class') || '';				
+				$this.css('width', $origCell.width());
+				$this.css('height', $origCell.height());
 			});
 
 			// Copy row width from whole table
 			base.$clonedHeader.css('width', base.$originalHeader.width());
+			base.$clonedHeader.css('height', base.$originalHeader.height());
 			
 			
 		};

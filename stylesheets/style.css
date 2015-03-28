@@ -1136,7 +1136,7 @@ pages
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
-  min-width: 895px;
+  min-width: 740px;
   border-bottom: 1px solid #a0acb2;
 }
 .site-header .container {
@@ -9917,9 +9917,9 @@ ul.fwpn-naw a:hover {
   padding: 0px 10px 3px;
   font-size: 18px;
   border: 1px solid #bbb;
-  margin-bottom: 20px;
-  margin-right: 7px;
+  margin-bottom: 20px;  
 }
+
 .calc-form-wrapp input:-moz-placeholder {
   font-size: 18px;
   color: #333;
@@ -9940,6 +9940,10 @@ ul.fwpn-naw a:hover {
   background: url(../img/ikon-percent.png) no-repeat 100px 10px;
   padding-right: 25px;
 }
+.calc-form-wrapp span{
+  margin-left:10px;
+}
+
 .calc-form-wrapp select {
   display: inline-block;
   vertical-align: middle;
@@ -9976,6 +9980,9 @@ ul.fwpn-naw a:hover {
 /*===================================================================================================================*/
 /* 44.  100Creditov-Compare-Tabl.html
 /*===================================================================================================================*/
+body.card .site-header{
+	min-width: 895px;	
+}	
 .credit-compare {
   margin: 15px 25px 100px;
   padding: 5px;
@@ -9996,10 +10003,14 @@ ul.fwpn-naw a:hover {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   overflow: hidden;
-  width: 100%;
+  width: 100%;  
 }
 .credit-compare tbody {
   width: 100%;
+}
+
+.credit-compare tr{
+	width:100%;
 }
 .credit-compare th,
 .credit-compare td {
@@ -10018,7 +10029,7 @@ ul.fwpn-naw a:hover {
   margin-bottom: 10px;
 }
 .credit-compare th:first-child {
-  padding: 10px 10px 10px 20px;
+  padding: 10px 2px 10px 7px;
   background: #edf7df;
   color: #333333;
   font-size: 12px;
@@ -10028,7 +10039,7 @@ ul.fwpn-naw a:hover {
 }
 @media (min-width: 0px) and (max-width: 950px) {
   .credit-compare th:first-child {
-    padding: 10px 5px 10px 10px;
+    padding: 10px 2px 10px 7px;
   }
 }
 .credit-compare tr.odd td {
