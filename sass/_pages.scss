@@ -7883,18 +7883,12 @@ ul.fwpn-naw{
         padding-bottom:9999px;        
     }
 }
-
 .tableFloatingHeader{
-	th{	
-		padding-right:45px!important;
+	td,th{	
+		@include box-sizing(content-box)!important;
 	}
 }
-
-.fix.tableFloatingHeader{
-	th{	
-		padding-right:0!important;
-	}
-}	
+	
 
 /*===================================================================================================================*/
 /* 44. / 100Creditov-Compare-Tabl.html
