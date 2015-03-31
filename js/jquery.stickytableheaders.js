@@ -121,6 +121,13 @@
 				$this.css('width', $origCell.width());
 				$this.css('height', $origCell.height());
 			});
+			$('td', base.$clonedHeader).each(function (index) {
+				var $this = $(this);
+				var $origCell = $('td', base.$originalHeader).eq(index);
+				this.className = $origCell.attr('class') || '';				
+				$this.css('width', $origCell.width());
+				$this.css('height', $origCell.height());
+			});
 
 			// Copy row width from whole table
 			base.$clonedHeader.css('width', base.$originalHeader.width());
