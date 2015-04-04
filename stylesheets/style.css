@@ -10178,6 +10178,170 @@ body.card .site-header{
 /*===================================================================================================================*/
 /* 44. / 100Creditov-Compare-Tabl.html
 /*===================================================================================================================*/
+/*================================================End Avtocredits=======================================================*/
+.avto .credit-ticket .ttl {
+  margin-top: 20px;
+}
+.avto .credit-ticket .ttl span {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.avto .bg-edf7df {
+  background: #fff !important;
+}
+.avto .lft-col.bg-edf7df {
+  border-right: none;
+}
+.avto .lft-col.bg-edf7df .credits_type ul, .avto .lft-col.bg-edf7df .credits_calc ul {
+  border-right: 1px solid #cccccc;
+}
+.avto .rght-col.bg-edf7df {
+  border-left: none;
+}
+.avto .rght-col.bg-edf7df .credit-ticket {
+  border-left: 1px solid #cccccc;
+}
+.avto .rght-col.bg-edf7df .credit-history {
+  text-decoration: underline;
+  color: #639f0a;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.avto .banks-ticket {
+  margin-left: 15px;
+}
+.avto .banks-ticket a {
+  color: #326586;
+  font-size: 14px;
+}
+.avto .banks-ticket a .img {
+  float: left;
+  margin-right: 5px;
+}
+.avto .banks-ticket a .img + div {
+  float: right;
+  width: 73%;
+}
+.avto .banks-ticket ul {
+  display: block;
+  margin-top: 10px;
+}
+.avto .banks-ticket ul .zayavka_online {
+  font-size: 12px;
+  color: #639f0a;
+  text-decoration: underline;
+}
+.avto .banks-ticket ul li {
+  padding-bottom: 30px;
+}
+.avto .banks-ticket .limit-credits li {
+  padding-bottom: 0;
+  font-size: 12px;
+}
+.avto .banks-ticket .limit-credits + p {
+  margin-top: 10px;
+}
+.avto .banks-ticket p {
+  font-size: 12px;
+}
+.avto .avto_credits dl + a {
+  font-size: 14px;
+  color: #639f0a;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.avto .avto_credits dl {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.avto .avto_credits dd {
+  width: 25%;
+  float: left;
+  font-weight: bold;
+}
+.avto .avto_credits dt {
+  width: 74%;
+  float: right;
+}
+.avto .avto_credits li {
+  margin-bottom: 7px;
+}
+.avto .avto_credits .pt-big {
+  color: #690;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.avto .avto_credits .pb-small {
+  font-size: 16px;
+  color: #690;
+}
+.avto .avto_credits .credits-programm {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.avto .avto_credits .credits-programm .title {
+  font-size: 16px;
+  color: #639f0a;
+  font-weight: bold;
+  display: block;
+}
+.avto .avto_credits .credits-programm dl {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 60%;
+  float: left;
+}
+.avto .avto_credits .credits-programm dl dd {
+  width: 35%;
+}
+.avto .avto_credits .credits-programm dl dt {
+  width: 64%;
+}
+.avto .avto_credits .credits-programm .submit-orange-arrow1 {
+  float: left;
+  margin-top: 38px;
+  font-size: 12px;
+  color: #000 !important;
+  height: 28px;
+  line-height: 28px !important;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.avto .avto_credits .credits-programm + ul li {
+  margin-bottom: 2px;
+}
+.avto .avto_credits .credits-programm + ul a {
+  font-size: 12px;
+}
+.avto .avto_credits.programm .pt-big {
+  line-height: 1.3;
+}
+.avto .avto_credits.programm .pb-small {
+  color: #333;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.avto .banks-review-news {
+  background: #fff;
+  border: none;
+}
+.avto .banks-review-news ul li {
+  padding-left: 10px;
+  margin-bottom: 60px;
+}
+.avto .banks-review-news ul li p {
+  color: #000;
+}
+.avto .banks-review-news ul li p + a {
+  color: #000;
+  font-weight: bold;
+}
+/*================================================End Avtocredits=======================================================*/
+
 /*
 ===================================================================================================
 pages                                                
