@@ -79,7 +79,8 @@
 				var scrollTop = base.$window.scrollTop() + newTopOffset;
 				var scrollLeft = base.$window.scrollLeft();
 
-				if ((scrollTop > offset.top) && (scrollTop < offset.top + $this.height())) {
+				/*if ((scrollTop > offset.top) && (scrollTop < offset.top + $this.height())) {*/
+				if ((scrollTop > offset.top + 115)){
 					var newLeft = offset.left - scrollLeft;
 					
 					if (base.isCloneVisible && (newLeft === base.leftOffset) && (newTopOffset === base.topOffset)) {
@@ -117,6 +118,13 @@
 			$('th', base.$clonedHeader).each(function (index) {
 				var $this = $(this);
 				var $origCell = $('th', base.$originalHeader).eq(index);
+				this.className = $origCell.attr('class') || '';				
+				$this.css('width', $origCell.width());
+				$this.css('height', $origCell.height());
+			});
+			$('td', base.$clonedHeader).each(function (index) {
+				var $this = $(this);
+				var $origCell = $('td', base.$originalHeader).eq(index);
 				this.className = $origCell.attr('class') || '';				
 				$this.css('width', $origCell.width());
 				$this.css('height', $origCell.height());
