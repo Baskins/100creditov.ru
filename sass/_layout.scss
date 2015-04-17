@@ -385,8 +385,7 @@ bottons
 }
 /*==================================================================================================*/
 
-.columns-3{
-    overflow: hidden;
+.columns-3{    
     -webkit-border-radius: 0px 0px 5px 5px; 
      -khtml-border-radius: 0px 0px 5px 5px; 
        -moz-border-radius: 0px 0px 5px 5px; 
@@ -395,9 +394,7 @@ bottons
 .lft-col,
 .rght-col{
     @include box-sizing(border-box);
-    background:#fff;    
-    margin-bottom: -9999px;
-    padding-bottom:9999px;
+    background:#fff;
 }
 .lft-col{
     float: left;
