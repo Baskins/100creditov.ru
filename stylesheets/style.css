@@ -2070,6 +2070,7 @@ a.bank_big_link {
     margin-left: 185px;
     width: auto;
     float: none;
+	display:none;
   }
 
   .columns-3 .middle-col {
