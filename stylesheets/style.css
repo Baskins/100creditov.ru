@@ -285,7 +285,7 @@ indent
 }
 
 .pt20px, .pt-medium {
-  padding-top: 20px;
+  padding-top: 27px;
 }
 
 .pt25px, .pt-averager {
@@ -293,7 +293,7 @@ indent
 }
 
 .pt30px, .pt-big {
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .pt35px, .pt-biger {
@@ -1583,7 +1583,7 @@ a.mail-botton {
 .bank_description {
   position: relative;
   margin-bottom: 60px;
-  padding-top: 30px;
+  padding-top: 27px;
   overflow: hidden;
 }
 
@@ -3053,7 +3053,7 @@ a.bank_big_link {
 
 .credit-cash-title {
   /*border:  1px solid red;*/
-  padding: 13px 10px 30px;
+  padding: 27px 10px 30px;
 }
 .credit-cash-title h1 {
   font-size: 2.14286em;
@@ -3618,7 +3618,7 @@ a.news-sub-a {
   background-image: -moz-linear-gradient(top, #fbfbfb, #ececec);
   background-image: -webkit-linear-gradient(top, #fbfbfb, #ececec);
   background-image: linear-gradient(to bottom, #fbfbfb, #ececec);
-  padding: 28px 13px 13px 13px;
+  padding: 23px 13px 13px 13px;
   margin-bottom: 25px;
   position: relative;
 }
@@ -4505,7 +4505,7 @@ a.news-sub-a {
 }
 
 .faqpage-content {
-  padding: 50px 0 20px 0;
+  padding: 27px 0 20px 0;
   font-size: 1em;
   line-height: 1.35714em;
   line-height: 1.4em;
@@ -4963,7 +4963,7 @@ a.news-sub-a {
 }
 
 .feedback-wrapp {
-  padding-top: 20px;
+  padding-top: 27px;
   /*border:  1px solid red;*/
   overflow: hidden;
   margin-bottom: 80px;
@@ -7691,7 +7691,7 @@ ul.fwpn-naw a:hover {
   line-height: 1em;
   font-weight: bold;
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 27px;
   color: #326586;
 }
 
@@ -9475,7 +9475,7 @@ ul.fwpn-naw a:hover {
 }
 
 .credit-ticket-main-wrapp {
-  padding-top: 30px;
+  padding-top: 27px;
 }
 .credit-ticket-main-wrapp h2 {
   font-size: 1.71429em;
@@ -10045,7 +10045,7 @@ body.card .site-header{
   background: #f2f0f1;
 }
 .credit-compare h1 {
-  margin: 40px 20px 30px 20px;
+  margin: 17px 20px 30px 20px;
   font-size: 25px;
   color: #326586;
 }
