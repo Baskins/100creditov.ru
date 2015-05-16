@@ -2136,6 +2136,7 @@ a.bank_big_link {
   background: #f6fbef;
   padding: 10px 3px 15px;
   text-align: center;
+  margin-bottom:20px;
 }
 .banks-review-news .ttl {
   font-family: "Open Sans", sans-serif;
@@ -10351,3 +10352,267 @@ pages
 /*===================================================================================================================*/
 /* 44. / 100Creditov-Compare-Tabl.html
 /*===================================================================================================================*/
+
+
+/*Тизеры*/
+	.tizer{
+		display:inline-block;	
+		text-align:left;
+		margin-bottom:20px;			
+	}
+	
+	.tizer.one, .tizer.two{
+		width:160px;	
+	}
+	
+	.tizer .logo_tizer{
+		display:block;
+		margin-bottom:5px;
+		text-decoration:none;
+		font-size:12px;
+		font-weight:bold;
+		color:#036;
+		overflow:hidden;
+		
+	}	
+	
+	.tizer .logo_tizer .logo{
+		display:block;
+		float:left;
+		margin-right:5px;
+		margin-top:3px;
+		background:url(../img/tizer/sprite.png)no-repeat;
+	}
+	
+	.tizer.one.domadengi .logo{
+		width:38px;
+		height:48px;
+	}
+	
+	.tizer.one.e-finance .logo{
+		background-position:-38px 0;
+		width:43px;
+		height:50px;
+	}
+	
+	.tizer.one.ezaem .logo{
+		background-position:-81px 0;
+		width:45px;
+		height:37px;
+	}
+	
+	.tizer.one.slovo .logo{
+		background-position:-126px 0;
+		width:33px;
+		height:52px;
+	}
+	
+	.tizer.one.bystrodengi .logo{
+		background-position:-159px 0;
+		width:38px;
+		height:41px;
+	}
+	
+	.tizer.one.citibank .logo{
+		background-position:-197px 0;
+		width:38px;
+		height:28px;
+	}
+	
+	.tizer.one.fingooroo .logo{
+		background-position:-235px 0;
+		width:47px;
+		height:38px;
+	}
+	
+	.tizer.one.sovcom .logo{
+		background-position:-282px 0;
+		width:40px;
+		height:38px;
+	}
+	
+	.tizer.one.tinkoff .logo{
+		background-position:-250px -41px;
+		width:48px;
+		height:44px;
+	}
+	
+	.tizer.one.mili .logo{
+		background-position:0 -50px;
+		width:32px;
+		height:34px;		
+	}
+	
+	.tizer.one.platiza .logo{
+		background-position:-32px -50px;
+		width:46px;
+		height:25px;
+		margin-top:1px;
+	}
+	
+	.tizer.one.moneyman .logo{
+		background-position:-81px -40px;
+		width:46px;
+		height:55px;
+	}
+	
+	.tizer.one.renesans .logo{
+		background-position:-126px -51px;
+		width:34px;
+		height:42px;
+	}
+	
+	.tizer.one.rosenergobank .logo{
+		background-position:-161px -40px;
+		width:44px;
+		height:52px;
+		margin-right:2px
+	}
+	
+	.tizer.one.zaim-bistro .logo{
+		background-position:-205px -40px;
+		width:46px;
+		height:46px;	
+	}
+		
+	.tizer.one .text{
+		display:block;
+		float:left;
+		width:107px;
+		
+	}
+	
+	.tizer.p, .tizer .zayavka{
+		margin-left:15px;
+	}
+	.tizer .limit{
+		font-size: 12px;
+		font-weight: bold;
+		color: #369;		
+	}
+		
+	.tizer .srok{
+		font-size: 11px;
+		color: #000;		
+	}
+		
+	.tizer.one .zayavka{
+		display:inline-block;
+		height:25px;
+		background:url(../img/tizer/bg.png)no-repeat right 0;
+		padding-right:31px;
+		padding-top:2px;
+		font-size:12px;
+		font-weight:bold;
+		color:#000;		
+	}
+	
+	.tizer.two{
+		background:url(../img/tizer/bg_two.png)no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		padding:15px 20px 12px 50px;		
+		box-sizing:border-box;
+		position:relative;
+	}
+	
+	.tizer.two .logo{
+		background:url(../img/tizer/sprite1.png)no-repeat;
+		float:none;
+		position:absolute;
+		left:10px;
+		top:15px;
+	}
+	
+	.tizer.two.domadengi .logo{
+		width:28px;
+		height:36px;
+	}
+	
+	.tizer.two.e-finance .logo{
+		background-position:-29px 0;
+		width:34px;
+		height:39px;
+	}
+	
+	.tizer.two.ezaem .logo{
+		background-position:-63px 0;
+		width:33px;
+		height:28px;
+	}
+	
+	.tizer.two.slovo .logo{
+		background-position:-96px 0;
+		width:25px;
+		height:41px;
+	}
+	
+	.tizer.two.bystrodengi .logo{
+		background-position:-121px 0;
+		width:29px;
+		height:30px;
+	}
+	
+	.tizer.two.citibank .logo{
+		background-position:-150px 0;
+		width:29px;
+		height:20px;
+	}
+	
+	.tizer.two.fingooroo .logo{
+		background-position:-179px 0;
+		width:36px;
+		height:30px;
+	}
+	
+	.tizer.two.sovcom .logo{
+		background-position:-215px 0;
+		width:29px;
+		height:29px;
+	}
+	
+	.tizer.two.tinkoff .logo{
+		background-position:-190px -31px;
+		width:37px;
+		height:32px;
+	}
+	
+	.tizer.two.mili .logo{
+		background-position:0 -37px;
+		width:24px;
+		height:27px;		
+	}
+	
+	.tizer.two.platiza .logo{
+		background-position:-24px -39px;
+		width:35px;
+		height:17px;
+	}
+	
+	.tizer.two.moneyman .logo{
+		background-position:-62px -31px;
+		width:33px;
+		height:40px;
+	}
+	
+	.tizer.two.renesans .logo{
+		background-position:-95px -41px;
+		width:28px;
+		height:30px;
+	}
+	
+	.tizer.two.rosenergobank .logo{
+		background-position:-123px -33px;
+		width:33px;
+		height:36px;
+		margin-right:2px
+	}
+	
+	.tizer.two.zaim-bistro .logo{
+		background-position:-156px -32px;
+		width:35px;
+		height:34px;	
+	}
+	
+	
+/*конец тизеры*/
