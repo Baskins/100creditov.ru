@@ -1836,7 +1836,7 @@ a.bank_big_link {
   box-sizing: border-box;
   width: 295px;
   padding: 10px;
-  margin: 10px 1.5px;
+  margin: 10px 2px 10px 0;
   border: 2px solid #dfdede;
   border-top: 1px solid #c5c4c4;
   border-bottom: 1px solid #c5c4c4;
@@ -4756,7 +4756,7 @@ a.news-sub-a {
   border-radius: 10px;
   padding: 15px 15px 10px;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .order-for-credit p {
   margin-right: 150px;
@@ -5594,7 +5594,7 @@ a.news-sub-a {
   border-radius: 10px;
   padding: 10px 10px 10px 5px;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .order-for-credit2 p {
   text-align: center;
@@ -6777,7 +6777,7 @@ ul.fwpn-naw a:hover {
   }
 }
 .ab-cont .text {
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   padding-bottom: 40px;
   /*border: 1px solid red;*/
 }
@@ -6788,9 +6788,8 @@ ul.fwpn-naw a:hover {
   margin-bottom: 15px;
 }
 .ab-cont .text .ttl {
-  font-size: 1.14286em;
-  line-height: 2.375em;
-  line-height: 1.1em;
+  font-size: 1.14286em;  
+  line-height: 1.5em;
   color: #326586;
   font-weight: bold;
 }
@@ -6862,12 +6861,10 @@ ul.fwpn-naw a:hover {
 }
 .abc-kredit-rtng .ttl {
   color: #326586;
-  font-size: 1.07143em;
-  line-height: 1.26667em;
-  line-height: 1.1em;
+  font-size: 1.07143em;  
+  line-height: 1.5em;
   font-weight: bold;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  margin-bottom: 10px;  
 }
 .abc-kredit-rtng .ttl span {
   color: #99cc33;
@@ -6877,7 +6874,7 @@ ul.fwpn-naw a:hover {
   margin-bottom: 15px;
 }
 .abc-kredit-rtng td {
-  padding: 3px 10px;
+  padding: 3px 10px 3px 0;
   font-size: 0.92857em;
   line-height: 1.46154em;
   line-height: 1.3em;
