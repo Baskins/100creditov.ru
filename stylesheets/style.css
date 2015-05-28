@@ -285,7 +285,7 @@ indent
 }
 
 .pt20px, .pt-medium {
-  padding-top: 27px;
+  padding-top: 40px;
 }
 
 .pt25px, .pt-averager {
@@ -293,7 +293,7 @@ indent
 }
 
 .pt30px, .pt-big {
-  padding-top: 27px;
+  padding-top: 40px;
 }
 
 .pt35px, .pt-biger {
@@ -1584,7 +1584,7 @@ a.mail-botton {
 .bank_description {
   position: relative;
   margin-bottom: 60px;
-  padding-top: 27px;
+  padding-top: 40px;
   overflow: hidden;
 }
 
@@ -3054,7 +3054,7 @@ a.bank_big_link {
 
 .credit-cash-title {
   /*border:  1px solid red;*/
-  padding: 27px 10px 30px;
+  padding: 40px 10px 30px;
 }
 .credit-cash-title h1 {
   font-size: 2.14286em;
@@ -4506,7 +4506,7 @@ a.news-sub-a {
 }
 
 .faqpage-content {
-  padding: 27px 0 20px 0;
+  padding: 40px 0 20px 0;
   font-size: 1em;
   line-height: 1.35714em;
   line-height: 1.4em;
@@ -4964,7 +4964,7 @@ a.news-sub-a {
 }
 
 .feedback-wrapp {
-  padding-top: 27px;
+  padding-top: 40px;
   /*border:  1px solid red;*/
   overflow: hidden;
   margin-bottom: 80px;
@@ -7692,7 +7692,7 @@ ul.fwpn-naw a:hover {
   line-height: 1em;
   font-weight: bold;
   padding-bottom: 40px;
-  padding-top: 27px;
+  padding-top: 40px;
   color: #326586;
 }
 
@@ -7868,7 +7868,7 @@ ul.fwpn-naw a:hover {
 
 .mc-bank-search {
   /*border: 1px solid red;*/
-  padding: 25px 0;
+  padding: 40px 0 25px;
 }
 .mc-bank-search h2 {
   font-size: 1.71429em;
@@ -8049,7 +8049,7 @@ ul.fwpn-naw a:hover {
 
 .search-bank-form {
   /*border: 1px solid red;*/
-  padding: 27px 0px 40px;
+  padding: 40px 0px 40px;
 }
 .search-bank-form .sbf-wrap {
   overflow: hidden;
@@ -8241,7 +8241,7 @@ ul.fwpn-naw a:hover {
 .sk-ttl-bl {
   /*border: 1px solid red;*/
   margin-bottom: 30px;
-  padding-top: 27px;
+  padding-top: 40px;
 }
 .sk-ttl-bl h2 {
   font-size: 2.14286em;
@@ -9476,7 +9476,7 @@ ul.fwpn-naw a:hover {
 }
 
 .credit-ticket-main-wrapp {
-  padding-top: 27px;
+  padding-top: 40px;
 }
 .credit-ticket-main-wrapp h2 {
   font-size: 1.71429em;
@@ -10046,7 +10046,7 @@ body.card .site-header{
   background: #f2f0f1;
 }
 .credit-compare h1 {
-  margin: 17px 20px 30px 20px;
+  margin: 30px 20px 30px 20px;
   font-size: 25px;
   color: #326586;
 }

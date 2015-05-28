@@ -531,7 +531,7 @@ a.mail-botton{
 .bank_description {
     position:relative;
     margin-bottom:60px;
-    padding-top: 27px;
+    padding-top: 40px;
     overflow: hidden;
 }
 .bank_description img {
@@ -1796,7 +1796,7 @@ $fence-sm: $small $medium;
 
 .credit-cash-title{
     /*border:  1px solid red;*/
-    padding: 27px 10px 30px; 
+    padding: 40px 10px 30px; 
     h1{
         @include adjust-font-size-to(30px); 
         line-height: 1.2em;
@@ -2990,7 +2990,7 @@ a.news-sub-a{
 
 
 .faqpage-content{
-    padding: 27px 0 20px 0;
+    padding: 40px 0 20px 0;
 
     @include adjust-font-size-to(14px);
     line-height: 1.4em;
@@ -3384,7 +3384,7 @@ a.news-sub-a{
 
 
 .feedback-wrapp{
-    padding-top: 27px;
+    padding-top: 40px;
     /*border:  1px solid red;*/
     overflow: hidden;
     margin-bottom: 80px;
@@ -5650,7 +5650,7 @@ ul.fwpn-naw{
         line-height: 1em;
         font-weight: bold;
         padding-bottom: 40px;
-        padding-top: 27px;
+        padding-top: 40px;
         color: $bluet;        
     }
 }
@@ -5817,7 +5817,7 @@ ul.fwpn-naw{
 
 .mc-bank-search{
     /*border: 1px solid red;*/
-    padding: 25px 0;
+    padding: 40px 0 25px;
     h2{
         @include adjust-font-size-to(24px);
         line-height: 1em;
@@ -5982,7 +5982,7 @@ ul.fwpn-naw{
 
 .search-bank-form{
     /*border: 1px solid red;*/
-    padding: 27px 0px 40px;
+    padding: 40px 0px 40px;
     .sbf-wrap{
         overflow: hidden;
     }
@@ -6157,7 +6157,7 @@ ul.fwpn-naw{
 .sk-ttl-bl{
     /*border: 1px solid red;*/
     margin-bottom: 30px;
-    padding-top: 27px;
+    padding-top: 40px;
     h2{
         @include adjust-font-size-to(30px);
         line-height: 1em;
@@ -7266,7 +7266,7 @@ ul.fwpn-naw{
     }
 }
 .credit-ticket-main-wrapp{
-    padding-top: 27px;
+    padding-top: 40px;
     h2{
         @include adjust-font-size-to(24px);
         font-weight: bold;
@@ -7765,7 +7765,7 @@ ul.fwpn-naw{
 
     
     h1{
-        margin: 17px 20px 30px 20px;
+        margin: 30px 20px 30px 20px;
         font-size: 25px;
         color: #326586;
         @include breakpoint(0px 950px) {
