@@ -1289,6 +1289,7 @@ $fence-sm: $small $medium;
     .submit_small{
         float: right;
         margin-top: 5px;
+		border: none;
     }
     p{
         margin-right:  170px;
@@ -1374,9 +1375,9 @@ $fence-sm: $small $medium;
     a.all{
       padding: 5px 5px 5px 5px;
       width: 125px;
-      background: #f69f0b;
+      /*background: #f69f0b;
       border: 1px solid #e17002;
-      color: #fff;
+      color: #fff;*/
 
       @include breakpoint(0px 1024px)  { 
         display: block;
@@ -1387,20 +1388,23 @@ $fence-sm: $small $medium;
           width: 139px;
       }      
     }    
-    a.all:hover,
+    /*a.all:hover,
     a.all.active{
         background: #fff;
         border: 1px solid #e17002;
         color: #254b64;
-    }
+    }*/
     a.all::after{
       display: none;
     }
     a.active {
       cursor:default;
-      border: 1px solid #979797;
+      /*border: 1px solid #979797;
       color: #000;
-      background: #fff; 
+      background: #fff; */
+	  border: 1px solid #e17002;
+	  color: #fff;
+	  background: #f69f0b;
     }
 
 }
