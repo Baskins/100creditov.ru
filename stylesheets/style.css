@@ -2910,6 +2910,9 @@ a.bank_big_link {
   line-height: 1em;
   font-weight: bold;
   text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .rw-submit .submit_small {
   padding: 3px 10px 4px;
