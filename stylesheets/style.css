@@ -2903,6 +2903,7 @@ a.bank_big_link {
 .rw-submit input {
   display: block;
   float: right;
+  margin-right:5px;
   /*width: 85px;*/
   text-align: center;
   padding: 3px 10px;
@@ -2911,6 +2912,9 @@ a.bank_big_link {
   line-height: 1em;
   font-weight: bold;
   text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .rw-submit .submit_small {
   padding: 3px 10px 4px;
