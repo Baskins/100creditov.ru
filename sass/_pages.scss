@@ -531,7 +531,7 @@ a.mail-botton{
 .bank_description {
     position:relative;
     margin-bottom:60px;
-    padding-top: 30px;
+    padding-top: 40px;
     overflow: hidden;
 }
 .bank_description img {
@@ -748,7 +748,7 @@ a.bank_big_link {
     @include box-sizing(border-box);
     width: 295px;
     padding: 10px;
-    margin: 10px 1.5px;
+    margin: 10px 2px 10px 0;
     border: 2px solid #dfdede;
     border-top: 1px solid #c5c4c4;
     border-bottom: 1px solid #c5c4c4;
@@ -961,6 +961,7 @@ $fence-sm: $small $medium;
        margin-left: 185px; 
        width: auto;
        float: none;
+	   display:none;
     }
     .columns-3 .middle-col{
        margin-right: 0px; 
@@ -1289,6 +1290,7 @@ $fence-sm: $small $medium;
     .submit_small{
         float: right;
         margin-top: 5px;
+		border: none;
     }
     p{
         margin-right:  170px;
@@ -1374,9 +1376,9 @@ $fence-sm: $small $medium;
     a.all{
       padding: 5px 5px 5px 5px;
       width: 125px;
-      background: #f69f0b;
+      /*background: #f69f0b;
       border: 1px solid #e17002;
-      color: #fff;
+      color: #fff;*/
 
       @include breakpoint(0px 1024px)  { 
         display: block;
@@ -1387,20 +1389,23 @@ $fence-sm: $small $medium;
           width: 139px;
       }      
     }    
-    a.all:hover,
+    /*a.all:hover,
     a.all.active{
         background: #fff;
         border: 1px solid #e17002;
         color: #254b64;
-    }
+    }*/
     a.all::after{
       display: none;
     }
     a.active {
       cursor:default;
-      border: 1px solid #979797;
+      /*border: 1px solid #979797;
       color: #000;
-      background: #fff; 
+      background: #fff; */
+	  border: 1px solid #e17002;
+	  color: #fff;
+	  background: #f69f0b;
     }
 
 }
@@ -1663,6 +1668,8 @@ $fence-sm: $small $medium;
         line-height: 1em;
         font-weight: bold;
         text-transform: none;
+		@include box-shadow(none);
+		
     }
     .submit_small{
         padding: 3px 10px 4px;
@@ -1796,7 +1803,7 @@ $fence-sm: $small $medium;
 
 .credit-cash-title{
     /*border:  1px solid red;*/
-    padding: 13px 10px 30px; 
+    padding: 40px 10px 30px; 
     h1{
         @include adjust-font-size-to(30px); 
         line-height: 1.2em;
@@ -2281,7 +2288,7 @@ a.news-sub-a{
 .credit-ticket-main{
     @include border-radius(3px);
     @include background-image(linear-gradient(top, #fbfbfb, #ececec));  
-    padding: 28px 13px 13px 13px;
+    padding: 23px 13px 13px 13px;
     margin-bottom: 25px;
     position: relative;
     h2{
@@ -2990,7 +2997,7 @@ a.news-sub-a{
 
 
 .faqpage-content{
-    padding: 50px 0 20px 0;
+    padding: 40px 0 20px 0;
 
     @include adjust-font-size-to(14px);
     line-height: 1.4em;
@@ -3203,7 +3210,7 @@ a.news-sub-a{
     @include border-radius(10px);
     padding: 15px 15px 10px;
     overflow: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     p{
         margin-right: 150px;
         color: #000;
@@ -3384,7 +3391,7 @@ a.news-sub-a{
 
 
 .feedback-wrapp{
-    padding-top: 20px;
+    padding-top: 40px;
     /*border:  1px solid red;*/
     overflow: hidden;
     margin-bottom: 80px;
@@ -3891,7 +3898,7 @@ a.news-sub-a{
     @include border-radius(10px);
     padding: 10px 10px 10px 5px;
     overflow: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     p{
         text-align: center;
         margin-right: 150px;
@@ -4828,7 +4835,7 @@ ul.fwpn-naw{
         }    
 
     .text{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
         padding-bottom: 40px;
         /*border: 1px solid red;*/
 
@@ -4839,7 +4846,7 @@ ul.fwpn-naw{
         }
         .ttl{
             @include adjust-font-size-to(16px);
-            line-height: 1.1em;    
+            line-height: 1.5em;    
             color: #326586;   
             font-weight: bold;
             span{ color: #99cc33;}
@@ -4905,10 +4912,9 @@ ul.fwpn-naw{
     .ttl{
         color: #326586;
         @include adjust-font-size-to(15px);
-        line-height: 1.1em;
+        line-height: 1.5em;
         font-weight: bold;
-        margin-bottom: 10px;
-        padding-left: 10px;
+        margin-bottom: 10px;        
         span{
             color: #99cc33;
         }
@@ -4918,7 +4924,7 @@ ul.fwpn-naw{
         margin-bottom: 15px;
     }
     td{
-        padding: 3px 10px;
+        padding: 3px 10px 3px 0;
         @include adjust-font-size-to(13px);
         line-height: 1.3em;
         text-align: right;
@@ -5817,7 +5823,7 @@ ul.fwpn-naw{
 
 .mc-bank-search{
     /*border: 1px solid red;*/
-    padding: 25px 0;
+    padding: 40px 0 25px;
     h2{
         @include adjust-font-size-to(24px);
         line-height: 1em;
@@ -5982,7 +5988,7 @@ ul.fwpn-naw{
 
 .search-bank-form{
     /*border: 1px solid red;*/
-    padding: 27px 0px 40px;
+    padding: 40px 0px 40px;
     .sbf-wrap{
         overflow: hidden;
     }
@@ -6157,7 +6163,7 @@ ul.fwpn-naw{
 .sk-ttl-bl{
     /*border: 1px solid red;*/
     margin-bottom: 30px;
-    padding-top: 27px;
+    padding-top: 40px;
     h2{
         @include adjust-font-size-to(30px);
         line-height: 1em;
@@ -7266,7 +7272,7 @@ ul.fwpn-naw{
     }
 }
 .credit-ticket-main-wrapp{
-    padding-top: 30px;
+    padding-top: 40px;
     h2{
         @include adjust-font-size-to(24px);
         font-weight: bold;
@@ -7765,7 +7771,7 @@ ul.fwpn-naw{
 
     
     h1{
-        margin: 40px 20px 30px 20px;
+        margin: 30px 20px 30px 20px;
         font-size: 25px;
         color: #326586;
         @include breakpoint(0px 950px) {
