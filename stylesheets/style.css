@@ -1664,15 +1664,27 @@ a.mail-botton {
   box-sizing: border-box;
 }
 
+.tabs-menu ul:after {
+    content: "";
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 100%;
+}
+
+
 .tabs-menu ul {
   border-bottom: 1px solid #d9d9d9;
-  float: left;
+  /*float: left;*/    
+  text-align:justify;
 }
 
 .tabs-menu ul li {
-  display: inline-block;
+  display: inline-block;  
   *display: inline;
   *zoom: 1;
+  
 }
 
 .tabs-menu ul li a {
@@ -1691,6 +1703,11 @@ a.mail-botton {
   -webkit-border-radius: 3px 3px 0px 0px;
   background: #f6f6f6;
 }
+/*
+.tabs-menu ul li:last-child a {
+  padding: 0px 24px;
+}
+*/
 @media (min-width: 999px) and (max-width: 1050px) {
   .tabs-menu ul li a {
     padding: 0px 19px;
@@ -2902,6 +2919,7 @@ a.bank_big_link {
 .rw-submit input {
   display: block;
   float: right;
+/*  margin-right:5px;*/
   /*width: 85px;*/
   text-align: center;
   padding: 3px 10px;
@@ -2910,6 +2928,9 @@ a.bank_big_link {
   line-height: 1em;
   font-weight: bold;
   text-transform: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .rw-submit .submit_small {
   padding: 3px 10px 4px;

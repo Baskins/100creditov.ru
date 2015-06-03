@@ -597,9 +597,20 @@ overflow: hidden;
     height: 45px;
     @include box-sizing(border-box);
 }
+
+.tabs-menu ul:after {
+    content: "";
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 100%;
+}
+
 .tabs-menu ul{
     border-bottom: 1px solid #d9d9d9; 
-    float: left;
+    /*float: left;*/
+	text-align:justify;
 }
 .tabs-menu ul li{
     display: inline-block;  
@@ -1663,6 +1674,8 @@ $fence-sm: $small $medium;
         line-height: 1em;
         font-weight: bold;
         text-transform: none;
+		@include box-shadow(none);
+		
     }
     .submit_small{
         padding: 3px 10px 4px;
