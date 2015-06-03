@@ -2975,7 +2975,28 @@ a.news-sub-a{
 7. FAQ.psd                             
 ==================================================================================================*/
 .page-faq{
-
+	.order-for-credit{		
+		margin-top:60px;
+		p{
+			padding-bottom: 0;
+		}
+	}	
+	
+	.order-for-credit2{ 
+		width: 590px;
+        @include box-sizing(border-box);
+        margin: 55px auto;
+        @include breakpoint($resize-m) {
+			width: 100%;
+        } 
+		p{
+			font-weight:normal;
+			color:#000;
+			font-size: 1.28571em;
+			letter-spacing: -1px; 
+			text-align:left;
+		}
+	}
     .credits_type ul,
     .credits_calc ul,
     .banner-bank-kredit-fat,
@@ -5753,7 +5774,7 @@ ul.fwpn-naw{
 /*==================================================================================================
 /24. spisok_gorodov2.html          
 ==================================================================================================*/
-.city-list2{
+.city-list2, .page-faq{
     .order-for-credit{
         @include background-image(linear-gradient(top, #fdb51a, #e18c3b));
         position: relative;
@@ -5771,8 +5792,8 @@ ul.fwpn-naw{
 
         }
     }
-
-
+}
+.city-list2{
     .rght-col{
         .banks-ticket ul li{padding-bottom: 80px;}
         .credit-ticket{
