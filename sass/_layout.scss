@@ -419,6 +419,7 @@ bottons
 }
 .second-width-col{
     margin-left: $left-col-width + 25px;
+	overflow:hidden;
     @include breakpoint($wind-wdth) {
         padding-right: 15px;    
     }

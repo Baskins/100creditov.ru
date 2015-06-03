@@ -853,6 +853,7 @@ bottons
 
 .second-width-col {
   margin-left: 195px;
+  overflow:hidden;
 }
 @media (min-width: 0px) and (max-width: 1000px) {
   .second-width-col {
