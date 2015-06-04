@@ -2407,9 +2407,10 @@ a.bank_big_link {
 }
 .nb-other-banks ul {
   margin-bottom: 20px;
+  margin-top:20px;
 }
 .nb-other-banks li {
-  padding-left: 15px;
+  padding-left: 10px;  
 }
 .nb-other-banks li a:hover {
   color: #6c9913;
