@@ -2935,6 +2935,16 @@ a.bank_big_link {
   padding: 30px 10px 20px 30px;
   margin-bottom: 60px;
 }
+
+.compare-credit.white {
+	background: #fff;
+	border:1px solid #d5d5d5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
 .compare-credit p.ttl {
   font-size: 1.42857em;
   line-height: 1.9em;

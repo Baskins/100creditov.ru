@@ -1683,6 +1683,13 @@ $fence-sm: $small $medium;
 }
 
 
+
+.compare-credit.white {
+	background: #fff;
+	border:1px solid #d5d5d5;
+	@include border-radius(10px);	
+}
+
 .compare-credit{
     overflow: hidden;
     background: #fbf2d5;
