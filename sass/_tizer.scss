@@ -1,0 +1,487 @@
+
+/*Тизеры*/
+	.tizer{
+		display:inline-block;	
+		text-align:left;
+		margin-bottom:20px;			
+	}
+	
+	.tizer.one, .tizer.two, .tizer.four, .tizer.five  {
+		width:160px;
+	}
+	
+	.rght-col .tizer.two{
+		width:195px;
+	}
+	
+	.tizer .logo_tizer{
+		display:block;
+		margin-bottom:5px;
+		text-decoration:none;
+		font-size:12px;
+		font-weight:bold;
+		color:#036;
+		overflow:hidden;
+		
+	}	
+	
+	.tizer  .logo{
+		display:block;
+		float:left;
+		margin-right:5px;
+		margin-top:3px;
+		background:url(../img/tizer/sprite.png)no-repeat;
+	}
+	
+	.tizer.domadengi .logo{
+		width:38px;
+		height:48px;
+	}
+	
+	.tizer.e-finance .logo{
+		background-position:-38px 0;
+		width:43px;
+		height:50px;
+	}
+	
+	.tizer.ezaem .logo{
+		background-position:-81px 0;
+		width:45px;
+		height:37px;
+	}
+	
+	.tizer.slovo .logo{
+		background-position:-126px 0;
+		width:33px;
+		height:52px;
+	}
+	
+	.tizer.bystrodengi .logo{
+		background-position:-159px 0;
+		width:38px;
+		height:41px;
+	}
+	
+	.tizer.citibank .logo{
+		background-position:-197px 0;
+		width:38px;
+		height:28px;
+	}
+	
+	.tizer.fingooroo .logo{
+		background-position:-235px 0;
+		width:47px;
+		height:38px;
+	}
+	
+	.tizer.sovcom .logo{
+		background-position:-282px 0;
+		width:40px;
+		height:38px;
+	}
+	
+	.tizer.tinkoff .logo{
+		background-position:-250px -41px;
+		width:48px;
+		height:44px;
+	}
+	
+	.tizer.mili .logo{
+		background-position:0 -50px;
+		width:32px;
+		height:34px;		
+	}
+	
+	.tizer.platiza .logo{
+		background-position:-32px -50px;
+		width:46px;
+		height:25px;
+		margin-top:1px;
+	}
+	
+	.tizer.moneyman .logo{
+		background-position:-81px -40px;
+		width:46px;
+		height:55px;
+	}
+	
+	.tizer.renesans .logo{
+		background-position:-126px -51px;
+		width:34px;
+		height:42px;
+	}
+	
+	.tizer.rosenergobank .logo{
+		background-position:-161px -40px;
+		width:44px;
+		height:52px;
+		margin-right:2px
+	}
+	
+	.tizer.zaim-bistro .logo{
+		background-position:-205px -40px;
+		width:46px;
+		height:46px;	
+	}
+		
+	.tizer.one .text, .tizer.five .text{
+		display:block;
+		float:left;
+		width:107px;
+		
+	}
+	
+	.tizer.p, .tizer .zayavka{
+		margin-left:15px;
+	}
+	.tizer .limit{
+		font-size: 12px;
+		font-weight: bold;
+		color: #369;		
+	}
+		
+	.tizer .srok{
+		font-size: 11px;
+		color: #000;		
+	}
+		
+	.tizer.one .zayavka{
+		display:inline-block;
+		height:25px;
+		background:url(../img/tizer/bg.png)no-repeat right 0;
+		padding-right:31px;
+		padding-top:2px;
+		font-size:12px;
+		font-weight:bold;
+		color:#000;		
+	}
+	
+
+//2 вид тизеров
+	.tizer.two{
+		background:url(../img/tizer/bg_two.png)no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		padding:5px 15px 5px 41px;		
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position:relative;
+		line-height:10px;
+		text-decoration:none;
+	}
+	
+	.tizer.two .logo, .tizer.four  .logo{
+		background:url(../img/tizer/sprite1.png)no-repeat;
+		float:none;		
+		display:block;
+		margin:0 auto;
+		
+	}
+	
+	.tizer.two .logotip{
+		width:36px;			
+		position:absolute;
+		left:6px;
+		top:50%;
+	}
+	
+	.tizer.two.domadengi .logo, .tizer.four.domadengi  .logo{
+		width:22px;
+		height:29px;
+	}
+
+	.tizer.two.domadengi .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.e-finance .logo, .tizer.four.e-finance  .logo{
+		background-position:-23px 0;
+		width:26px;
+		height:31px;
+	}
+
+	.tizer.two.e-finance .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.ezaem .logo, .tizer.four.ezaem  .logo{
+		background-position:-50px 0;
+		width:26px;
+		height:23px;
+	}
+	
+	.tizer.two.ezaem .logo{
+		margin-top:-11px;
+	}
+	
+	.tizer.two.slovo .logo, .tizer.four.slovo  .logo{
+		background-position:-76px 0;
+		width:21px;
+		height:32px;
+	}
+
+	.tizer.two.slovo .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.two.bystrodengi .logo, .tizer.four.bystrodengi .logo{
+		background-position:-97px 0;
+		width:23px;
+		height:25px;
+	}
+
+	.tizer.two.bystrodengi .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.two.citibank .logo, .tizer.four.citibank  .logo{
+		background-position:-120px 0;
+		width:24px;
+		height:17px;
+	}
+
+	.tizer.two.citibank .logo{
+		margin-top:-9px;
+	}
+	
+	.tizer.two.fingooroo .logo, .tizer.four.fingooroo  .logo{
+		background-position:-143px 0;
+		width:29px;
+		height:24px;
+	}
+
+	.tizer.two.fingooroo .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.two.sovcom{
+		padding-left:35px;
+	}
+	
+	.tizer.two.sovcom .logotip{
+		width:30px;
+	}
+	
+	.tizer.two.sovcom .text{
+		font-size:14px;
+	}
+	
+	.tizer.two.sovcom .logo, .tizer.four.sovcom .logo{
+		background-position:-172px 0;
+		width:23px;
+		height:24px;
+	}
+
+	.tizer.two.sovcom .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.two.tinkoff .logo, .tizer.four.tinkoff  .logo{
+		background-position:-152px -24px;
+		width:29px;
+		height:26px;
+	}
+	
+	.tizer.two.tinkoff .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.mili .logo, .tizer.four.mili  .logo{
+		background-position:0 -30px;
+		width:19px;
+		height:21px;
+	}
+
+	.tizer.two.mili .logo{
+		margin-top:-10px;
+	}
+	
+	.tizer.two.platiza .logo, .tizer.four.platiza  .logo{
+		background-position:-19px -31px;
+		width:29px;
+		height:15px;
+	}
+
+	.tizer.two.platiza .logo{
+		margin-top:-7px;
+	}
+	
+	.tizer.two.moneyman .logo, .tizer.four.moneyman  .logo{
+		background-position:-50px -25px;
+		width:26px;
+		height:32px;
+	}
+
+	.tizer.two.moneyman .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.two.renesans .logo, .tizer.four.renesans  .logo{
+		background-position:-76px -32px;
+		width:22px;
+		height:24px;
+	}
+
+	.tizer.two.renesans .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.two.rosenergobank .logo, .tizer.four.rosenergobank  .logo{
+		background-position:-98px -25px;
+		width:27px;
+		height:30px;	
+	}
+	
+	.tizer.two.rosenergobank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.zaim-bistro .logo, .tizer.four.zaim-bistro  .logo{
+		background-position:-125px -23px;
+		width:28px;
+		height:29px;	
+	}
+	
+	.tizer.two.zaim-bistro .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two .text, .tizer.three .text, .tizer.four .text{
+		font-weight:bold;
+		color:#036;
+		text-transform:uppercase;
+		font-size:15px;
+		line-height:1;
+		font-family:Arial,sans-serif;
+	}
+		
+	
+	.tizer.two .vid{
+		font:13px/0.8 Arial,sans-serif;
+		color:#9c3;
+	}
+	
+	.tizer.two .limit, .tizer.three .limit{
+		font:11px/1.2 Arial,sans-serif;		
+	}
+	
+	.tizer.two  p{
+		margin-bottom:4px;
+	}
+		
+//3 вид тизеров	
+	.tizer.three{
+		background:url(../img/tizer/bg_three.png)no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		/*padding:5px 15px 5px 41px;		*/
+		padding:15px;
+		padding-left:9px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position:relative;
+		line-height:10px;
+		text-decoration:none;
+		width:125px;		
+	}
+	
+	.tizer.three .logo{
+		float:none;
+		margin:0 0 10px;
+		
+	}
+	
+	.tizer.three .text{
+		font-size:14px;
+	}
+	
+	.tizer.three .vid{
+		font:12px/1 Arial,sans-serif;		
+		text-transform:uppercase;
+		font-weight:bold;
+	}
+	
+	.tizer.three .limit{
+		font-size:12px;
+		font-weight:bold;
+		text-transform:uppercase;
+		color:#9c3;
+	}
+	.tizer.three p{
+		margin-bottom:10px;
+	}
+//4 вид тизеров	
+	.tizer.four{
+		background:url(../img/tizer/bg_four.png)no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		padding:5px 15px 15px 9px;		
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position:relative;
+		line-height:10px;
+		text-decoration:none;		
+	}
+	
+	.tizer.four .logo{
+		float:left;
+		margin-right:2px;
+	}
+
+	.tizer.four .logotip{
+		overflow:hidden;		
+		margin-bottom:15px;
+		position:relative;
+		padding-top:10px;
+	}
+	
+	.tizer.four .text{
+		display:inline-block;
+		float:left;
+		width:100px;
+		position:absolute;
+		bottom:0;
+	}
+	
+	.tizer.four .vid{		
+		font-weight:bold;
+		text-transform:uppercase;
+		line-height:1.1;
+		font-size:12px;
+		margin-bottom:10px;
+	}
+		
+	.tizer.four .limit{
+		color:#000;
+		font-weight:normal;
+		line-height:1.1;
+	}
+//5 вид тизеров	
+	.tizer.five .text {
+		line-height:1.2;
+	}
+	
+	.tizer.five .zayavka{
+		margin-left: 0;
+		color:#639f0a;
+		font-size:12px;
+		line-height:1;
+	}
+	
+	.tizer.five  .limit{
+		margin-bottom:3px;
+		
+	}
+	
+	.tizer.five p{
+		font-weight:normal;
+		color:#333;
+		font-size:12px;
+		margin-bottom:0;
+		line-height:1;
+	}
+	
+/*конец тизеры*/
