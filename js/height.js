@@ -34,10 +34,10 @@ var currentTallest = 0,
 }
 
 $(window).load(function() {
-  equalheight('.columns-3 section');
+  equalheight('.columns-3>section');
 });
 
 
 $(window).resize(function(){
-  equalheight('.columns-3 section');
+  equalheight('.columns-3>section');
 });
