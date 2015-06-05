@@ -6523,21 +6523,21 @@ ul.fwpn-naw a:hover {
 .p-credit-about .rght-col .banner-bank-kredit-border {
   margin-left: 0px;
 }
-.p-credit-about .special-offer {
+.p-credit-about .special-offer, .p-3otziv .special-offer{
   padding-left: 150px;
   position: relative;
 }
-.p-credit-about .special-offer .so-question {
+.p-credit-about .special-offer .so-question, .p-3otziv .special-offer .so-question{
   position: absolute;
   top: 25px;
   left: 14px;
 }
-.p-credit-about .special-offer p {
+.p-credit-about .special-offer p, .p-3otziv .special-offer p {
   font-size: 1.07143em;
   line-height: 1.26667em;
   line-height: 1.1em;
 }
-.p-credit-about .special-offer p.ttl {
+.p-credit-about .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
   margin-bottom: 19px;
   font-size: 2em;
   line-height: 1.35714em;
@@ -6545,43 +6545,43 @@ ul.fwpn-naw a:hover {
   /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
 }
 @media (min-width: 0) and (max-width: 1040px) {
-  .p-credit-about .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.71429em;
     line-height: 1.58333em;
     line-height: 1em;
   }
 }
 @media (min-width: 0) and (max-width: 960px) {
-  .p-credit-about .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.21429em;
     line-height: 2.23529em;
     line-height: 30px;
   }
 }
 @media (min-width: 0) and (max-width: 860px) {
-  .p-credit-about .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.78571em;
     line-height: 1.52em;
     line-height: 1em;
   }
 }
 @media (min-width: 0) and (max-width: 740px) {
-  .p-credit-about .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.42857em;
     line-height: 1.9em;
     line-height: 1em;
   }
 }
-.p-credit-about .special-offer select {
+.p-credit-about .special-offer select, .p-3otziv .special-offer select {
   width: 140px;
 }
 @media (min-width: 860px) and (max-width: 900px) {
-  .p-credit-about .special-offer select {
+  .p-credit-about .special-offer select, .p-3otziv .special-offer select {
     width: 110px;
   }
 }
 @media (min-width: 860px) and (max-width: 900px) {
-  .p-credit-about .special-offer .submit_small {
+  .p-credit-about .special-offer .submit_small, .p-3otziv .special-offer .submit_small {
     padding-left: 11px;
     padding-right: 7px;
   }
@@ -7311,6 +7311,7 @@ ul.fwpn-naw a:hover {
   /*border: 1px solid red;*/
   text-align: top;
   margin-bottom: 50px;
+  overflow:hidden;
 }
 .rew-comment p {
   color: #326586;

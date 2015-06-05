@@ -5128,6 +5128,43 @@ ul.fwpn-naw{
 /20. otziv3.psd                    
 ==================================================================================================*/
 .p-3otziv{
+	.special-offer{
+        padding-left: 150px;
+        position: relative;
+        .so-question{
+            position: absolute;
+            top: 25px;
+            left: 14px;
+        }
+        p{
+            @include adjust-font-size-to(15px);
+            line-height: 1.1em;
+        }        
+        p.ttl{
+            margin-bottom: 19px;
+            @include adjust-font-size-to(28px); line-height: 30px;
+
+            @include breakpoint(0 1040px)   {   @include adjust-font-size-to(24px); line-height: 1em;}
+            @include breakpoint(0 960px)   {   @include adjust-font-size-to(17px); line-height: 30px;}
+            /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
+            @include breakpoint(0 860px)    {   @include adjust-font-size-to(25px); line-height: 1em;}
+            @include breakpoint(0 740px)    {   @include adjust-font-size-to(20px); line-height: 1em;}             
+        }        
+
+        select{
+            width: 140px;
+            @include breakpoint(860px 900px){
+                width: 110px;
+            }            
+        }
+        .submit_small{
+            @include breakpoint(860px 900px){
+                padding-left: 11px;
+                padding-right: 7px;
+            }
+        }
+    }
+
     .banner-bank-kredit-border{
         margin-left: 5px;
     }
