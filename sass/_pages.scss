@@ -1277,9 +1277,12 @@ $fence-sm: $small $medium;
         font-weight: 700;
         font-family: $fontf;        
     }
-    ul{margin-bottom: 20px;}
+    ul{
+		margin-bottom: 20px;
+		margin-top:20px;	
+	}
     li{
-        padding-left: 15px;
+        padding-left: 10px;
         a:hover{color:#6c9913;}
     }
     .other_bank_link{
