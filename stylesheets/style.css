@@ -4553,6 +4553,18 @@ a.news-sub-a {
 .page-safety .credits_type {
   margin-bottom: 60px;
 }
+
+
+.page-safety .order-for-credit{
+	margin-top:45px;
+}
+
+.page-safety .order-for-credit p{
+	padding-bottom:0;
+	margin-top:5px;
+}
+
+
 .page-safety .credits_calc {
   margin-bottom: 60px;
 }
