@@ -3691,7 +3691,7 @@ a.news-sub-a{
     @include adjust-font-size-to(14px);
     color: #ec8f16!important;
     @include inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
 
 }
@@ -4724,6 +4724,45 @@ ul.fwpn-naw{
         }
     }
 }
+.otziv, .p-3otziv{
+	.special-offer{
+        padding-left: 150px;
+        position: relative;
+        .so-question{
+            position: absolute;
+            top: 25px;
+            left: 14px;
+        }
+        p{
+            @include adjust-font-size-to(15px);
+            line-height: 1.1em;
+        }        
+        p.ttl{
+            margin-bottom: 19px;
+            @include adjust-font-size-to(28px); line-height: 30px;
+
+            @include breakpoint(0 1040px)   {   @include adjust-font-size-to(24px); line-height: 1em;}
+            @include breakpoint(0 960px)   {   @include adjust-font-size-to(17px); line-height: 30px;}
+            /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
+            @include breakpoint(0 860px)    {   @include adjust-font-size-to(25px); line-height: 1em;}
+            @include breakpoint(0 740px)    {   @include adjust-font-size-to(20px); line-height: 1em;}             
+        }        
+
+        select{
+            width: 140px;
+            @include breakpoint(860px 900px){
+                width: 110px;
+            }            
+        }
+        .submit_small{
+            @include breakpoint(860px 900px){
+                padding-left: 11px;
+                padding-right: 7px;
+            }
+        }
+    }
+}
+
 /*==================================================================================================
 /17. /o kreditovanii.psd                       
 ==================================================================================================*/
@@ -5369,6 +5408,7 @@ ul.fwpn-naw{
     /*border: 1px solid red;*/
     text-align: top;
     margin-bottom: 50px;
+	overflow:hidden;
     p{
         color: #326586;
         @include adjust-font-size-to(14px);
