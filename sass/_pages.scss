@@ -6869,12 +6869,16 @@ ul.fwpn-naw{
 /*32. news-page-list.html*/
 /*===================================================================================================================*/
 
-.credit-news-table{
+.credit-news-table{	
   margin-bottom: 50px;
+  .orange-link{
+	margin-bottom:5px;
+  }
   td{
     vertical-align: top;
   }
-  tr:nth-child(2n+1){
+  /*tr:nth-child(2n+1){*/
+  .news-title{
     td{
       padding-top: 25px;
       padding-bottom: 10px;
@@ -6893,7 +6897,8 @@ ul.fwpn-naw{
   }
 
 /*--------------------------------------*/
-  tr:nth-child(2n){
+  /*tr:nth-child(2n){*/
+  .description-news{
     td{
       border-bottom: 1px solid #dddddd;
       padding-bottom: 22px;
@@ -6911,7 +6916,9 @@ ul.fwpn-naw{
     td:last-child{
       @include adjust-font-size-to(13px);
       line-height: 1.3em;     
-
+	  div{
+		margin-top:10px;
+	  }
       strong{
         display: block;
         margin-bottom: 10px;
