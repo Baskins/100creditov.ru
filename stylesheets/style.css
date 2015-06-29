@@ -5375,7 +5375,7 @@ a.news-sub-a {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -6573,21 +6573,21 @@ ul.fwpn-naw a:hover {
 .p-credit-about .rght-col .banner-bank-kredit-border {
   margin-left: 0px;
 }
-.p-credit-about .special-offer,  .otziv .special-offer{
+.p-credit-about .special-offer,  .otziv .special-offer, .p-3otziv .special-offer{
   padding-left: 150px;
   position: relative;
 }
-.p-credit-about .special-offer .so-question, .otziv .special-offer .so-question{
+.p-credit-about .special-offer .so-question, .otziv .special-offer .so-question, .p-3otziv .special-offer .so-question{
   position: absolute;
   top: 25px;
   left: 14px;
 }
-.p-credit-about .special-offer p, .otziv .special-offer p{
+.p-credit-about .special-offer p, .otziv .special-offer p, .p-3otziv .special-offer p{
   font-size: 1.07143em;
   line-height: 1.26667em;
   line-height: 1.1em;
 }
-.p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl {
+.p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
   margin-bottom: 19px;
   font-size: 2em;
   line-height: 1.35714em;
@@ -6596,43 +6596,43 @@ ul.fwpn-naw a:hover {
   /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
 }
 @media (min-width: 0) and (max-width: 1040px) {
-  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.71429em;
     line-height: 1.58333em;
     line-height: 1em;
   }
 }
 @media (min-width: 0) and (max-width: 960px) {
-  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl, .p-3otziv .special-offer p.ttl{
     font-size: 1.21429em;
     line-height: 2.23529em;
     line-height: 30px;
   }
 }
 @media (min-width: 0) and (max-width: 860px) {
-  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl, .p-3otziv .special-offer p.ttl {
     font-size: 1.78571em;
     line-height: 1.52em;
     line-height: 1em;
   }
 }
 @media (min-width: 0) and (max-width: 740px) {
-  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl {
+  .p-credit-about .special-offer p.ttl, .otziv .special-offer p.ttl, .p-3otziv .special-offer p.ttl{
     font-size: 1.42857em;
     line-height: 1.9em;
     line-height: 1em;
   }
 }
-.p-credit-about .special-offer select, .otziv .special-offer select {
+.p-credit-about .special-offer select, .otziv .special-offer select, .p-3otziv .special-offer select{
   width: 140px;
 }
 @media (min-width: 860px) and (max-width: 900px) {
-  .p-credit-about .special-offer select, .otziv .special-offer select {
+  .p-credit-about .special-offer select, .otziv .special-offer select , .p-3otziv .special-offer select{
     width: 110px;
   }
 }
 @media (min-width: 860px) and (max-width: 900px) {
-  .p-credit-about .special-offer .submit_small, .otziv .special-offer .submit_small {
+  .p-credit-about .special-offer .submit_small, .otziv .special-offer .submit_small, .p-3otziv .special-offer .submit_small {
     padding-left: 11px;
     padding-right: 7px;
   }
@@ -7359,6 +7359,7 @@ ul.fwpn-naw a:hover {
   /*border: 1px solid red;*/
   text-align: top;
   margin-bottom: 50px;
+  overflow:hidden;
 }
 .rew-comment p {
   color: #326586;
@@ -10411,20 +10412,28 @@ pages
 
 
 /*Тизеры*/
+	.tizer_block{
+		text-align:center;
+	}
+	
+/*	.rght-col .tizer_block{
+		text-align:left;
+	}
+*/
 	.tizer{
 		display:inline-block;	
 		text-align:left;
 		margin-bottom:20px;			
 	}
 	
-	.tizer.one, .tizer.two, .tizer.four, .tizer.five  {
+	.tizer.one, .tizer.two, .tizer.four, .tizer.five, .tizer.six{
 		width:160px;
 	}
 	
-	.rght-col .tizer.two{
+/*	.rght-col .tizer.two{
 		width:195px;
 	}
-	
+	*/
 	.tizer .logo_tizer{
 		display:block;
 		margin-bottom:5px;
@@ -10564,7 +10573,8 @@ pages
 		padding-top:2px;
 		font-size:12px;
 		font-weight:bold;
-		color:#000;		
+		color:#000;	
+		margin-left:0;		
 	}
 	
 	.tizer.two{
@@ -10756,7 +10766,7 @@ pages
 		margin-top:-15px;
 	}
 	
-	.tizer.two .text, .tizer.three .text, .tizer.four .text{
+	.tizer.two .text, .tizer.three .text, .tizer.four .text, .tizer.six .text{
 		font-weight:bold;
 		color:#036;
 		text-transform:uppercase;
@@ -10771,7 +10781,7 @@ pages
 		color:#9c3;
 	}
 	
-	.tizer.two .limit, .tizer.three .limit{
+	.tizer.two .limit, .tizer.three .limit, .tizer.six .limit{
 		font:11px/1.2 Arial,sans-serif;
 		color:#369;
 	}
@@ -10780,7 +10790,7 @@ pages
 		margin-bottom:4px;
 	}
 		
-	.tizer.three{
+	.tizer.three, .tizer.six{
 		background:url(../img/tizer/bg_three.png)no-repeat;
 		-webkit-background-size: 100% 100%;
 		background-size: 100% 100%;
@@ -10793,33 +10803,40 @@ pages
 		position:relative;
 		line-height:10px;
 		text-decoration:none;
+	}	
+	
+	.tizer.six{
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	.tizer.three{	
 		width:125px;		
 	}
 	
-	.tizer.three .logo{
+	.tizer.three .logo, .tizer.six .logo{
 		float:none;
 		margin:0 0 10px;
 		
 	}
 	
-	.tizer.three .text{
+	.tizer.three .text, .tizer.six .text{
 		font-size:14px;
 	}
 	
-	.tizer.three .vid{
-		font:12px/1 Arial,sans-serif;
+	.tizer.three .vid, .tizer.six .vid{
+		font:11px/1 Arial,sans-serif;
 		color:#369;
 		text-transform:uppercase;
 		font-weight:bold;
 	}
 	
-	.tizer.three .limit{
+	.tizer.three .limit, .tizer.six .limit{
 		font-size:12px;
 		font-weight:bold;
 		text-transform:uppercase;
 		color:#9c3;
 	}
-	.tizer.three p{
+	.tizer.three p, .tizer.six p{
 		margin-bottom:10px;
 	}
 	

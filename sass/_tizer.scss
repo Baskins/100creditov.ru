@@ -1,19 +1,28 @@
 
+
 /*Тизеры*/
+	.tizer_block{
+		text-align:center;
+	}
+	
+/*	.rght-col .tizer_block{
+		text-align:left;
+	}
+*/
 	.tizer{
 		display:inline-block;	
 		text-align:left;
 		margin-bottom:20px;			
 	}
 	
-	.tizer.one, .tizer.two, .tizer.four, .tizer.five  {
+	.tizer.one, .tizer.two, .tizer.four, .tizer.five, .tizer.six{
 		width:160px;
 	}
 	
-	.rght-col .tizer.two{
+/*	.rght-col .tizer.two{
 		width:195px;
 	}
-	
+	*/
 	.tizer .logo_tizer{
 		display:block;
 		margin-bottom:5px;
@@ -153,11 +162,10 @@
 		padding-top:2px;
 		font-size:12px;
 		font-weight:bold;
-		color:#000;		
+		color:#000;	
+		margin-left:0;		
 	}
 	
-
-//2 вид тизеров
 	.tizer.two{
 		background:url(../img/tizer/bg_two.png)no-repeat;
 		-webkit-background-size: 100% 100%;
@@ -347,7 +355,7 @@
 		margin-top:-15px;
 	}
 	
-	.tizer.two .text, .tizer.three .text, .tizer.four .text{
+	.tizer.two .text, .tizer.three .text, .tizer.four .text, .tizer.six .text{
 		font-weight:bold;
 		color:#036;
 		text-transform:uppercase;
@@ -362,16 +370,16 @@
 		color:#9c3;
 	}
 	
-	.tizer.two .limit, .tizer.three .limit{
-		font:11px/1.2 Arial,sans-serif;		
+	.tizer.two .limit, .tizer.three .limit, .tizer.six .limit{
+		font:11px/1.2 Arial,sans-serif;
+		color:#369;
 	}
 	
 	.tizer.two  p{
 		margin-bottom:4px;
 	}
 		
-//3 вид тизеров	
-	.tizer.three{
+	.tizer.three, .tizer.six{
 		background:url(../img/tizer/bg_three.png)no-repeat;
 		-webkit-background-size: 100% 100%;
 		background-size: 100% 100%;
@@ -384,35 +392,43 @@
 		position:relative;
 		line-height:10px;
 		text-decoration:none;
+	}	
+	
+	.tizer.six{
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	.tizer.three{	
 		width:125px;		
 	}
 	
-	.tizer.three .logo{
+	.tizer.three .logo, .tizer.six .logo{
 		float:none;
 		margin:0 0 10px;
 		
 	}
 	
-	.tizer.three .text{
+	.tizer.three .text, .tizer.six .text{
 		font-size:14px;
 	}
 	
-	.tizer.three .vid{
-		font:12px/1 Arial,sans-serif;		
+	.tizer.three .vid, .tizer.six .vid{
+		font:11px/1 Arial,sans-serif;
+		color:#369;
 		text-transform:uppercase;
 		font-weight:bold;
 	}
 	
-	.tizer.three .limit{
+	.tizer.three .limit, .tizer.six .limit{
 		font-size:12px;
 		font-weight:bold;
 		text-transform:uppercase;
 		color:#9c3;
 	}
-	.tizer.three p{
+	.tizer.three p, .tizer.six p{
 		margin-bottom:10px;
 	}
-//4 вид тизеров	
+	
 	.tizer.four{
 		background:url(../img/tizer/bg_four.png)no-repeat;
 		-webkit-background-size: 100% 100%;
@@ -446,7 +462,8 @@
 		bottom:0;
 	}
 	
-	.tizer.four .vid{		
+	.tizer.four .vid{
+		color:#369;
 		font-weight:bold;
 		text-transform:uppercase;
 		line-height:1.1;
@@ -459,8 +476,8 @@
 		font-weight:normal;
 		line-height:1.1;
 	}
-//5 вид тизеров	
-	.tizer.five .text {
+	
+	.tizer.five .text/*, .tizer.five .zayavka, .tizer.five p*/ {
 		line-height:1.2;
 	}
 	
