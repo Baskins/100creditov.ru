@@ -3014,6 +3014,85 @@ a.news-sub-a{
     .banks-ticket ul li                 { padding-bottom: 0px; }
     .rc-news-wrapp                      { padding-top: 20px; }
     .rght-col .banner-bank-kredit-fat   { margin-left: 15px }    
+	
+	.special-offer.which-loan{
+		padding-left: 5%;
+	}
+	.special-offer{
+        padding-left: 150px;
+        position: relative;
+        .so-question{
+            position: absolute;
+            top: 25px;
+            left: 14px;
+        }
+        p{
+            @include adjust-font-size-to(15px);
+            line-height: 1.1em;
+        }        
+        p.ttl{
+            margin-bottom: 19px;
+            @include adjust-font-size-to(28px); line-height: 30px;
+
+            @include breakpoint(0 1040px)   {   @include adjust-font-size-to(24px); line-height: 1em;}
+            @include breakpoint(0 960px)   {   @include adjust-font-size-to(17px); line-height: 30px;}
+            /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
+            @include breakpoint(0 860px)    {   @include adjust-font-size-to(25px); line-height: 1em;}
+            @include breakpoint(0 740px)    {   @include adjust-font-size-to(20px); line-height: 1em;}             
+        }        
+
+        select{
+            width: 140px;
+            @include breakpoint(860px 900px){
+                width: 110px;
+            }            
+        }
+        .submit_small{
+            @include breakpoint(860px 900px){
+                padding-left: 11px;
+                padding-right: 7px;
+            }
+        }
+    }
+	
+	.order-for-credit{
+        @include background-image(linear-gradient(top, #fdb51a, #e18c3b));
+        position: relative;
+        .get-credit{
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            margin-top: -18px;
+        }
+        p{
+            letter-spacing: -1px;
+            @include adjust-font-size-to(18px);
+            line-height: 1.3em;
+            /*font-weight: bold;*/
+
+        }
+    }
+	
+	.order-for-credit2{
+        width: 590px;
+        @include box-sizing(border-box);
+        margin: 55px auto;
+        padding: 15px;
+        @include breakpoint($resize-m) {
+            width: 100%;
+        }        
+
+        p{
+            @include adjust-font-size-to(18px);
+            line-height: 1em;
+            margin-top: 7px;
+            padding-left: 20px;
+            @include breakpoint($resize-m) {
+                padding-left: 0px;
+            } 
+        }
+    }
+
 }
 
 
