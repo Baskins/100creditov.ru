@@ -6175,6 +6175,13 @@ ul.fwpn-naw{
     }
     .cont-text {
         margin-bottom: 60px;
+		h2{
+			@include adjust-font-size-to(24px);
+			line-height: 1em;
+			font-weight: bold;
+			padding-bottom: 35px;
+			color: $bluet; 
+		}
         p{
         line-height: 1.5em;
         }
