@@ -11048,3 +11048,36 @@ pages
 	}
 	
 /*конец тизеры*/
+/*Кредитная карта за 15 минут*/
+.credit-card-za-15-minut{
+	padding:30px 3px 25px 3px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #cdcdcd;
+	text-align:center;
+	margin-top:20px;
+}
+
+.credit-card-za-15-minut p.ttl{
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 30px;    
+	font-weight:bold;
+}
+
+.credit-card-za-15-minut p:not(.ttl){
+	color:#639f0a;
+	font-size: 1.3em;
+	margin-bottom:30px;	
+}
+.credit-card-za-15-minut .submit_small{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.credit-card-za-15-minut .submit_small span{
+	float:left;
+	margin-right:10px;
+	margin-top:2px;
+}
