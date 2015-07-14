@@ -8214,7 +8214,7 @@ ul.fwpn-naw a:hover {
 .search-bank-form .sbf-wrap {
   overflow: hidden;
 }
-.search-bank-form h2 {
+.search-bank-form h2, .city-list-cont .cont-text h2 {
   font-size: 1.71429em;
   line-height: 1.58333em;
   line-height: 1em;
