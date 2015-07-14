@@ -4522,6 +4522,119 @@ a.news-sub-a {
 /*==================================================================================================
 7. FAQ.psd                             
 ==================================================================================================*/
+.page-faq .order-for-credit{
+	margin-top:60px;
+}
+
+.page-faq .order-for-credit p{
+	padding-bottom:0;
+}
+
+ .page-faq .order-for-credit2 p{
+	font-weight:normal;
+	color:#000;
+	font-size: 1.28571em;
+    letter-spacing: -1px; 
+	text-align:left;
+}
+
+
+.page-faq .order-for-credit2 {
+  width: 590px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 55px auto;
+  padding: 15px;
+}
+@media (min-width: 0) and (max-width: 860px) {
+  .page-faq .order-for-credit2{
+    width: 100%;
+  }
+}
+.page-faq .order-for-credit2 p {
+  font-size: 1.28571em;
+  line-height: 2.11111em;
+  line-height: 1em;
+  margin-top: 7px;
+  padding-left: 20px;
+}
+@media (min-width: 0) and (max-width: 860px) {
+  .page-faq .order-for-credit2 p {
+    padding-left: 0px;
+  }
+}
+
+.page-faq .special-offer{
+  padding-left: 150px;
+  position: relative;
+}
+
+.page-faq  .special-offer.which-loan{
+  padding-left: 5%;
+}
+
+.page-faq  .special-offer .so-question{
+  position: absolute;
+  top: 25px;
+  left: 14px;
+}
+.page-faq .special-offer p{
+  font-size: 1.07143em;
+  line-height: 1.26667em;
+  line-height: 1.1em;
+  padding:0;
+}
+.page-faq  .special-offer p.ttl{
+  margin-bottom: 19px;
+  font-size: 2em;
+  line-height: 1.35714em;
+  line-height: 30px;
+  /*@include breakpoint(860px 900px){   @include adjust-font-size-to(20px); line-height: 1em;}*/
+}
+@media (min-width: 0) and (max-width: 1040px) {
+.page-faq  .special-offer p.ttl{
+    font-size: 1.71429em;
+    line-height: 1.58333em;
+    line-height: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 960px) {
+.page-faq  .special-offer p.ttl{
+    font-size: 1.21429em;
+    line-height: 2.23529em;
+    line-height: 30px;
+  }
+}
+@media (min-width: 0) and (max-width: 860px) {
+.page-faq  .special-offer p.ttl{
+    font-size: 1.78571em;
+    line-height: 1.52em;
+    line-height: 1em;
+  }
+}
+@media (min-width: 0) and (max-width: 740px) {
+.page-faq  .special-offer p.ttl{
+    font-size: 1.42857em;
+    line-height: 1.9em;
+    line-height: 1em;
+  }
+}
+.page-faq  .special-offer select{
+  width: 140px;
+}
+@media (min-width: 860px) and (max-width: 900px) {
+.page-faq  .special-offer select{
+    width: 110px;
+  }
+}
+@media (min-width: 860px) and (max-width: 900px) {
+.page-faq  .special-offer select{
+    padding-left: 11px;
+    padding-right: 7px;
+  }
+}
+
 .page-faq .credits_type ul,
 .page-faq .credits_calc ul,
 .page-faq .banner-bank-kredit-fat,
@@ -7846,19 +7959,19 @@ ul.fwpn-naw a:hover {
 /*==================================================================================================
 /24. spisok_gorodov2.html          
 ==================================================================================================*/
-.city-list2 .order-for-credit {
+.city-list2 .order-for-credit, .page-faq .order-for-credit{
   background-image: -moz-linear-gradient(top, #fdb51a, #e18c3b);
   background-image: -webkit-linear-gradient(top, #fdb51a, #e18c3b);
   background-image: linear-gradient(to bottom, #fdb51a, #e18c3b);
   position: relative;
 }
-.city-list2 .order-for-credit .get-credit {
+.city-list2 .order-for-credit .get-credit, .page-faq .order-for-credit .get-credit {
   position: absolute;
   top: 50%;
   right: 12px;
   margin-top: -18px;
 }
-.city-list2 .order-for-credit p {
+.city-list2 .order-for-credit p, .page-faq .order-for-credit p{
   letter-spacing: -1px;
   font-size: 1.28571em;
   line-height: 2.11111em;
