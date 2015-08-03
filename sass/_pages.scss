@@ -193,7 +193,7 @@ a.mail-botton{
 
         @include box-sizing(border-box);
         @include background-image(linear-gradient(top, $input-search-grad-top, $input-search-grad-bottom));
-        @include border-radius(10px);
+        @include border-radius(10px);|
         
         font-size: 12px;
         font-weight: 300;    
@@ -597,7 +597,7 @@ overflow: hidden;
     height: 45px;
     @include box-sizing(border-box);
 }
-
+/*
 .tabs-menu ul:after {
     content: "";
     display: inline-block;
@@ -605,12 +605,12 @@ overflow: hidden;
     overflow: hidden;
     visibility: hidden;
     width: 100%;
-}
+}*/
 
 .tabs-menu ul{
     border-bottom: 1px solid #d9d9d9; 
-    /*float: left;*/
-	text-align:justify;
+    float: left;
+	/*text-align:justify;*/
 }
 .tabs-menu ul li{
     display: inline-block;  
@@ -1277,6 +1277,9 @@ $fence-sm: $small $medium;
         font-weight: 700;
         font-family: $fontf;        
     }
+	h3{
+		line-height: 1.3;
+	}
     ul{
 		margin-bottom: 20px;
 		margin-top:20px;	
@@ -1687,6 +1690,7 @@ $fence-sm: $small $medium;
     }
     .submit_small{
         padding: 3px 10px 4px;
+		margin-right:75px;
     }
 }
 
@@ -1787,8 +1791,8 @@ $fence-sm: $small $medium;
 5. svodnaya.psd                             
 ==================================================================================================*/
 .lft-col.plx10px{
-    width: 183px;
-    padding-left: 7px;
+    width: 170px;
+    padding-left: 0;
     .credits_type ul li a,
     .credits_calc ul li a{
         border-left:1px solid #cccccc;
@@ -1840,9 +1844,10 @@ $fence-sm: $small $medium;
     }
     select{
         @include inline-block;
-        padding: 5px 10px;
+        padding: 5px 10px 0;
         float: left;
         margin-left: 0px;
+		margin-top: 3px;
 
     }
 
@@ -1858,13 +1863,13 @@ $fence-sm: $small $medium;
         // text-align:  center; 
     }
 }
-
+/*
 @-moz-document url-prefix() 
 { 
     .credit-cash-title{
         select{margin-top: 3px;}
     }
-} 
+} */
 
 
 .get-credit-history{
@@ -1888,6 +1893,12 @@ $fence-sm: $small $medium;
     max-width: 770px;
     margin-right: 20px;
     padding: 0 0 80px 0;
+	.th {
+		border-bottom:none;
+	}
+	tr:first-child th, tr:last-child td{
+		border:none;
+	}
     tr th,
     tr td{
         border-bottom: 1px solid #cccccc;
@@ -1920,6 +1931,9 @@ $fence-sm: $small $medium;
             @include adjust-font-size-to(14px);
         }
     }
+	tr td:last-child{
+		text-align:right;
+	}
     tr td:nth-child(2),
     tr td:nth-child(3){
         @include adjust-font-size-to(18px);
@@ -1947,7 +1961,7 @@ $fence-sm: $small $medium;
     }
     .bank-logo-block{
         padding: 10px 7px 0px;
-        border: 1px solid #e5e4e4;
+        /*border: 1px solid #e5e4e4;*/
         width: 190px;
         @include box-sizing(border-box);
         text-align: left;
@@ -1985,7 +1999,29 @@ $fence-sm: $small $medium;
             padding: 5px 8px;
             white-space: normal;
         }
-    }
+    }	
+}
+
+
+.credit-table .online_credit_history td{
+	padding-bottom:30px;
+}
+
+.credit-table .online_credit_history td, .credit-table .th {
+	border-bottom:none;
+}
+
+.credit-table .online_credit_history  td:last-child{
+	text-align:left;
+}
+
+.credit-table .online_credit_history .submit_small{
+	margin-right:0;
+	margin-left:40px;
+}
+
+.credit-table tr:first-child th, .credit-table tr:last-child td{
+	border:none;
 }
 
 
@@ -3132,7 +3168,14 @@ a.news-sub-a{
 8. bezopastnost.psd                            
 ==================================================================================================*/
 .page-safety{
-
+	.middle-col{
+		.wrapper{
+			padding-top:20px;			
+		}
+		.wrapper>.special-offer:first-child{
+			margin-top:0
+		}
+	}	
 	.order-for-credit{
 		margin-top:45px;
 		p{
@@ -3287,7 +3330,14 @@ a.news-sub-a{
 9. dosrochno.psd                             
 ==================================================================================================*/
 .page-ahead-of-time{
-
+	.middle-col{
+		.wrapper{
+			padding-top:20px;			
+		}
+		.wrapper>.compare-credits:first-child{
+			margin-top:0;
+		}
+	}	
     .credits_type{margin-bottom: 130px;}
     .credits_calc,
     .banner-bank-kredit-border{margin-bottom: 60px;}
@@ -3635,6 +3685,7 @@ a.news-sub-a{
         width: 140px;
         margin-right: 20px;
         margin-bottom: 30px;
+		text-align:center;
         /*border: 1px solid green;*/
 /*        @include breakpoint($wind-wdth) {
             margin-right: 5px;
@@ -3643,7 +3694,7 @@ a.news-sub-a{
 */
         img{
             display: block;
-            margin: 0px 0px 15px 0px;
+            margin: 0px auto 15px;
         }
         .submit-orange-arrow2{
             color: #432700!important;
@@ -3654,8 +3705,39 @@ a.news-sub-a{
         }
     }
 }
-.cont-icon-block.crdcardorder h3{ padding-bottom: 20px;}
-.cont-icon-block.crdcardorder img{ height: 60px;}
+.cont-icon-block.crdcardorder {
+	h3{ padding-bottom: 20px;}
+	/*li{
+		text-align:center;
+	}*/
+	img {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	p {
+		height: 85px;  
+		margin-bottom:20px;
+		@include box-sizing(border-box); 
+	}
+	
+	li:first-child p{
+		padding-top:32px;
+	}
+	li:nth-child(2) p{
+		padding-top:17px;
+	}
+	li:nth-child(3) p{
+		padding-top:18px;
+	}
+	li:nth-child(4) p{
+		padding-top:0;
+	}
+	li:last-child p{
+		padding-top:13px;
+	}
+}
+
 /*==================================================================================================
 /10. contact.psd                            
 ==================================================================================================*/
@@ -3916,7 +3998,15 @@ a.news-sub-a{
     .rght-col .banner-bank-kredit-border{
         margin-left: 0px;
     }
-
+	
+	.middle-col{
+		.wrapper{
+			padding-top:20px;			
+		}
+		.wrapper>.get-credit-bl:first-child{
+			margin-top:0;
+		}
+	}
 }
 
 
@@ -4001,6 +4091,89 @@ a.news-sub-a{
         }
     } 
 }
+
+.get-credit-bl-big{
+    border:  1px solid #d4d4d4;
+    @include border-radius(7px);
+    @include box-sizing(border-box);   
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    @include breakpoint($resize-m) {
+        margin-top: 0px;
+    }
+	@include box-shadow(rgba(0, 0, 0, 0.75) 1px 1px 7px);
+
+    p.ttl{
+        color: #333333;
+        @include adjust-font-size-to(34px); 
+        font-weight: bold;
+        line-height: 1.2em;
+        margin-bottom: 35px;
+    }
+
+    .arrow-block{
+        width: 198px;
+        height: 162px;
+		margin-left:30px;
+        float: left;
+        background: url(../img/ok-big.png) no-repeat center center;       
+    }
+    .cont{
+        @include box-sizing(border-box);   
+        padding: 0px 0 0px 0;
+        margin-left: 230px;
+        text-align: left;
+        /*border: 1px solid red;*/
+    }     
+    .submit_small{
+        padding: 3px 10px 4px 10px;
+        float: right;
+       position:absolute;
+		top:70px;
+		right:15px;
+        @include adjust-font-size-to(11px); 
+
+        //@include breakpoint(0 1000px)   {   margin-top: 10px;}         
+
+        i{
+           @include adjust-font-size-to(18px); 
+           line-height: 1em; 
+
+        }
+    }  
+    .vantage{
+        /*border: 1px solid green;*/
+        overflow: hidden;
+        vertical-align: middle;
+        /*padding-bottom: 10px;*/
+
+        .number{
+            @include inline-block;
+            float: left;
+            @include adjust-font-size-to(60px); 
+            line-height: 1em; 
+            color:#6c9913;
+            font-weight: bold;
+            width: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        p{
+            margin-left: 50px;
+            @include adjust-font-size-to(16px); 
+            line-height: 1.1em;
+            strong{
+                color:#6c9913;
+                @include adjust-font-size-to(13px, $from-size: 24px); 
+            }
+        }
+    } 
+}
+
+
 .order-for-credit2{
     /*border: 1px solid #bfbebe;*/
     @include background-image(linear-gradient(top, #f2f2f1, #d4d4d4));
@@ -4082,6 +4255,26 @@ a.news-sub-a{
             }
         }
     }
+}
+
+.p-banks-branch, .page-services{
+	.get-credit-bl{
+		.submit_small{
+			position: absolute;
+			top: 61px;
+			right: 10px;
+			margin-top: 0px;
+			@include box-shadow(rgba(0, 0, 0, 0.03) 0px 0px 0px 4px);
+			@include breakpoint(0 950px) {
+				position: static;
+				margin-top: 10px;
+			}
+		}
+	}	
+}
+
+.p-banks-branch.avto .abc-credit-type{
+	margin-top:50px;
 }
 
 .forumwr{
@@ -4721,6 +4914,14 @@ ul.fwpn-naw{
 /17. o kreditovanii.psd                       
 ==================================================================================================*/
 .p-credit-about{
+	.middle-col{
+		.wrapper{
+			padding-top:20px;
+		}
+		.wrapper>.special-offer:first-child{
+			margin-top:0;
+		}
+	}	
     .order-for-credit2{
         p{
             text-align: center;
@@ -5085,7 +5286,7 @@ ul.fwpn-naw{
         background: #f5f5f5;
     }
     a{
-        padding-left: 10px;
+        /*padding-left: 10px;*/
         @include adjust-font-size-to(13px);
     }
     .orange-link{
@@ -5167,6 +5368,9 @@ ul.fwpn-naw{
     .bank-branches{
         margin-bottom: 50px;
     }
+	get-credit-bl-big{
+		margin-bottom:80px;
+	}
 }
 
 .wrapp20px50px{
@@ -5333,7 +5537,7 @@ ul.fwpn-naw{
             padding-right: 10px;
             padding-left: 10px;
             padding-bottom: 40px;
-
+			margin-top:0;
             /*background: #edf1f0;*/
             position: relative;
 
@@ -5636,9 +5840,9 @@ ul.fwpn-naw{
     .bank_order{
         position: relative;
         z-index: 2;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 584px;
+        /*margin-left: auto;
+        margin-right: auto;*/
         margin-top: 0px;
 
         .submit_orange{
@@ -5656,6 +5860,16 @@ ul.fwpn-naw{
             }            
         }
     }
+	.compare-credit.white{
+		width:580px;
+		padding-left:10px;
+		padding-right:10px;
+		@include breakpoint(0 1000px){
+			width: auto;
+			padding-left:5px;
+			padding-right:5px;
+		}
+	}
 }
 .ab-credit-order{
     /*border:  1px solid green;*/
@@ -5703,6 +5917,10 @@ ul.fwpn-naw{
 .prb2-cont-right{
     /*border:  1px solid red;*/
     margin-bottom: 50px;
+	margin-right:200px;
+	@include breakpoint($resize-m) {
+            margin-right: 0px;
+        }    
     p{
         @include adjust-font-size-to(14px);
         line-height: 1.5em; 
@@ -6105,7 +6323,7 @@ ul.fwpn-naw{
     }
     .rght-col{
         padding-top: 20px;
-        padding-right: 8px;
+        padding-right: 0;
     }
     .personal-help {
         border: 1px solid #cccccc;
@@ -6471,7 +6689,14 @@ ul.fwpn-naw{
 /27. uslugi.html        
 ==================================================================================================*/
 .page-services{
-    
+    .middle-col{
+		.wrapper{
+			padding-top:20px;
+		}
+		.wrapper>.compare-credits:first-child{
+			margin-top:0;
+		}
+	}	
     .rght-col{
         padding-top: 20px;
         .banks-ticket ul{
@@ -6524,7 +6749,7 @@ ul.fwpn-naw{
 ==================================================================================================*/
 .page-vhod2{
     .credits_type ul{
-        margin-bottom: 140px;
+        margin-bottom: 80px;
     }
     .personal-help {
         margin-bottom: 50px;
@@ -6732,7 +6957,7 @@ ul.fwpn-naw{
         }   
     }
     .compare-credit{
-        margin-top: 20px;
+        margin-top: 0;
         .submit_orange{
             padding: 10px 13px 10px 18px;
         }
@@ -6767,7 +6992,8 @@ ul.fwpn-naw{
         padding-bottom: 20px;
     }
     .ct-list{
-        padding: 5px 0 15px; 
+        padding: 5px 0 15px;
+		margin-bottom:25px;
         li{
             padding: 0px 0px 5px 0px;
         }
@@ -7166,6 +7392,9 @@ ul.fwpn-naw{
     ul {padding-right: 12px;}
   } 
   .rght-col .banner-bank-kredit-fat {margin-left: 20px;}
+  .credit-card-za-15-minut{
+		margin-bottom:55px;
+	}
 }
 .b_banks-all-review{
   width: 100%;
@@ -7243,14 +7472,13 @@ ul.fwpn-naw{
   color:#666;
   font-size:13px;
   background:#eaebec;
-  margin:20px 0 40px 0;
-  border:#ccc 1px solid;
+  margin:20px 0 55px 0;
+  border:none;
   border-collapse:separate; 
   th {
     font-weight:bold;
     padding:21px 25px 22px 25px;
-    border-top:1px solid #fafafa;
-    border-bottom:1px solid #e0e0e0;
+    border:none;
     background: #ededed;
     background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
     background: -moz-linear-gradient(top, #ededed, #ebebeb);
@@ -7264,14 +7492,11 @@ ul.fwpn-naw{
     padding-left:10px;
     td:first-child{
       text-align: left;
-      padding-left:10px;
-      border-left: 0;
+      padding-left:10px;      
     }
     td {
       padding:9px;
-      border-top: 1px solid #ffffff;
-      border-bottom:1px solid #e0e0e0;
-      border-left: 1px solid #e0e0e0;
+      border:none;
       background: #fafafa;
       background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
       background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
@@ -7285,10 +7510,7 @@ ul.fwpn-naw{
     background: #f6f6f6;
     background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
     background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
-  }
-  tr:last-child td{
-    border-bottom:0;
-  }
+  } 
   tr:hover td{
     background: #f2f2f2;
     background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
@@ -7325,6 +7547,10 @@ ul.fwpn-naw{
             line-height: 1.5em;
         }
     }
+}
+
+.page-kabinet .credit-cash-title{
+	text-align:center;
 }
 
 /*===================================================================================================================*/
@@ -7448,6 +7674,7 @@ ul.fwpn-naw{
         line-height: 1em;
         color: $bluet;
         margin-bottom: 20px;
+		text-align:center;
         @include breakpoint(0 960px) {
             @include adjust-font-size-to(20px);
             line-height: 1em;
@@ -8185,6 +8412,10 @@ ul.fwpn-naw{
   width: 60%;
   float: left;
 }
+.avto .avto_credits .credits-programm div{
+	overflow:hidden;
+}
+
 .avto .avto_credits .credits-programm dl dd {
   width: 35%;
 }
@@ -8239,3 +8470,34 @@ ul.fwpn-naw{
 pages                                                
 ===================================================================================================
 */
+
+/*Кредитная карта за 15 минут*/
+.credit-card-za-15-minut{
+	padding:30px 3px 25px 3px; 
+	@include border-radius(10px);|	
+	border: 1px solid #cdcdcd;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	p.ttl{
+		font-size: 1.5em;
+		line-height: 30px;
+		margin-bottom: 30px;    
+		font-weight:bold;
+	}
+	p:not(.ttl){
+		color:#639f0a;
+		font-size: 1.3em;
+		margin-bottom:30px;	
+	}
+	.submit_small{
+		padding-left:30px;
+		padding-right:30px;
+		span{
+			float:left;
+			margin-right:10px;
+			margin-top:2px;
+		}
+	}
+	
+}
