@@ -3070,32 +3070,34 @@ a.bank_big_link {
   border-left: 1px solid #cccccc;
 }
 
-.lft-col.plx10px .credit-ticket {
+.lft-col.plx10px .credit-ticket, .calculator-page .lft-col .credit-ticket{
   margin: 20px 0px 60px 0px;
   padding: 10px 3px 10px;
   overflow: hidden;
 }
-.lft-col.plx10px .credit-ticket .ttl {
+.lft-col.plx10px .credit-ticket .ttl, .calculator-page .lft-col .credit-ticket .ttl {
   color: #009900;
   text-transform: uppercase;
   font-size: 1.07143em;
   line-height: 1.26667em;
   line-height: 1.2em;
 }
-.lft-col.plx10px .credit-ticket .widthx499per {
+.lft-col.plx10px .credit-ticket .widthx499per, .calculator-page .lft-col .credit-ticket  .widthx499per{
   width: 100%;
+  margin:0;
 }
-.lft-col.plx10px .credit-ticket select {
+.lft-col.plx10px .credit-ticket select, .calculator-page .lft-col .credit-ticket select {
   width: 163px;
 }
-.lft-col.plx10px .credit-ticket input {
-  width: 100%;
+.lft-col.plx10px .credit-ticket input, .calculator-page .lft-col .credit-ticket input {
+  width: 100%!important;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
-.lft-col.plx10px .credit-ticket .submit-orange-arrow1 {
+
+.lft-col.plx10px .credit-ticket .submit-orange-arrow1, .calculator-page .lft-col .credit-ticket  .submit-orange-arrow1{
   float: right;
 }
 
@@ -8397,6 +8399,7 @@ ul.fwpn-naw a:hover {
 /*==================================================================================================
 /24. /spisok_gorodov2.html           
 ==================================================================================================*/
+
 /*==================================================================================================
 /25. spisok_gorodov.html          
 ==================================================================================================*/
@@ -8598,19 +8601,20 @@ ul.fwpn-naw a:hover {
     padding-bottom: 35px;
   }
 }
-.city-list-cont .order-for-credit {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.ab-cont .order-for-credit {
+  max-width: 530px;
+  margin-left: 13px;
+/*  margin-right: auto;*/
   position: relative;
+  margin-top:125px;
 }
-.city-list-cont .order-for-credit .submit_small {
+.ab-cont .order-for-credit .submit_small {
   position: absolute;
   top: 50%;
   right: 12px;
   margin-top: -16px;
 }
-.city-list-cont .order-for-credit p {
+.ab-cont .order-for-credit p {
   font-size: 1.28571em;
   line-height: 2.11111em;
   line-height: 1.3em;
@@ -11315,6 +11319,10 @@ pages
 	margin-bottom:20px;
 }
 
+.calculator-page .credit-card-za-15-minut{
+	margin-top:70px;
+}
+
 .credit-card-za-15-minut p.ttl{
     font-size: 1.5em;
     line-height: 30px;
@@ -11336,4 +11344,26 @@ pages
 	float:left;
 	margin-right:10px;
 	margin-top:2px;
+}
+
+
+
+/*==================================================================================================
+spisok_gorodov2_mfo.html
+==================================================================================================*/
+.city-list2.mfo .order-for-credit{
+	background-image: -moz-linear-gradient(top, #f2f2f1, #d4d4d4);
+	background-image: -webkit-linear-gradient(top, #f2f2f1, #d4d4d4);
+	background-image: linear-gradient(to bottom, #f2f2f1, #d4d4d4);
+}
+.city-list2.mfo .order-for-credit .submit_small{
+	margin-top:7px;
+}
+/*==================================================================================================
+spisok_gorodov2_mfo.html
+==================================================================================================*/
+
+.svodnaya_new h1{
+	width:640px;
+	text-align:center;	
 }

@@ -1798,7 +1798,7 @@ $fence-sm: $small $medium;
         border-left:1px solid #cccccc;
     }
 }
-.lft-col.plx10px{
+.lft-col.plx10px,  .calculator-page .lft-col{
     .credit-ticket{
         margin: 20px 0px 60px 0px;
         padding: 10px 3px 10px;
@@ -1811,12 +1811,13 @@ $fence-sm: $small $medium;
         }
         .widthx499per{
             width: 100%;
+			margin:0;
         }
         select{
             width: 163px;
         }
         input{ 
-            width: 100%;
+            width: 100%!important;
             @include box-sizing(border-box);
             margin-bottom: 15px;
         }
@@ -5183,6 +5184,7 @@ ul.fwpn-naw{
             margin-right: 0px;
         }    
 
+			
     .text{
         /*padding-left: 10px;*/
         padding-bottom: 40px;
@@ -5199,6 +5201,23 @@ ul.fwpn-naw{
             color: #326586;   
             font-weight: bold;
             span{ color: #99cc33;}
+        }
+    }
+	.order-for-credit{
+        max-width: 530px;
+        margin-left: 13px;
+       /* margin-right: auto;*/
+		margin-top:125px;
+        position: relative;
+        .submit_small{
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            margin-top: -16px;   
+        }
+        p{
+            @include adjust-font-size-to(18px);
+            line-height: 1.3em;
         }
     }
 }
@@ -6493,23 +6512,7 @@ ul.fwpn-naw{
 
             }
         }      
-    }
-    .order-for-credit{
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        .submit_small{
-            position: absolute;
-            top: 50%;
-            right: 12px;
-            margin-top: -16px;   
-        }
-        p{
-            @include adjust-font-size-to(18px);
-            line-height: 1.3em;
-        }
-    }
+    }    
     .cont-text {
         margin-bottom: 60px;
 		h2{
@@ -7907,6 +7910,9 @@ ul.fwpn-naw{
             }
         }
     }
+	.credit-card-za-15-minut{
+		margin-top:70px;
+	}
 }
 
 
@@ -8500,4 +8506,24 @@ pages
 		}
 	}
 	
+}
+
+/*==================================================================================================
+spisok_gorodov2_mfo.html
+==================================================================================================*/
+.city-list2.mfo{
+	.order-for-credit{
+		@include background-image(linear-gradient(top, #fdb51a, #e18c3b));
+		.submit_small{
+			margin-top:7px;
+		}
+	}
+}
+/*==================================================================================================
+spisok_gorodov2_mfo.html
+==================================================================================================*/
+
+.svodnaya_new h1{
+	text-align:center;	
+	width:640px;
 }
