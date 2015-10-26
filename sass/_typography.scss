@@ -67,7 +67,7 @@ a.dashed:hover {
 h1, .h1 {
   @include adjust-font-size-to(24px);
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.2em;
   color: #326586;
   margin-bottom: 30px;
   padding: 0 0px;

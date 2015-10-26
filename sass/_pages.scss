@@ -3054,6 +3054,7 @@ a.news-sub-a{
 	
 	.special-offer.which-loan{
 		padding-left: 5%;
+		margin-top:0;
 	}
 	.special-offer{
         padding-left: 150px;
@@ -3134,7 +3135,7 @@ a.news-sub-a{
 
 
 .faqpage-content{
-    padding: 40px 0 20px 0;
+    padding: 20px 0 20px 0;
 
     @include adjust-font-size-to(14px);
     line-height: 1.4em;
@@ -3692,6 +3693,10 @@ a.news-sub-a{
             margin-right: 5px;
             width: 130px;
         }
+		
+		P{
+			height:50px;
+		}
 */
         img{
             display: block;
@@ -3773,7 +3778,7 @@ a.news-sub-a{
     .orange-link{padding-left: 20px;}
 
     .special-offer{
-        margin-left: -10px;
+       /* margin-left: -10px;*/
         margin-right: 15px;
         padding-left: 15px;
         padding-right: 15px;

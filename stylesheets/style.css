@@ -118,7 +118,7 @@ h1, .h1 {
   font-size: 1.71429em;
   line-height: 1.58333em;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.2em;
   color: #326586;
   margin-bottom: 30px;
   padding: 0 0px;
@@ -4612,6 +4612,7 @@ a.news-sub-a {
 
 .page-faq  .special-offer.which-loan{
   padding-left: 5%;
+  margin-top:0;
 }
 
 .page-faq  .special-offer .so-question{
@@ -4695,7 +4696,7 @@ a.news-sub-a {
 }
 
 .faqpage-content {
-  padding: 40px 0 20px 0;
+  padding: 20px 0 20px 0;
   font-size: 1em;
   line-height: 1.35714em;
   line-height: 1.4em;
@@ -5349,6 +5350,11 @@ a.news-sub-a {
           }
   */
 }
+.cont-icon-block li p{
+	height:50px;
+}
+
+
 .cont-icon-block li img {
   display: block;
   margin: 0px auto 15px;
@@ -5445,7 +5451,7 @@ a.news-sub-a {
   padding-left: 20px;
 }
 .n_b2 .special-offer {
-  margin-left: -10px;
+  /*margin-left: -10px;*/
   margin-right: 15px;
   padding-left: 15px;
   padding-right: 15px;
@@ -11366,4 +11372,26 @@ spisok_gorodov2_mfo.html
 .svodnaya_new h1{
 	width:640px;
 	text-align:center;	
+}
+
+.spisok_region{
+	position:relative;
+}
+
+#spisok_region{
+	display:none;
+	position:absolute;
+	border:1px solid #ccc;
+	bottom:-110px;
+	right:0;
+	background:#fff;
+}
+
+.spisok_region >p{
+	cursor:pointer;
+}
+
+#spisok_region li:hover{
+	background:#ebebeb;
+	cursor:pointer;
 }
