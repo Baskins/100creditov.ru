@@ -118,7 +118,7 @@ h1, .h1 {
   font-size: 1.71429em;
   line-height: 1.58333em;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.2em;
   color: #326586;
   margin-bottom: 30px;
   padding: 0 0px;
@@ -3715,13 +3715,13 @@ a.news-sub-a {
 }
 
 .orange-arrow {
-  width: 72px;
-  height: 68px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  z-index: 1;
-  background: url(../img/orange-arrow.png) no-repeat 0px 0px;
+	background: rgba(0, 0, 0, 0) url("../img/orange-arrow_temp.png") no-repeat scroll 0 0;
+    width: 40px;
+	height: 90px;
+    position: absolute;
+    right: -6px;
+    top: 28px;    
+    z-index: 1;
 }
 
 .white-with-border {
@@ -7649,6 +7649,18 @@ ul.fwpn-naw a:hover {
   padding-bottom: 10px;
 }
 
+.p-3otziv .order-for-credit {
+    position: relative;
+}
+
+.p-3otziv .order-for-credit .submit_small {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -16px;
+}
+
+
 /*.p-3otziv*/
 .bplace-for-img {
   display: block;
@@ -9693,6 +9705,21 @@ ul.fwpn-naw a:hover {
 }
 .filial-bank-card .nb-other-banks {
   padding-bottom: 30px;
+}
+
+.filial-bank-card .compare-credit{
+	margin-top:60px;
+}
+
+.filial-bank-card .order-for-credit{
+	position:relative;	
+}
+
+.filial-bank-card .order-for-credit .submit_small{
+	margin-top: -16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
 }
 
 /*===================================================================================================================*/

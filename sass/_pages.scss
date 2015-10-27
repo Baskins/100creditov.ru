@@ -2362,13 +2362,13 @@ a.news-sub-a{
     }
 }
 .orange-arrow{
-    width: 72px;
-    height: 68px;
+   background: rgba(0, 0, 0, 0) url("../img/orange-arrow_temp.png") no-repeat scroll 0 0;
+    width: 40px;
+	height: 90px;
     position: absolute;
-    top:40px;
-    right:20px;
+    right: -6px;
+    top: 28px;    
     z-index: 1;
-    background: url(../img/orange-arrow.png) no-repeat 0px 0px;
 }
 
 .white-with-border{
@@ -5486,6 +5486,15 @@ ul.fwpn-naw{
 /20. otziv3.psd                    
 ==================================================================================================*/
 .p-3otziv{
+	.order-for-credit {
+		position: relative;
+		.submit_small {
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			margin-top: -16px;
+		}
+	}
     .banner-bank-kredit-border{
         margin-left: 5px;
     }
@@ -7459,6 +7468,15 @@ ul.fwpn-naw{
   .map          {margin-top: 50px; margin-bottom: 50px;  }
   .credit_order {margin-top: 50px;}
   .nb-other-banks{padding-bottom: 30px;}
+  .order-for-credit{
+		position:relative;	
+		.submit_small{
+			margin-top: -16px;
+			position: absolute;
+			right: 12px;
+			top: 50%;
+		}   
+   }
 }
 
 /*===================================================================================================================*/
