@@ -139,6 +139,7 @@ body.card{
     float: right;
     text-align: right;
     padding-top: 25px;
+	width:100%;
 }
 
 .cabinet-insert{    
@@ -3053,6 +3054,7 @@ a.news-sub-a{
 	
 	.special-offer.which-loan{
 		padding-left: 5%;
+		margin-top:0;
 	}
 	.special-offer{
         padding-left: 150px;
@@ -3133,12 +3135,11 @@ a.news-sub-a{
 
 
 .faqpage-content{
-    padding: 40px 0 20px 0;
-
+    padding: 20px 0 20px 0;
+	
     @include adjust-font-size-to(14px);
     line-height: 1.4em;
-    color: #333; 
-
+    color: #333; 		
     h2{
         @include adjust-font-size-to(16px);
         line-height: 1.2em;
@@ -3672,7 +3673,7 @@ a.news-sub-a{
 .cont-icon-block{
     /*border: 1px solid red;*/
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 30px;	
     h3{
         color: #333333;
         @include adjust-font-size-to(16px);
@@ -3692,7 +3693,10 @@ a.news-sub-a{
             width: 130px;
         }
 */
-        img{
+		p{
+			height:50px;
+		}        
+		img{
             display: block;
             margin: 0px auto 15px;
         }
@@ -3772,8 +3776,8 @@ a.news-sub-a{
     .orange-link{padding-left: 20px;}
 
     .special-offer{
-        margin-left: -10px;
-        margin-right: 15px;
+        /*margin-left: -10px;*/
+        margin-right: 25px;
         padding-left: 15px;
         padding-right: 15px;
         p{
@@ -6359,6 +6363,9 @@ ul.fwpn-naw{
             margin-bottom: 40px;
         }
     }
+	.special-offer{
+		padding-left:29px;
+	}
 
 }
 
@@ -6441,8 +6448,25 @@ ul.fwpn-naw{
     } 
 }
 
+.city-list{
+	.order-for-credit{
+		margin-right:25px;
+		position:relative;
+		margin-bottom:0;
+		p{			
+			@include adjust-font-size-to(18px);
+		}
+		.submit_small{
+			margin-top: -15px;
+			position: absolute;
+			right: 12px;
+			top: 50%;
+		}
+	}
+}
 .city-name-list{
     overflow: hidden;
+	margin-bottom:50px;	
     ul{
         width: auto;
         /*margin-right: 20px;*/
