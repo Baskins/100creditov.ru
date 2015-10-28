@@ -11395,31 +11395,95 @@ pages
 
 .menu-vibor-region{
 	position:relative;	
-
+	margin-bottom:10px;
+	margin-top:-25px;
 }
-
-.drop-down{
-	cursor:pointer;
-	/*color: #9d9898;*/
-	/*font-size: 10px;*/
+.drop-down, .proverka-regiona{
+	cursor:pointer;	
 	line-height: 1.3em;	
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	color: #9d9898;	
 }
+.drop-down{
+	font-size: 10px;
+	text-transform:uppercase;
+    display:inline-block;
+	margin-bottom:0;
+	padding-left:20px;
+	background:url(../img/icons.png)no-repeat;
+	height:14px;
+	padding-top:3px;
+	
+}
+
+#proverka-regiona{
+	position:absolute;
+	top:20px;
+	right:0;	
+}
+
+.proverka-regiona{
+	font-size:12px;	
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);	
+	padding:10px;	
+	margin-top:10px;
+	position:relative;
+	display:none;
+	z-index:90;
+	background:#fff;
+}
+
+.proverka-regiona:before, .proverka-regiona:after { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 100px; 
+	border: 10px solid; 
+}	
+.proverka-regiona:before{	
+	top: -20px; 	
+	border-color: transparent  transparent #B7B7B7  transparent; 	
+}
+
+.proverka-regiona:after {
+	top: -19px; 	
+	border-color: transparent  transparent #fff  transparent; 	
+}
+
+.proverka-regiona button{
+	border:none;	
+	color: #9d9898;
+	/*border-radius:5px;*/
+	padding:0 10px 0;
+	font-family: "Open Sans", sans-serif;
+	/*color:#fff;*/
+	cursor:pointer;
+	background:transparent;
+	float:right;
+	margin-top:5px;
+}
+
+.proverka-regiona #SelectRegionYes{
+	/*background:#b80003;*/
+	float:left;
+}	
+
 .drop-down:hover {
   color: #99cc33;
 }
-	/*width:250px;
-	display:inline-block;
-	padding:0 5px 0;*/
-
 .drop-menu-main-sub {
-    display: none;
+    line-height: 1.3em;	
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #9d9898;
+    font-size: 12px;
+	display: none;
 	position:absolute;
 	top:20px;
 	right:0;	   
     background: #FFFFFF;
-   /* border-radius: 6px;*/
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
     z-index: 100; 
     padding: 5px 0 5px;   
