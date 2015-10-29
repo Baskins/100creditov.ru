@@ -139,6 +139,7 @@ body.card{
     float: right;
     text-align: right;
     padding-top: 25px;
+	width:100%;
 }
 
 .cabinet-insert{    
@@ -1798,7 +1799,7 @@ $fence-sm: $small $medium;
         border-left:1px solid #cccccc;
     }
 }
-.lft-col.plx10px,  .calculator-page .lft-col{
+.lft-col.plx10px{
     .credit-ticket{
         margin: 20px 0px 60px 0px;
         padding: 10px 3px 10px;
@@ -1811,13 +1812,12 @@ $fence-sm: $small $medium;
         }
         .widthx499per{
             width: 100%;
-			margin:0;
         }
         select{
             width: 163px;
         }
         input{ 
-            width: 100%!important;
+            width: 100%;
             @include box-sizing(border-box);
             margin-bottom: 15px;
         }
@@ -2363,13 +2363,13 @@ a.news-sub-a{
     }
 }
 .orange-arrow{
-    width: 72px;
-    height: 68px;
+   background: rgba(0, 0, 0, 0) url("../img/orange-arrow_temp.png") no-repeat scroll 0 0;
+    width: 40px;
+	height: 90px;
     position: absolute;
-    top:40px;
-    right:20px;
+    right: -6px;
+    top: 28px;    
     z-index: 1;
-    background: url(../img/orange-arrow.png) no-repeat 0px 0px;
 }
 
 .white-with-border{
@@ -3054,6 +3054,7 @@ a.news-sub-a{
 	
 	.special-offer.which-loan{
 		padding-left: 5%;
+		margin-top:0;
 	}
 	.special-offer{
         padding-left: 150px;
@@ -3134,12 +3135,11 @@ a.news-sub-a{
 
 
 .faqpage-content{
-    padding: 40px 0 20px 0;
-
+    padding: 20px 0 20px 0;
+	
     @include adjust-font-size-to(14px);
     line-height: 1.4em;
-    color: #333; 
-
+    color: #333; 		
     h2{
         @include adjust-font-size-to(16px);
         line-height: 1.2em;
@@ -3673,7 +3673,7 @@ a.news-sub-a{
 .cont-icon-block{
     /*border: 1px solid red;*/
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 30px;	
     h3{
         color: #333333;
         @include adjust-font-size-to(16px);
@@ -3693,7 +3693,10 @@ a.news-sub-a{
             width: 130px;
         }
 */
-        img{
+		p{
+			height:50px;
+		}        
+		img{
             display: block;
             margin: 0px auto 15px;
         }
@@ -3773,8 +3776,8 @@ a.news-sub-a{
     .orange-link{padding-left: 20px;}
 
     .special-offer{
-        margin-left: -10px;
-        margin-right: 15px;
+        /*margin-left: -10px;*/
+        margin-right: 25px;
         padding-left: 15px;
         padding-right: 15px;
         p{
@@ -5184,7 +5187,6 @@ ul.fwpn-naw{
             margin-right: 0px;
         }    
 
-			
     .text{
         /*padding-left: 10px;*/
         padding-bottom: 40px;
@@ -5201,23 +5203,6 @@ ul.fwpn-naw{
             color: #326586;   
             font-weight: bold;
             span{ color: #99cc33;}
-        }
-    }
-	.order-for-credit{
-        max-width: 530px;
-        margin-left: 13px;
-       /* margin-right: auto;*/
-		margin-top:125px;
-        position: relative;
-        .submit_small{
-            position: absolute;
-            top: 50%;
-            right: 12px;
-            margin-top: -16px;   
-        }
-        p{
-            @include adjust-font-size-to(18px);
-            line-height: 1.3em;
         }
     }
 }
@@ -5505,6 +5490,15 @@ ul.fwpn-naw{
 /20. otziv3.psd                    
 ==================================================================================================*/
 .p-3otziv{
+	.order-for-credit {
+		position: relative;
+		.submit_small {
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			margin-top: -16px;
+		}
+	}
     .banner-bank-kredit-border{
         margin-left: 5px;
     }
@@ -6369,6 +6363,9 @@ ul.fwpn-naw{
             margin-bottom: 40px;
         }
     }
+	.special-offer{
+		padding-left:29px;
+	}
 
 }
 
@@ -6451,8 +6448,25 @@ ul.fwpn-naw{
     } 
 }
 
+.city-list{
+	.order-for-credit{
+		margin-right:25px;
+		position:relative;
+		margin-bottom:0;
+		p{			
+			@include adjust-font-size-to(18px);
+		}
+		.submit_small{
+			margin-top: -15px;
+			position: absolute;
+			right: 12px;
+			top: 50%;
+		}
+	}
+}
 .city-name-list{
     overflow: hidden;
+	margin-bottom:50px;	
     ul{
         width: auto;
         /*margin-right: 20px;*/
@@ -6512,7 +6526,23 @@ ul.fwpn-naw{
 
             }
         }      
-    }    
+    }
+    .order-for-credit{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        .submit_small{
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            margin-top: -16px;   
+        }
+        p{
+            @include adjust-font-size-to(18px);
+            line-height: 1.3em;
+        }
+    }
     .cont-text {
         margin-bottom: 60px;
 		h2{
@@ -7462,6 +7492,15 @@ ul.fwpn-naw{
   .map          {margin-top: 50px; margin-bottom: 50px;  }
   .credit_order {margin-top: 50px;}
   .nb-other-banks{padding-bottom: 30px;}
+  .order-for-credit{
+		position:relative;	
+		.submit_small{
+			margin-top: -16px;
+			position: absolute;
+			right: 12px;
+			top: 50%;
+		}   
+   }
 }
 
 /*===================================================================================================================*/
@@ -7910,9 +7949,6 @@ ul.fwpn-naw{
             }
         }
     }
-	.credit-card-za-15-minut{
-		margin-top:70px;
-	}
 }
 
 
@@ -8508,22 +8544,115 @@ pages
 	
 }
 
-/*==================================================================================================
-spisok_gorodov2_mfo.html
-==================================================================================================*/
-.city-list2.mfo{
-	.order-for-credit{
-		@include background-image(linear-gradient(top, #fdb51a, #e18c3b));
-		.submit_small{
-			margin-top:7px;
-		}
-	}
-}
-/*==================================================================================================
-spisok_gorodov2_mfo.html
-==================================================================================================*/
 
-.svodnaya_new h1{
-	text-align:center;	
-	width:640px;
+.menu-vibor-region{
+	position:relative;	
+	margin-bottom:10px;
+	margin-top:-25px;
+}
+
+.drop-down, .proverka-regiona{
+	cursor:pointer;	
+	line-height: 1.3em;	
+	font-family: $fontf;    
+	font-weight: 300;
+	color: #9d9898;
+}
+
+
+.drop-down{	
+    font-size: 10px;
+	text-transform:uppercase;
+    display:inline-block;
+	margin-bottom:0;
+	padding-left:20px;
+	background:url(../img/icons.png)no-repeat;
+	height:14px;
+	padding-top:3px;
+	
+}
+.drop-down:hover {
+  color: #99cc33;
+}
+.drop-menu-main-sub {
+    display: none;
+	position:absolute;
+	top:20px;
+	right:0;	   
+    background: #FFFFFF;   
+	line-height: 1.3em;	
+	font-family: $fontf;    
+	font-weight: 300;
+	color: #9d9898;
+    font-size: 12px;	
+	@include box-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px);
+    z-index: 100; 
+    padding: 5px 0 5px;   
+
+	ul{
+		float: left;
+		text-align:left;
+		margin-left:20px;
+	}
+
+	ul:first-child{
+		margin-left:0;
+	}
+
+	li{
+		padding:2px 8px 2px;
+	}
+
+	li:hover{
+		cursor:pointer;
+		background:#ebebeb;	
+	}
+}	
+
+#proverka-regiona{
+	position:absolute;
+	top:20px;
+	right:0;	
+}
+
+.proverka-regiona{
+	font-size:12px;		
+	@include box-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px);
+	padding:10px;	
+	margin-top:10px;
+	position:relative;
+	display:none;
+	z-index:90;
+	background:#fff;
+	button{
+		border:none;	
+		color: #9d9898;	
+		padding:0 10px 0;
+		font-family: $fontf;
+		cursor:pointer;
+		background:transparent;
+		float:right;
+		margin-top:5px;
+	}	
+	#SelectRegionYes{	
+		float:left;
+	}	
+}
+
+.proverka-regiona:before, .proverka-regiona:after { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 100px; 
+	border: 10px solid; 
+}	
+.proverka-regiona:before{	
+	top: -20px; 	
+	border-color: transparent  transparent #B7B7B7  transparent; 	
+}
+
+.proverka-regiona:after {
+	top: -19px; 	
+	border-color: transparent  transparent #fff  transparent; 	
 }

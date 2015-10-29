@@ -118,7 +118,7 @@ h1, .h1 {
   font-size: 1.71429em;
   line-height: 1.58333em;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 1.2em;
   color: #326586;
   margin-bottom: 30px;
   padding: 0 0px;
@@ -1177,6 +1177,7 @@ pages
   float: right;
   text-align: right;
   padding-top: 25px;
+  width:100%;
 }
 
 .cabinet-insert {
@@ -3070,34 +3071,32 @@ a.bank_big_link {
   border-left: 1px solid #cccccc;
 }
 
-.lft-col.plx10px .credit-ticket, .calculator-page .lft-col .credit-ticket{
+.lft-col.plx10px .credit-ticket {
   margin: 20px 0px 60px 0px;
   padding: 10px 3px 10px;
   overflow: hidden;
 }
-.lft-col.plx10px .credit-ticket .ttl, .calculator-page .lft-col .credit-ticket .ttl {
+.lft-col.plx10px .credit-ticket .ttl {
   color: #009900;
   text-transform: uppercase;
   font-size: 1.07143em;
   line-height: 1.26667em;
   line-height: 1.2em;
 }
-.lft-col.plx10px .credit-ticket .widthx499per, .calculator-page .lft-col .credit-ticket  .widthx499per{
+.lft-col.plx10px .credit-ticket .widthx499per {
   width: 100%;
-  margin:0;
 }
-.lft-col.plx10px .credit-ticket select, .calculator-page .lft-col .credit-ticket select {
+.lft-col.plx10px .credit-ticket select {
   width: 163px;
 }
-.lft-col.plx10px .credit-ticket input, .calculator-page .lft-col .credit-ticket input {
-  width: 100%!important;
+.lft-col.plx10px .credit-ticket input {
+  width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
-
-.lft-col.plx10px .credit-ticket .submit-orange-arrow1, .calculator-page .lft-col .credit-ticket  .submit-orange-arrow1{
+.lft-col.plx10px .credit-ticket .submit-orange-arrow1 {
   float: right;
 }
 
@@ -3717,13 +3716,13 @@ a.news-sub-a {
 }
 
 .orange-arrow {
-  width: 72px;
-  height: 68px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  z-index: 1;
-  background: url(../img/orange-arrow.png) no-repeat 0px 0px;
+	background: rgba(0, 0, 0, 0) url("../img/orange-arrow_temp.png") no-repeat scroll 0 0;
+    width: 40px;
+	height: 90px;
+    position: absolute;
+    right: -6px;
+    top: 28px;    
+    z-index: 1;
 }
 
 .white-with-border {
@@ -4695,7 +4694,7 @@ a.news-sub-a {
 }
 
 .faqpage-content {
-  padding: 40px 0 20px 0;
+  padding: 20px 0 20px 0;
   font-size: 1em;
   line-height: 1.35714em;
   line-height: 1.4em;
@@ -4725,6 +4724,7 @@ a.news-sub-a {
   color: #ec8f16;
   font-weight: normal;
 }
+
 
 /*==================================================================================================
 /7. FAQ.psd                              
@@ -5349,6 +5349,10 @@ a.news-sub-a {
           }
   */
 }
+.cont-icon-block li p{
+	height:50px;
+}
+
 .cont-icon-block li img {
   display: block;
   margin: 0px auto 15px;
@@ -5445,8 +5449,8 @@ a.news-sub-a {
   padding-left: 20px;
 }
 .n_b2 .special-offer {
-  margin-left: -10px;
-  margin-right: 15px;
+  /*margin-left: -10px;*/
+  margin-right: 25px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -7651,6 +7655,18 @@ ul.fwpn-naw a:hover {
   padding-bottom: 10px;
 }
 
+.p-3otziv .order-for-credit {
+    position: relative;
+}
+
+.p-3otziv .order-for-credit .submit_small {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -16px;
+}
+
+
 /*.p-3otziv*/
 .bplace-for-img {
   display: block;
@@ -8399,7 +8415,6 @@ ul.fwpn-naw a:hover {
 /*==================================================================================================
 /24. /spisok_gorodov2.html           
 ==================================================================================================*/
-
 /*==================================================================================================
 /25. spisok_gorodov.html          
 ==================================================================================================*/
@@ -8438,6 +8453,10 @@ ul.fwpn-naw a:hover {
 }
 .city-list .banks-name a {
   margin-bottom: 40px;
+}
+
+.city-list .special-offer{
+	padding-left:29px;
 }
 
 .search-bank-form {
@@ -8534,6 +8553,24 @@ ul.fwpn-naw a:hover {
 
 .city-name-list {
   overflow: hidden;
+  margin-bottom:50px;
+}
+
+.city-list .order-for-credit{
+	margin-right:25px;	
+	position:relative;
+	margin-bottom:0;
+}
+
+.city-list .order-for-credit p{
+	font-size: 1.28571em;
+}
+
+.city-list .order-for-credit .submit_small{
+	margin-top: -15px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
 }
 .city-name-list ul {
   width: auto;
@@ -8601,20 +8638,19 @@ ul.fwpn-naw a:hover {
     padding-bottom: 35px;
   }
 }
-.ab-cont .order-for-credit {
-  max-width: 530px;
-  margin-left: 13px;
-/*  margin-right: auto;*/
+.city-list-cont .order-for-credit {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  margin-top:125px;
 }
-.ab-cont .order-for-credit .submit_small {
+.city-list-cont .order-for-credit .submit_small {
   position: absolute;
   top: 50%;
   right: 12px;
   margin-top: -16px;
 }
-.ab-cont .order-for-credit p {
+.city-list-cont .order-for-credit p {
   font-size: 1.28571em;
   line-height: 2.11111em;
   line-height: 1.3em;
@@ -9697,6 +9733,21 @@ ul.fwpn-naw a:hover {
 }
 .filial-bank-card .nb-other-banks {
   padding-bottom: 30px;
+}
+
+.filial-bank-card .compare-credit{
+	margin-top:60px;
+}
+
+.filial-bank-card .order-for-credit{
+	position:relative;	
+}
+
+.filial-bank-card .order-for-credit .submit_small{
+	margin-top: -16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
 }
 
 /*===================================================================================================================*/
@@ -11319,10 +11370,6 @@ pages
 	margin-bottom:20px;
 }
 
-.calculator-page .credit-card-za-15-minut{
-	margin-top:70px;
-}
-
 .credit-card-za-15-minut p.ttl{
     font-size: 1.5em;
     line-height: 30px;
@@ -11346,24 +11393,117 @@ pages
 	margin-top:2px;
 }
 
-
-
-/*==================================================================================================
-spisok_gorodov2_mfo.html
-==================================================================================================*/
-.city-list2.mfo .order-for-credit{
-	background-image: -moz-linear-gradient(top, #f2f2f1, #d4d4d4);
-	background-image: -webkit-linear-gradient(top, #f2f2f1, #d4d4d4);
-	background-image: linear-gradient(to bottom, #f2f2f1, #d4d4d4);
+.menu-vibor-region{
+	position:relative;	
+	margin-bottom:10px;
+	margin-top:-25px;
 }
-.city-list2.mfo .order-for-credit .submit_small{
-	margin-top:7px;
+.drop-down, .proverka-regiona{
+	cursor:pointer;	
+	line-height: 1.3em;	
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #9d9898;	
 }
-/*==================================================================================================
-spisok_gorodov2_mfo.html
-==================================================================================================*/
+.drop-down{
+	font-size: 10px;
+	text-transform:uppercase;
+    display:inline-block;
+	margin-bottom:0;
+	padding-left:20px;
+	background:url(../img/icons.png)no-repeat;
+	height:14px;
+	padding-top:3px;
+	
+}
 
-.svodnaya_new h1{
-	width:640px;
-	text-align:center;	
+#proverka-regiona{
+	position:absolute;
+	top:20px;
+	right:0;	
+}
+
+.proverka-regiona{
+	font-size:12px;	
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);	
+	padding:10px;	
+	margin-top:10px;
+	position:relative;
+	display:none;
+	z-index:90;
+	background:#fff;
+}
+
+.proverka-regiona:before, .proverka-regiona:after { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 100px; 
+	border: 10px solid; 
+}	
+.proverka-regiona:before{	
+	top: -20px; 	
+	border-color: transparent  transparent #B7B7B7  transparent; 	
+}
+
+.proverka-regiona:after {
+	top: -19px; 	
+	border-color: transparent  transparent #fff  transparent; 	
+}
+
+.proverka-regiona button{
+	border:none;	
+	color: #9d9898;
+	/*border-radius:5px;*/
+	padding:0 10px 0;
+	font-family: "Open Sans", sans-serif;
+	/*color:#fff;*/
+	cursor:pointer;
+	background:transparent;
+	float:right;
+	margin-top:5px;
+}
+
+.proverka-regiona #SelectRegionYes{
+	/*background:#b80003;*/
+	float:left;
+}	
+
+.drop-down:hover {
+  color: #99cc33;
+}
+.drop-menu-main-sub {
+    line-height: 1.3em;	
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #9d9898;
+    font-size: 12px;
+	display: none;
+	position:absolute;
+	top:20px;
+	right:0;	   
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    z-index: 100; 
+    padding: 5px 0 5px;   
+}
+
+.drop-menu-main-sub ul{
+	float: left;
+	text-align:left;
+	margin-left:20px;
+}
+
+.drop-menu-main-sub ul:first-child{
+	margin-left:0;
+}
+
+.drop-menu-main-sub li{
+	padding:2px 8px 2px;
+}
+
+.drop-menu-main-sub li:hover{
+	cursor:pointer;
+	background:#ebebeb;	
 }
