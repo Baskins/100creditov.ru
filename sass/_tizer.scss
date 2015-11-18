@@ -1,6 +1,4 @@
-
-
-/*Òèçåðû*/
+/*Ð¢Ð¸Ð·ÐµÑ€Ñ‹*/
 	.tizer_block{
 		text-align:center;
 	}
@@ -54,7 +52,7 @@
 	}
 	
 	.tizer.ezaem .logo{
-		background-position:-81px 0;
+		background-position:-82px 0;
 		width:45px;
 		height:37px;
 	}
@@ -84,7 +82,7 @@
 	}
 	
 	.tizer.sovcom .logo{
-		background-position:-282px 0;
+		background-position:-283px 0;
 		width:40px;
 		height:38px;
 	}
@@ -109,7 +107,7 @@
 	}
 	
 	.tizer.moneyman .logo{
-		background-position:-81px -40px;
+		background-position:-82px -40px;
 		width:46px;
 		height:55px;
 	}
@@ -132,12 +130,107 @@
 		width:46px;
 		height:46px;	
 	}
+	
+	.tizer.ecspert-bank .logo{
+		background-position:-95px -95px;
+		width:41px;
+		height:41px;	
+	}	
+	
+	.tizer.sberbank .logo{
+		background-position:-50px -95px;
+		width:45px;
+		height:43px;	
+	}
+	
+	.tizer.turbo-zaem .logo{
+		background-position:0 -95px;
+		width:43px;
+		height:28px;	
+	}
 		
+	.tizer.turbo-zaem .label, .tizer.bin-bank .label{
+		height:auto;
+		bottom:0;
+		background-position:0 center;
+	}
+	
+	.tizer.skb-bank .logo{
+		background-position:-136px -95px;
+		width:40px;
+		height:40px;	
+	}
+	
+	.tizer.lime .logo{
+		background-position:-224px -95px;
+		width:45px;
+		height:45px;	
+	}
+	
+	.tizer.zaimer .logo{
+		background-position:-180px -95px;
+		width:40px;
+		height:40px;	
+	}
+	
+	.tizer.vivus .logo{
+		background-position:-277px -95px;
+		width:45px;
+		height:29px;	
+	}
+	
+	.tizer.pay_ps .logo{
+		background-position:0 -140px;
+		width:43px;
+		height:38px;	
+	}
+	
+	.tizer.prosto_credit .logo{
+		background-position:-43px -140px;
+		width:40px;
+		height:46px;	
+	}
+	
+	.tizer.bin-bank .logo{
+		background-position:-83px -140px;
+		width:45px;
+		height:33px;	
+	}
+	
+	.tizer.zaimon .logo{
+		background-position:-133px -140px;
+		width:40px;
+		height:40px;	
+	}	
+	
+	.tizer.soveren .logo{
+		background-position:-182px -140px;
+		width:45px;
+		height:34px;	
+	}
+	
+	.tizer.sms-finance .logo{
+		background-position:-4px -184px;
+		width:111px;
+		height:26px;
+		float:none;
+	}			
+	
+	
 	.tizer.one .text, .tizer.five .text{
 		display:block;
 		float:left;
 		width:107px;
 		
+	}
+	
+	.tizer.one .text span{
+		 color: #369;
+	}
+	
+	.tizer.sms-finance .text{
+		width:100%;
+		float:none;
 	}
 	
 	.tizer.p, .tizer .zayavka{
@@ -216,7 +309,7 @@
 	.tizer.two.ezaem .logo, .tizer.four.ezaem  .logo{
 		background-position:-50px 0;
 		width:26px;
-		height:23px;
+		height:23px;		
 	}
 	
 	.tizer.two.ezaem .logo{
@@ -306,7 +399,7 @@
 	}
 	
 	.tizer.two.platiza .logo, .tizer.four.platiza  .logo{
-		background-position:-19px -31px;
+		background-position:-20px -31px;
 		width:29px;
 		height:15px;
 	}
@@ -326,7 +419,7 @@
 	}
 	
 	.tizer.two.renesans .logo, .tizer.four.renesans  .logo{
-		background-position:-76px -32px;
+		background-position:-77px -32px;
 		width:22px;
 		height:24px;
 	}
@@ -354,6 +447,120 @@
 	.tizer.two.zaim-bistro .logo{
 		margin-top:-15px;
 	}
+	
+	.tizer.two.zaimon .logo, .tizer.four.zaimon  .logo{
+		background-position:-81px -85px;
+		width:26px;
+		height:22px;	
+	}
+	
+	.tizer.two.zaimon .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.turbo-zaem .logo, .tizer.four.turbo-zaem  .logo{
+		background-position:0 -57px;
+		width:27px;
+		height:19px;	
+	}
+	
+	.tizer.two.turbo-zaem .logo{
+		margin-top:-10px;
+	}
+	
+	.tizer.two.zaimer .logo, .tizer.four.zaimer  .logo{
+		background-position:-109px -57px;
+		width:25px;
+		height:26px;	
+	}
+	
+	.tizer.two.zaimer .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.lime .logo, .tizer.four.lime  .logo{
+		background-position:-135px -57px;
+		width:28px;
+		height:29px;	
+	}
+	
+	.tizer.two.lime .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.vivus .logo, .tizer.four.vivus  .logo{
+		background-position:-168px -57px;
+		width:28px;
+		height:19px;	
+	}
+	
+	.tizer.two.vivus .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.skb-bank .logo, .tizer.four.skb-bank  .logo{
+		background-position:-83px -57px;
+		width:26px;
+		height:26px;	
+	}
+	
+	.tizer.two.skb-bank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.ecspert-bank .logo, .tizer.four.ecspert-bank  .logo{
+		background-position:-58px -57px;
+		width:26px;
+		height:26px;	
+	}
+	
+	.tizer.two.ecspert-bank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.sberbank .logo, .tizer.four.sberbank  .logo{
+		background-position:-30px -57px;
+		width:28px;
+		height:28px;	
+	}
+	
+	.tizer.two.sberbank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.soveren .logo, .tizer.four.soveren  .logo{
+		background-position:-110px -85px;
+		width:28px;
+		height:22px;	
+	}
+	
+	.tizer.two.soveren .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.bin-bank .logo, .tizer.four.bin-bank  .logo{
+		background-position:-50px -85px;
+		width:28px;
+		height:21px;	
+	}
+	
+	.tizer.two.bin-bank .logo{
+		margin-top:-13px;
+	}
+	
+	
+	.tizer.two.sms-finance .logotip{
+		position:relative;
+		margin-top:5px;
+		left:0;
+	}
+	
+	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo{
+		background-position:-1px -114px;
+		width:89px;
+		height:20px;	
+	}
+	
 	
 	.tizer.two .text, .tizer.three .text, .tizer.four .text, .tizer.six .text{
 		font-weight:bold;
@@ -457,9 +664,62 @@
 	.tizer.four .text{
 		display:inline-block;
 		float:left;
-		width:100px;
-		position:absolute;
-		bottom:0;
+		width:100px;		
+	}
+	
+	.tizer.four .text{
+		margin-top:5px;
+	}
+	
+	.tizer.four.tinkoff .text, .tizer.four.sms-finance .text, .tizer.four.platiza .text, .tizer.four.renesans .text, .tizer.four.sberbank .text{
+		margin-top:0;
+	}	
+	
+	.tizer.four.moneyman .text, .tizer.four.e-finance .text{
+		margin-top:10px;
+	}
+	
+	.tizer.four.zaim-bistro .text, .tizer.four.slovo .text{
+		margin-top:1px;
+	}
+	
+	.tizer.four.domadengi .text{
+		margin-top:-2px;
+	}
+	
+	.tizer.four.bystrodengi .text{
+		margin-top:-4px;
+	}
+	
+	.tizer.four.ecspert-bank .text, .tizer.four.soveren .text{
+		margin-top:-1px;
+	}
+	
+	.tizer.four.ezaem .text, .tizer.four.citibank .text, .tizer.four.turbo-zaem .text, .tizer.four.vivus .text, .tizer.four.bin-bank .text{
+		margin-top:3px;
+	}
+	
+	.tizer.four.fingooroo .text, .tizer.four.sovcom .text{
+		margin-top:6px;
+	}
+		
+	.tizer.four.zaimer .text, .tizer.four.lime .text{
+		margin-top:7px;
+	}
+	
+	.tizer.four.skb-bank .text{
+		margin-top:9px;
+	}
+	
+	
+		
+	.tizer.four.tinkoff .logo{		
+		margin-top:7px;		
+	}
+	
+	.tizer.four.sms-finance .text{
+		width:100%;
+		margin-top:5px;
 	}
 	
 	.tizer.four .vid{
@@ -477,8 +737,316 @@
 		line-height:1.1;
 	}
 	
+	/*.tizer.five.tinkoff .logo {
+		margin-top:18px;
+	}
+	
+	.tizer.five.mili .logo {
+		margin-top:13px;
+	}
+	
+	.tizer.five.platiza .logo {
+		margin-top:10px;
+	}
+	
+	.tizer.five.moneyman .logo_tizer{
+		padding-top:5px;
+	}
+	
+	.tizer.five.moneyman .logo {
+		margin-top:-5px;
+	}
+	
+	.tizer.five.renesans .logo, .tizer.five.domadengi .logo, .tizer.five.turbo-zaem .logo{
+		margin-top:8px;
+	}
+	
+	.tizer.five.citibank .logo{
+		margin-top:6px;
+	}
+	
+	.tizer.five.fingooroo .logo{
+		margin-top:1px;
+	}
+	
+	.tizer.five.zaimer .logo, .tizer.five.lime .logo{
+		margin-top:0;
+	}
+	
+	.tizer.five.vivus .logo{
+		margin-top:17px;
+	}
+	
+	.tizer.five.sberbank .logo{
+		margin-top:15px;
+	}*/
+	/*
+	.tizer.five.ecspert-bank .logo{
+		margin-top:10px;
+	}*/
+	
+	.tizer.five .logo_tizer{
+		position:relative;
+	}
+	
+	.tizer.five .logo{
+		position:absolute;
+		top:50%;		
+	}
+	
+	.tizer.five.tinkoff .logo{
+		margin-top:-22px;
+	}
+	
+	.tizer.five.tinkoff .text{
+		margin-left:53px;
+	}
+	
+	.tizer.five.mili .logo{
+		margin-top:-17px;
+	}
+	
+	.tizer.five.mili .text{
+		margin-left:39px;
+	}
+	
+	.tizer.five.platiza .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.five.platiza .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.moneyman .logo_tizer{
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	
+	.tizer.five.moneyman .logo{
+		margin-top:-27px;
+	}
+	
+	.tizer.five.moneyman .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.renesans .logo{
+		margin-top:-21px;
+	}
+	
+	.tizer.five.renesans .text{
+		margin-left:39px;
+	}
+	
+	.tizer.five.zaim-bistro .logo_tizer{
+		padding-top:8px;
+		padding-bottom:8px;
+	}
+	
+	.tizer.five.zaim-bistro .logo{
+		margin-top:-23px;
+	}
+	
+	.tizer.five.zaim-bistro .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.domadengi .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.domadengi .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.e-finance .logo_tizer{
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+	
+	.tizer.five.e-finance .logo{
+		margin-top:-25px;
+	}
+	
+	.tizer.five.e-finance .text{
+		margin-left:48px;
+	}
+	
+	.tizer.five.ezaem .logo_tizer{
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+	
+	.tizer.five.ezaem .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.ezaem .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.slovo .logo_tizer{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.tizer.five.slovo .logo{
+		margin-top:-26px;
+	}
+	
+	.tizer.five.slovo .text{
+		margin-left:38px;
+	}
+	
+	.tizer.five.bystrodengi .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.bystrodengi .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.citibank .logo{
+		margin-top:-14px;
+	}
+	
+	.tizer.five.citibank .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.fingooroo .logo{
+		margin-top:-19px;
+	}
+	
+	.tizer.five.fingooroo .text{
+		margin-left:52px;
+	}
+	
+	.tizer.five.sovcom .logo{
+		margin-top:-19px;
+	}
+	
+	.tizer.five.sovcom .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.zaimon .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.zaimon .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.turbo-zaem .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.turbo-zaem .text{
+		margin-left:48px;
+	}
+	
+	.tizer.five.zaimer .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.zaimer .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.lime .logo{
+		margin-top:-23px;
+	}
+	
+	.tizer.five.lime .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.vivus .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.five.vivus .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.skb-bank .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.skb-bank .text{
+		margin-left:45px;
+	}	
+	
+	.tizer.five.ecspert-bank .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.ecspert-bank .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.sberbank .logo{
+		margin-top:-21px;
+	}
+	
+	.tizer.five.sberbank .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.soveren .logo{
+		margin-top:-17px;
+	}
+	
+	.tizer.five.soveren .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.bin-bank .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.bin-bank .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.sms-finance .logo{
+		position:relative;
+	}
+	
+	
+	/*.tizer.five.zaim-bistro .text{
+		margin-top:13px;
+	}
+	
+	.tizer.five.e-finance .text{
+		margin-top:8px;
+	}
+	
+	.tizer.five.ezaem .text{
+		margin-top:4px;
+	}
+	
+	.tizer.five.slovo .text{
+		margin-top:14px;
+	}
+	
+	.tizer.five.zaimon .text{
+		margin-top:7px;
+	}
+	
+*/
+	
+	
 	.tizer.five .text/*, .tizer.five .zayavka, .tizer.five p*/ {
 		line-height:1.2;
+		color:#036;
+		font-weight:bold;
+	}
+	
+	.tizer.five .text span{
+		color:#639f0a;
 	}
 	
 	.tizer.five .zayavka{
@@ -501,4 +1069,23 @@
 		line-height:1;
 	}
 	
-/*êîíåö òèçåðû*/
+.tizer.bb-each-bank{
+	width:110px;
+	height:215px;
+	margin-left:20px;
+	vertical-align:top;
+}
+
+.tizer.bb-each-bank .logo{
+	margin:0 auto 5px;
+	float:none;
+}
+
+.tizer.bb-each-bank .cont {	
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	height:100%;
+}
+
+/*ÐºÐ¾Ð½ÐµÑ† Ñ‚Ð¸Ð·ÐµÑ€Ñ‹*/
