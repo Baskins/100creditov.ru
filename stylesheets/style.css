@@ -3150,7 +3150,8 @@ a.bank_big_link {
   }
 }*/
 .get-credit-history {
-  text-align: center;
+  /*text-align: center;*/
+  text-align:right;
   padding-bottom: 27px;
 }
 .get-credit-history p {
@@ -3164,6 +3165,27 @@ a.bank_big_link {
   font-size: 14px;
 }
 
+
+.get-credit-history .submit_small{
+	margin-right:12px;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 1050px) {
+	.get-credit-history {
+		text-align:left;
+	}	
+	
+	
+	.get-credit-history p {
+		float:none;
+		
+	}
+	
+}
+
+
 .credit-table {
   /*border: 1px solid green;*/
   max-width: 770px;
@@ -3171,6 +3193,11 @@ a.bank_big_link {
   padding: 0 0 80px 0;
 }
 /**/
+
+.credit-table table{
+	width:100%;
+}
+
 .credit-table .online_credit_history td{
 	padding-bottom: 30px;
 }
@@ -3226,6 +3253,7 @@ a.bank_big_link {
 }
 .credit-table tr td:last-child{
 	text-align:right;
+	font-size: 1em!important;
 }
 
 .credit-table tr td:nth-child(2),
@@ -3241,6 +3269,8 @@ a.bank_big_link {
     line-height: 1.35714em;
   }
 }
+
+
 .credit-table strong {
   font-weight: bold;
   font-size: 1.33333em;
@@ -3292,7 +3322,7 @@ a.bank_big_link {
   color: #000;
   font-weight: bold;
 }
-.credit-table .submit_small {
+.credit-table .submit_small {	
   white-space: nowrap;
   text-transform: none;
   font-size: 1em;
@@ -3311,8 +3341,13 @@ a.bank_big_link {
     line-height: 1.46154em;
     padding: 5px 8px;
     white-space: normal;
+	text-align:center;
   }
 }
+
+
+
+
 
 .credit-page-text {
   /*border:  1px solid red;*/
@@ -6621,7 +6656,7 @@ ul.fwpn-naw a:hover {
   .special-offer2 .sb-safely {
     width: 120px;
     line-height: 1.3em;
-    padding: 6px 0px 10px 25px;
+   <00></00>adding: 6px 0px 10px 25px;
   }
 }
 
@@ -7147,7 +7182,7 @@ ul.fwpn-naw a:hover {
 
 .ab-cont {
   /*border: 1px solid red;*/
-  margin-right: 200px;
+  margin-right: 225px;
   padding-bottom: 50px;
 }
 @media (min-width: 0) and (max-width: 860px) {
@@ -7891,7 +7926,8 @@ ul.fwpn-naw a:hover {
   max-width: 584px;
   /*margin-left: auto;
   margin-right: auto;*/
-  margin-top: 0px;
+  /*margin-top: 50px;*/
+  margin-bottom:0;
 }
 .p-progr-bank .bank_order .submit_orange {
   padding: 8px 10px 10px 14px;
@@ -7911,10 +7947,14 @@ ul.fwpn-naw a:hover {
   }
 }
 
-.p-progr-bank .compare-credit.white{
-	width:580px;
+.p-progr-bank .compare-credit.white{	
 	padding-left:10px;
 	padding-right:10px;
+	margin-top:60px;
+	width:100%;
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 @media (min-width: 0) and (max-width: 1000px) {
   .p-progr-bank .compare-credit.white{
@@ -7976,7 +8016,7 @@ ul.fwpn-naw a:hover {
 .prb2-cont-right {
   /*border:  1px solid red;*/
   margin-bottom: 50px;
-  margin-right:200px;
+  margin-right:225px;
 }
 
 @media (min-width: 0) and (max-width: 860px) {
@@ -8123,6 +8163,13 @@ ul.fwpn-naw a:hover {
 .page-reiting.pr2 .banks-name {
   padding-top: 0px;
 }
+
+.page-reiting.pr2 .order-for-credit p{
+	margin-top:5px;
+}
+
+
+
 
 .bank_order.wide {
   position: relative;
@@ -8459,6 +8506,11 @@ ul.fwpn-naw a:hover {
 	padding-left:29px;
 }
 
+.city-list .special-offer.mfo{
+	padding-left:145px;
+	padding-right:25px;
+}
+
 .search-bank-form {
   /*border: 1px solid red;*/
   padding: 40px 0px 40px;
@@ -8559,11 +8611,16 @@ ul.fwpn-naw a:hover {
 .city-list .order-for-credit{
 	margin-right:25px;	
 	position:relative;
-	margin-bottom:0;
+	margin-bottom:50px;
+}
+
+.city-list .ab-cont .order-for-credit{
+	margin-right:0;
 }
 
 .city-list .order-for-credit p{
-	font-size: 1.28571em;
+	/*font-size: 1.28571em;*/
+	font-size: 1em;
 }
 
 .city-list .order-for-credit .submit_small{
@@ -8578,7 +8635,7 @@ ul.fwpn-naw a:hover {
 }
 .city-name-list ul li {
   width: auto;
-  min-width: 200px;
+  min-width: 190px;
   padding-bottom: 5px;
 }
 .city-name-list ul a {
@@ -8597,7 +8654,7 @@ ul.fwpn-naw a:hover {
 .city-list-cont {
   position: relative;
   z-index: 2;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   padding-bottom: 20px;
 }
 .city-list-cont .compare-credits {
@@ -10212,9 +10269,15 @@ ul.fwpn-naw a:hover {
   margin-bottom: 17px;
 }
 .calculator-page .credit-ticket .widthx499per{
-	width:155px;
+	/*width:155px;*/
+	width:100%;
 	margin:0 auto 10px;	
 }
+
+.calculator-page .credit-ticket .widthx499per select{
+	width:100%;
+}
+
 .calculator-page .credit-ticket .widthx499per input{
 	width:110px;
 	height:25px;
@@ -10234,6 +10297,11 @@ ul.fwpn-naw a:hover {
     display: none;
   }
 }
+/*
+.calculator-page .widthx499per{
+	width:100%;
+}*/
+
 
 .calc-type-tabs {
   /*border: 1px solid red;/**/
@@ -10822,7 +10890,7 @@ body.card .site-header{
 }
 .avto .avto_credits.programm .pb-small {
   color: #333;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .avto .banks-review-news {
@@ -10910,7 +10978,7 @@ pages
 	}
 	
 	.tizer.ezaem .logo{
-		background-position:-81px 0;
+		background-position:-82px 0;
 		width:45px;
 		height:37px;
 	}
@@ -10940,7 +11008,7 @@ pages
 	}
 	
 	.tizer.sovcom .logo{
-		background-position:-282px 0;
+		background-position:-283px 0;
 		width:40px;
 		height:38px;
 	}
@@ -10965,7 +11033,7 @@ pages
 	}
 	
 	.tizer.moneyman .logo{
-		background-position:-81px -40px;
+		background-position:-82px -40px;
 		width:46px;
 		height:55px;
 	}
@@ -10988,12 +11056,107 @@ pages
 		width:46px;
 		height:46px;	
 	}
+	
+	.tizer.ecspert-bank .logo{
+		background-position:-95px -95px;
+		width:41px;
+		height:41px;	
+	}	
+	
+	.tizer.sberbank .logo{
+		background-position:-50px -95px;
+		width:45px;
+		height:43px;	
+	}
+	
+	.tizer.turbo-zaem .logo{
+		background-position:0 -95px;
+		width:43px;
+		height:28px;	
+	}
 		
+	.tizer.turbo-zaem .label, .tizer.bin-bank .label{
+		height:auto;
+		bottom:0;
+		background-position:0 center;
+	}
+	
+	.tizer.skb-bank .logo{
+		background-position:-136px -95px;
+		width:40px;
+		height:40px;	
+	}
+	
+	.tizer.lime .logo{
+		background-position:-224px -95px;
+		width:45px;
+		height:45px;	
+	}
+	
+	.tizer.zaimer .logo{
+		background-position:-180px -95px;
+		width:40px;
+		height:40px;	
+	}
+	
+	.tizer.vivus .logo{
+		background-position:-277px -95px;
+		width:45px;
+		height:29px;	
+	}
+	
+	.tizer.pay_ps .logo{
+		background-position:0 -140px;
+		width:43px;
+		height:38px;	
+	}
+	
+	.tizer.prosto_credit .logo{
+		background-position:-43px -140px;
+		width:40px;
+		height:46px;	
+	}
+	
+	.tizer.bin-bank .logo{
+		background-position:-83px -140px;
+		width:45px;
+		height:33px;	
+	}
+	
+	.tizer.zaimon .logo{
+		background-position:-133px -140px;
+		width:40px;
+		height:40px;	
+	}	
+	
+	.tizer.soveren .logo{
+		background-position:-182px -140px;
+		width:45px;
+		height:34px;	
+	}
+	
+	.tizer.sms-finance .logo{
+		background-position:-4px -184px;
+		width:111px;
+		height:26px;
+		float:none;
+	}			
+	
+	
 	.tizer.one .text, .tizer.five .text{
 		display:block;
 		float:left;
 		width:107px;
 		
+	}
+	
+	.tizer.one .text span{
+		 color: #369;
+	}
+	
+	.tizer.sms-finance .text{
+		width:100%;
+		float:none;
 	}
 	
 	.tizer.p, .tizer .zayavka{
@@ -11072,7 +11235,7 @@ pages
 	.tizer.two.ezaem .logo, .tizer.four.ezaem  .logo{
 		background-position:-50px 0;
 		width:26px;
-		height:23px;
+		height:23px;		
 	}
 	
 	.tizer.two.ezaem .logo{
@@ -11162,7 +11325,7 @@ pages
 	}
 	
 	.tizer.two.platiza .logo, .tizer.four.platiza  .logo{
-		background-position:-19px -31px;
+		background-position:-20px -31px;
 		width:29px;
 		height:15px;
 	}
@@ -11182,7 +11345,7 @@ pages
 	}
 	
 	.tizer.two.renesans .logo, .tizer.four.renesans  .logo{
-		background-position:-76px -32px;
+		background-position:-77px -32px;
 		width:22px;
 		height:24px;
 	}
@@ -11210,6 +11373,120 @@ pages
 	.tizer.two.zaim-bistro .logo{
 		margin-top:-15px;
 	}
+	
+	.tizer.two.zaimon .logo, .tizer.four.zaimon  .logo{
+		background-position:-81px -85px;
+		width:26px;
+		height:22px;	
+	}
+	
+	.tizer.two.zaimon .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.turbo-zaem .logo, .tizer.four.turbo-zaem  .logo{
+		background-position:0 -57px;
+		width:27px;
+		height:19px;	
+	}
+	
+	.tizer.two.turbo-zaem .logo{
+		margin-top:-10px;
+	}
+	
+	.tizer.two.zaimer .logo, .tizer.four.zaimer  .logo{
+		background-position:-109px -57px;
+		width:25px;
+		height:26px;	
+	}
+	
+	.tizer.two.zaimer .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.lime .logo, .tizer.four.lime  .logo{
+		background-position:-135px -57px;
+		width:28px;
+		height:29px;	
+	}
+	
+	.tizer.two.lime .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.vivus .logo, .tizer.four.vivus  .logo{
+		background-position:-168px -57px;
+		width:28px;
+		height:19px;	
+	}
+	
+	.tizer.two.vivus .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.skb-bank .logo, .tizer.four.skb-bank  .logo{
+		background-position:-83px -57px;
+		width:26px;
+		height:26px;	
+	}
+	
+	.tizer.two.skb-bank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.ecspert-bank .logo, .tizer.four.ecspert-bank  .logo{
+		background-position:-58px -57px;
+		width:26px;
+		height:26px;	
+	}
+	
+	.tizer.two.ecspert-bank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.sberbank .logo, .tizer.four.sberbank  .logo{
+		background-position:-30px -57px;
+		width:28px;
+		height:28px;	
+	}
+	
+	.tizer.two.sberbank .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.two.soveren .logo, .tizer.four.soveren  .logo{
+		background-position:-110px -85px;
+		width:28px;
+		height:22px;	
+	}
+	
+	.tizer.two.soveren .logo{
+		margin-top:-13px;
+	}
+	
+	.tizer.two.bin-bank .logo, .tizer.four.bin-bank  .logo{
+		background-position:-50px -85px;
+		width:28px;
+		height:21px;	
+	}
+	
+	.tizer.two.bin-bank .logo{
+		margin-top:-13px;
+	}
+	
+	
+	.tizer.two.sms-finance .logotip{
+		position:relative;
+		margin-top:5px;
+		left:0;
+	}
+	
+	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo{
+		background-position:-1px -114px;
+		width:89px;
+		height:20px;	
+	}
+	
 	
 	.tizer.two .text, .tizer.three .text, .tizer.four .text, .tizer.six .text{
 		font-weight:bold;
@@ -11313,9 +11590,62 @@ pages
 	.tizer.four .text{
 		display:inline-block;
 		float:left;
-		width:100px;
-		position:absolute;
-		bottom:0;
+		width:100px;		
+	}
+	
+	.tizer.four .text{
+		margin-top:5px;
+	}
+	
+	.tizer.four.tinkoff .text, .tizer.four.sms-finance .text, .tizer.four.platiza .text, .tizer.four.renesans .text, .tizer.four.sberbank .text{
+		margin-top:0;
+	}	
+	
+	.tizer.four.moneyman .text, .tizer.four.e-finance .text{
+		margin-top:10px;
+	}
+	
+	.tizer.four.zaim-bistro .text, .tizer.four.slovo .text{
+		margin-top:1px;
+	}
+	
+	.tizer.four.domadengi .text{
+		margin-top:-2px;
+	}
+	
+	.tizer.four.bystrodengi .text{
+		margin-top:-4px;
+	}
+	
+	.tizer.four.ecspert-bank .text, .tizer.four.soveren .text{
+		margin-top:-1px;
+	}
+	
+	.tizer.four.ezaem .text, .tizer.four.citibank .text, .tizer.four.turbo-zaem .text, .tizer.four.vivus .text, .tizer.four.bin-bank .text{
+		margin-top:3px;
+	}
+	
+	.tizer.four.fingooroo .text, .tizer.four.sovcom .text{
+		margin-top:6px;
+	}
+		
+	.tizer.four.zaimer .text, .tizer.four.lime .text{
+		margin-top:7px;
+	}
+	
+	.tizer.four.skb-bank .text{
+		margin-top:9px;
+	}
+	
+	
+		
+	.tizer.four.tinkoff .logo{		
+		margin-top:7px;		
+	}
+	
+	.tizer.four.sms-finance .text{
+		width:100%;
+		margin-top:5px;
 	}
 	
 	.tizer.four .vid{
@@ -11333,8 +11663,316 @@ pages
 		line-height:1.1;
 	}
 	
+	/*.tizer.five.tinkoff .logo {
+		margin-top:18px;
+	}
+	
+	.tizer.five.mili .logo {
+		margin-top:13px;
+	}
+	
+	.tizer.five.platiza .logo {
+		margin-top:10px;
+	}
+	
+	.tizer.five.moneyman .logo_tizer{
+		padding-top:5px;
+	}
+	
+	.tizer.five.moneyman .logo {
+		margin-top:-5px;
+	}
+	
+	.tizer.five.renesans .logo, .tizer.five.domadengi .logo, .tizer.five.turbo-zaem .logo{
+		margin-top:8px;
+	}
+	
+	.tizer.five.citibank .logo{
+		margin-top:6px;
+	}
+	
+	.tizer.five.fingooroo .logo{
+		margin-top:1px;
+	}
+	
+	.tizer.five.zaimer .logo, .tizer.five.lime .logo{
+		margin-top:0;
+	}
+	
+	.tizer.five.vivus .logo{
+		margin-top:17px;
+	}
+	
+	.tizer.five.sberbank .logo{
+		margin-top:15px;
+	}*/
+	/*
+	.tizer.five.ecspert-bank .logo{
+		margin-top:10px;
+	}*/
+	
+	.tizer.five .logo_tizer{
+		position:relative;
+	}
+	
+	.tizer.five .logo{
+		position:absolute;
+		top:50%;		
+	}
+	
+	.tizer.five.tinkoff .logo{
+		margin-top:-22px;
+	}
+	
+	.tizer.five.tinkoff .text{
+		margin-left:53px;
+	}
+	
+	.tizer.five.mili .logo{
+		margin-top:-17px;
+	}
+	
+	.tizer.five.mili .text{
+		margin-left:39px;
+	}
+	
+	.tizer.five.platiza .logo{
+		margin-top:-12px;
+	}
+	
+	.tizer.five.platiza .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.moneyman .logo_tizer{
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	
+	.tizer.five.moneyman .logo{
+		margin-top:-27px;
+	}
+	
+	.tizer.five.moneyman .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.renesans .logo{
+		margin-top:-21px;
+	}
+	
+	.tizer.five.renesans .text{
+		margin-left:39px;
+	}
+	
+	.tizer.five.zaim-bistro .logo_tizer{
+		padding-top:8px;
+		padding-bottom:8px;
+	}
+	
+	.tizer.five.zaim-bistro .logo{
+		margin-top:-23px;
+	}
+	
+	.tizer.five.zaim-bistro .text{
+		margin-left:51px;
+	}
+	
+	.tizer.five.domadengi .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.domadengi .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.e-finance .logo_tizer{
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+	
+	.tizer.five.e-finance .logo{
+		margin-top:-25px;
+	}
+	
+	.tizer.five.e-finance .text{
+		margin-left:48px;
+	}
+	
+	.tizer.five.ezaem .logo_tizer{
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+	
+	.tizer.five.ezaem .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.ezaem .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.slovo .logo_tizer{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.tizer.five.slovo .logo{
+		margin-top:-26px;
+	}
+	
+	.tizer.five.slovo .text{
+		margin-left:38px;
+	}
+	
+	.tizer.five.bystrodengi .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.bystrodengi .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.citibank .logo{
+		margin-top:-14px;
+	}
+	
+	.tizer.five.citibank .text{
+		margin-left:43px;
+	}
+	
+	.tizer.five.fingooroo .logo{
+		margin-top:-19px;
+	}
+	
+	.tizer.five.fingooroo .text{
+		margin-left:52px;
+	}
+	
+	.tizer.five.sovcom .logo{
+		margin-top:-19px;
+	}
+	
+	.tizer.five.sovcom .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.zaimon .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.zaimon .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.turbo-zaem .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.turbo-zaem .text{
+		margin-left:48px;
+	}
+	
+	.tizer.five.zaimer .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.zaimer .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.lime .logo{
+		margin-top:-23px;
+	}
+	
+	.tizer.five.lime .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.vivus .logo{
+		margin-top:-15px;
+	}
+	
+	.tizer.five.vivus .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.skb-bank .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.skb-bank .text{
+		margin-left:45px;
+	}	
+	
+	.tizer.five.ecspert-bank .logo{
+		margin-top:-20px;
+	}
+	
+	.tizer.five.ecspert-bank .text{
+		margin-left:45px;
+	}
+	
+	.tizer.five.sberbank .logo{
+		margin-top:-21px;
+	}
+	
+	.tizer.five.sberbank .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.soveren .logo{
+		margin-top:-17px;
+	}
+	
+	.tizer.five.soveren .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.bin-bank .logo{
+		margin-top:-16px;
+	}
+	
+	.tizer.five.bin-bank .text{
+		margin-left:50px;
+	}
+	
+	.tizer.five.sms-finance .logo{
+		position:relative;
+	}
+	
+	
+	/*.tizer.five.zaim-bistro .text{
+		margin-top:13px;
+	}
+	
+	.tizer.five.e-finance .text{
+		margin-top:8px;
+	}
+	
+	.tizer.five.ezaem .text{
+		margin-top:4px;
+	}
+	
+	.tizer.five.slovo .text{
+		margin-top:14px;
+	}
+	
+	.tizer.five.zaimon .text{
+		margin-top:7px;
+	}
+	
+*/
+	
+	
 	.tizer.five .text/*, .tizer.five .zayavka, .tizer.five p*/ {
 		line-height:1.2;
+		color:#036;
+		font-weight:bold;
+	}
+	
+	.tizer.five .text span{
+		color:#639f0a;
 	}
 	
 	.tizer.five .zayavka{
@@ -11357,6 +11995,25 @@ pages
 		line-height:1;
 	}
 	
+.tizer.bb-each-bank{
+	width:110px;
+	height:215px;
+	margin-left:20px;
+	vertical-align:top;
+}
+
+.tizer.bb-each-bank .logo{
+	margin:0 auto 5px;
+	float:none;
+}
+
+.tizer.bb-each-bank .cont {	
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	height:100%;
+}
+
 /*конец тизеры*/
 /*Кредитная карта за 15 минут*/
 .credit-card-za-15-minut{
@@ -11454,15 +12111,17 @@ pages
 
 .proverka-regiona button{
 	border:none;	
-	color: #9d9898;
-	/*border-radius:5px;*/
+	color: #9d9898;	
 	padding:0 10px 0;
-	font-family: "Open Sans", sans-serif;
-	/*color:#fff;*/
+	font-family: "Open Sans", sans-serif;	
 	cursor:pointer;
 	background:transparent;
 	float:right;
 	margin-top:5px;
+}
+
+.proverka-regiona button:hover{
+	color:#9ACB6B;
 }
 
 .proverka-regiona #SelectRegionYes{
@@ -11475,10 +12134,10 @@ pages
 }
 .drop-menu-main-sub {
     line-height: 1.3em;	
-	font-family: "Open Sans", sans-serif;
+	/*font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	color: #9d9898;
-    font-size: 12px;
+    font-size: 12px;*/
 	display: none;
 	position:absolute;
 	top:20px;
@@ -11507,3 +12166,12 @@ pages
 	cursor:pointer;
 	background:#ebebeb;	
 }
+
+.drop-menu-main-sub a{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #9d9898;
+    font-size: 12px;
+	text-decoration:none;
+}
+

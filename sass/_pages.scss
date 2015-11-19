@@ -69,7 +69,6 @@ $wind-wdth: 0px 1000px;         /*плашка с оранжево кнопко�
 $filter-widts: 861px 920px;     /*$filter-widts: 861px 920px;  на станице отзывов при сужении страницы не влазили кнопки фильтров, при этом условии уменьшается боковой маржин*/
 $resize-m: 0 860px;
 
-
 $table-credit-widts: 0px 900px;  /*для уменьшения шрифта в талице на странице стравнения кредитных ставок по банкам*/
 
 $min-width-res0: 0px 800px; 
@@ -1873,9 +1872,12 @@ $fence-sm: $small $medium;
 } */
 
 
-.get-credit-history{
-    text-align: center;
+.get-credit-history{	
+    text-align: right;
     padding-bottom: 27px;
+	.submit_small{
+		margin-right:12px;
+	}
     p{
         font-size: 19px;
         padding: 5px 0px;
@@ -1888,8 +1890,25 @@ $fence-sm: $small $medium;
     }
 }
 
+@media (min-width: 0px) and (max-width: 1050px) {
+	.get-credit-history {
+		text-align:left;
+	}	
+	
+	
+	.get-credit-history p {
+		float:none;
+		
+	}
+	
+}
+
+
 
 .credit-table{
+	table{
+		width:100%;
+	}
     /*border: 1px solid green;*/
     max-width: 770px;
     margin-right: 20px;
@@ -1934,6 +1953,7 @@ $fence-sm: $small $medium;
     }
 	tr td:last-child{
 		text-align:right;
+		font-size: 1em!important;
 	}
     tr td:nth-child(2),
     tr td:nth-child(3){
@@ -1999,6 +2019,7 @@ $fence-sm: $small $medium;
             @include adjust-font-size-to(13px);
             padding: 5px 8px;
             white-space: normal;
+			text-align:center;
         }
     }	
 }
@@ -5181,7 +5202,7 @@ ul.fwpn-naw{
 
 .ab-cont{
     /*border: 1px solid red;*/
-    margin-right: 200px;
+    margin-right: 225px;
     padding-bottom: 50px;
         @include breakpoint($resize-m) {
             margin-right: 0px;
@@ -5856,7 +5877,7 @@ ul.fwpn-naw{
         max-width: 584px;
         /*margin-left: auto;
         margin-right: auto;*/
-        margin-top: 0px;
+        margin-top: 50px;
 
         .submit_orange{
             padding: 8px 10px 10px 14px;
@@ -5874,9 +5895,11 @@ ul.fwpn-naw{
         }
     }
 	.compare-credit.white{
-		width:580px;
+		width:100%;
 		padding-left:10px;
 		padding-right:10px;
+		margin-top:60px;
+		@include box-sizing(border-box);
 		@include breakpoint(0 1000px){
 			width: auto;
 			padding-left:5px;
@@ -5930,7 +5953,7 @@ ul.fwpn-naw{
 .prb2-cont-right{
     /*border:  1px solid red;*/
     margin-bottom: 50px;
-	margin-right:200px;
+	margin-right:225px;
 	@include breakpoint($resize-m) {
             margin-right: 0px;
         }    
@@ -6062,6 +6085,11 @@ ul.fwpn-naw{
     .banks-name{
         padding-top: 0px;
     }
+	
+	.order-for-credit p{
+		margin-top:5px;
+	}
+	
 }
 
 
@@ -6452,9 +6480,10 @@ ul.fwpn-naw{
 	.order-for-credit{
 		margin-right:25px;
 		position:relative;
-		margin-bottom:0;
+		margin-bottom:50px;
 		p{			
-			@include adjust-font-size-to(18px);
+			/*@include adjust-font-size-to(18px);*/
+			@include adjust-font-size-to(14px);
 		}
 		.submit_small{
 			margin-top: -15px;
@@ -6463,6 +6492,15 @@ ul.fwpn-naw{
 			top: 50%;
 		}
 	}
+	.ab-cont .order-for-credit{
+		margin-right:0;
+	}
+	
+	.special-offer.mfo{
+		padding-left:145px;
+		padding-right:25px;
+	}
+	
 }
 .city-name-list{
     overflow: hidden;
@@ -6472,7 +6510,7 @@ ul.fwpn-naw{
         /*margin-right: 20px;*/
         li{
             width: auto;
-            min-width: 200px;
+            min-width: 190px;
             padding-bottom: 5px;
         }
         a{
@@ -6490,7 +6528,7 @@ ul.fwpn-naw{
 .city-list-cont{
     position: relative;
     z-index: 2;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
     padding-bottom: 20px;
 
     .compare-credits{
@@ -7935,8 +7973,12 @@ ul.fwpn-naw{
             text-align: center;
         }
 		.widthx499per{
-			width:155px;
+			/*width:155px;*/
+			width:100%;
 			margin:0 auto 10px;
+			select{
+				width:100%;
+			}
 			input{
 				width:110px;
 				height:25px;
@@ -8487,7 +8529,7 @@ ul.fwpn-naw{
 }
 .avto .avto_credits.programm .pb-small {
   color: #333;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .avto .banks-review-news {
@@ -8579,12 +8621,8 @@ pages
 	position:absolute;
 	top:20px;
 	right:0;	   
-    background: #FFFFFF;   
-	line-height: 1.3em;	
-	font-family: $fontf;    
-	font-weight: 300;
-	color: #9d9898;
-    font-size: 12px;	
+    background: #FFFFFF;  
+	line-height: 1.3em;			
 	@include box-shadow(rgba(0, 0, 0, 0.45) 0px 2px 8px);
     z-index: 100; 
     padding: 5px 0 5px;   
@@ -8607,6 +8645,15 @@ pages
 		cursor:pointer;
 		background:#ebebeb;	
 	}
+	
+	a{
+		font-family: $fontf;    
+		font-weight: 300;
+		color: #9d9898;	
+		font-size: 12px;
+		text-decoration:none;
+	}
+	
 }	
 
 #proverka-regiona{
