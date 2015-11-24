@@ -11140,7 +11140,21 @@ pages
 		width:111px;
 		height:26px;
 		float:none;
-	}			
+	}
+	
+	.tizer.zaimi-prosto .logo{
+		background-position:-118px -184px;
+		width:115px;
+		height:18px;
+		float:none;
+	}
+	
+	.tizer.one-click-money .logo{
+		background-position:-1px -215px;
+		width:74px;
+		height:34px;
+		float:none;
+	}
 	
 	
 	.tizer.one .text, .tizer.five .text{
@@ -11481,11 +11495,37 @@ pages
 		left:0;
 	}
 	
+	.tizer.two.zaimi-prosto .logotip{
+		position:relative;
+		margin-top:5px;
+		left:0;
+	}
+	
+	.tizer.two.one-click-money .logotip{
+		position:relative;
+		margin-top:5px;
+		left:0;
+	}
+	
+	
+	
 	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo{
 		background-position:-1px -114px;
 		width:89px;
 		height:20px;	
 	}
+	
+	.tizer.two.zaimi-prosto .logo, .tizer.four.zaimi-prosto  .logo{
+		background-position:-92px -114px;
+		width:90px;
+		height:14px;	
+	}
+	.tizer.two.one-click-money .logo, .tizer.four.one-click-money  .logo{
+		background-position:-0 -134px;
+		width:59px;
+		height:27px;	
+	}
+	
 	
 	
 	.tizer.two .text, .tizer.three .text, .tizer.four .text, .tizer.six .text{
@@ -11936,11 +11976,22 @@ pages
 	.tizer.five.bin-bank .text{
 		margin-left:50px;
 	}
-	
+	/*
 	.tizer.five.sms-finance .logo{
 		position:relative;
 	}
 	
+	.tizer.five.zaimi-prosto .logo{
+		position:relative;
+	}
+	
+	.tizer.five.one-click-money .logo{
+		position:relative;
+	}*/
+	.tizer.five.one-click-money .logo, .tizer.five.zaimi-prosto .logo, .tizer.five.sms-finance .logo{
+		position:relative;
+		margin-bottom:5px;
+	}
 	
 	/*.tizer.five.zaim-bistro .text{
 		margin-top:13px;
@@ -11965,14 +12016,18 @@ pages
 */
 	
 	
-	.tizer.five .text/*, .tizer.five .zayavka, .tizer.five p*/ {
+	.tizer.five .text {
 		line-height:1.2;
 		color:#036;
 		font-weight:bold;
+		
 	}
+	
 	
 	.tizer.five .text span{
 		color:#639f0a;
+		display:inline-block;
+		margin-top:3px;
 	}
 	
 	.tizer.five .zayavka{
@@ -11991,7 +12046,7 @@ pages
 		font-weight:normal;
 		color:#333;
 		font-size:12px;
-		margin-bottom:0;
+		margin-bottom:5px!important;
 		line-height:1;
 	}
 	
