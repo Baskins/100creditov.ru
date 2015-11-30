@@ -3705,12 +3705,12 @@ a.news-sub-a {
   left: -8px;
   background: url(../img/label.png) no-repeat 0px 0px;
   height: 19px;
-  width: 105px;
+  /*width: 105px;*/
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 50px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 0.71429em;
   line-height: 1.9em;
   line-height: 19px;
@@ -11067,6 +11067,13 @@ pages
 		height:28px;	
 	}
 		
+	.tizer.bb-each-bank 	.label{
+		height:auto;
+		bottom:0;
+		background-position:0 center;
+		margin-bottom:10px;
+	}
+		
 	.tizer.turbo-zaem .label, .tizer.bin-bank .label{
 		height:auto;
 		bottom:0;
@@ -11216,6 +11223,10 @@ pages
 		display:block;
 		margin:0 auto;
 		
+	}
+	
+	.tizer.bb-each-bank.sms-finance .logo, .tizer.bb-each-bank.zaimi-prosto .logo{
+		background:url(../img/tizer/sprite1.png)no-repeat;
 	}
 	
 	.tizer.two .logotip{
@@ -11506,13 +11517,13 @@ pages
 	}
 	
 	
-	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo{
+	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo, .tizer.bb-each-bank.sms-finance .logo{
 		background-position:-1px -114px;
 		width:89px;
 		height:20px;	
 	}
 	
-	.tizer.two.zaimi-prosto .logo, .tizer.four.zaimi-prosto  .logo{
+	.tizer.two.zaimi-prosto .logo, .tizer.four.zaimi-prosto  .logo, .tizer.bb-each-bank.zaimi-prosto .logo{
 		background-position:-92px -114px;
 		width:90px;
 		height:14px;	
@@ -11987,7 +11998,7 @@ pages
 	}
 	
 .tizer.bb-each-bank{
-	width:110px;
+	width:120px;
 	height:215px;
 	margin-left:20px;
 	vertical-align:top;
@@ -12003,6 +12014,10 @@ pages
 	padding-left:10px;
 	padding-right:10px;
 	height:100%;
+}
+
+.tizer.bb-each-bank.one-click-money .logo+strong, .tizer.bb-each-bank.zaimi-prosto .logo+strong, .tizer.bb-each-bank.sms-finance .logo+strong{
+	display:none;
 }
 
 /*конец тизеры*/

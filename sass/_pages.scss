@@ -2347,10 +2347,10 @@ a.news-sub-a{
             left: -8px;
             background: url(../img/label.png) no-repeat 0px 0px;
             height: 19px;
-            width: 105px;
+            /*width: 105px;*/
             @include box-sizing(border-box);
             padding-left: 50px;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             @include adjust-font-size-to(10px);
             line-height: 19px;
             font-weight: bold; 
