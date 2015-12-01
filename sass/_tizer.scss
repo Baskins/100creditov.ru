@@ -4,9 +4,9 @@
 	}
 
 	.tizer{
-		display:inline-block;	
+		display:block;	
 		text-align:left;
-		margin-bottom:20px;			
+		margin:0 auto 20px;			
 	}
 	
 	.tizer.one, .tizer.two, .tizer.four, .tizer.five, .tizer.six{
@@ -141,6 +141,13 @@
 		height:28px;	
 	}
 		
+	.tizer.bb-each-bank 	.label{
+		height:auto;
+		bottom:0;
+		background-position:0 center;
+		margin-bottom:10px;
+	}
+		
 	.tizer.turbo-zaem .label, .tizer.bin-bank .label{
 		height:auto;
 		bottom:0;
@@ -236,8 +243,15 @@
 		
 	}
 	
-	.tizer.one .text span{
+	.tizer.one .text span:last-child{
 		 color: #369;
+	}
+	
+	
+	.tizer.sms-finance .text span:first-child,.tizer.one-click-money .text span:first-child,.tizer.zaimi-prosto .text span:first-child, 
+	.tizer.two.sms-finance .text, .tizer.two.one-click-money .text,  .tizer.two.zaimi-prosto .text,
+	.tizer.four.sms-finance .text, .tizer.four.one-click-money .text,  .tizer.four.zaimi-prosto .text{
+		display:none;
 	}
 	
 	.tizer.sms-finance .text{
@@ -290,6 +304,10 @@
 		display:block;
 		margin:0 auto;
 		
+	}
+	
+	.tizer.bb-each-bank.sms-finance .logo, .tizer.bb-each-bank.zaimi-prosto .logo{
+		background:url(../img/tizer/sprite1.png)no-repeat;
 	}
 	
 	.tizer.two .logotip{
@@ -580,13 +598,13 @@
 	}
 	
 	
-	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo{
+	.tizer.two.sms-finance .logo, .tizer.four.sms-finance  .logo, .tizer.bb-each-bank.sms-finance .logo{
 		background-position:-1px -114px;
 		width:89px;
 		height:20px;	
 	}
 	
-	.tizer.two.zaimi-prosto .logo, .tizer.four.zaimi-prosto  .logo{
+	.tizer.two.zaimi-prosto .logo, .tizer.four.zaimi-prosto  .logo, .tizer.bb-each-bank.zaimi-prosto .logo{
 		background-position:-92px -114px;
 		width:90px;
 		height:14px;	
@@ -1034,7 +1052,7 @@
 	}
 	
 	
-	.tizer.five .text span{
+	.tizer.five .text span:last-child{
 		color:#639f0a;
 		display:inline-block;
 		margin-top:3px;
@@ -1061,7 +1079,7 @@
 	}
 	
 .tizer.bb-each-bank{
-	width:110px;
+	width:120px;
 	height:215px;
 	margin-left:20px;
 	vertical-align:top;
@@ -1078,4 +1096,9 @@
 	padding-right:10px;
 	height:100%;
 }
+
+.tizer.bb-each-bank.one-click-money .logo+strong, .tizer.bb-each-bank.zaimi-prosto .logo+strong, .tizer.bb-each-bank.sms-finance .logo+strong{
+	display:none;
+}
+
 /*конец тизеры*/
