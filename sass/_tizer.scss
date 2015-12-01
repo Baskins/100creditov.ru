@@ -4,9 +4,9 @@
 	}
 
 	.tizer{
-		display:inline-block;	
+		display:block;	
 		text-align:left;
-		margin-bottom:20px;			
+		margin:0 auto 20px;			
 	}
 	
 	.tizer.one, .tizer.two, .tizer.four, .tizer.five, .tizer.six{
@@ -243,8 +243,15 @@
 		
 	}
 	
-	.tizer.one .text span{
+	.tizer.one .text span:last-child{
 		 color: #369;
+	}
+	
+	
+	.tizer.sms-finance .text span:first-child,.tizer.one-click-money .text span:first-child,.tizer.zaimi-prosto .text span:first-child, 
+	.tizer.two.sms-finance .text, .tizer.two.one-click-money .text,  .tizer.two.zaimi-prosto .text,
+	.tizer.four.sms-finance .text, .tizer.four.one-click-money .text,  .tizer.four.zaimi-prosto .text{
+		display:none;
 	}
 	
 	.tizer.sms-finance .text{
@@ -1045,7 +1052,7 @@
 	}
 	
 	
-	.tizer.five .text span{
+	.tizer.five .text span:last-child{
 		color:#639f0a;
 		display:inline-block;
 		margin-top:3px;
